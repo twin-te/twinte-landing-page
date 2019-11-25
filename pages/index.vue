@@ -14,14 +14,14 @@
         <div class="hero-body">
           <div class="container">
             <h2 class="subtitle">筑波大学生専用</h2>
-            <h1 class="title">時間割管理アプリケーション</h1>
+            <h1 class="title">時間割管理アプリ<br>Twin:te</h1>
           </div>
           <b-button
             id="start"
             class="is-large is-primary"
             rounded
             tag="a"
-            href="https://twinte.net"
+            href="https://app.twinte.net"
             aria-label="GetStart"
           >今すぐ使う</b-button>
         </div>
@@ -30,20 +30,21 @@
 
     <fixpos/>
 
-    <SectionTitle title="ついんて（Twin:te）とは？" id="about"/>
+    <SectionTitle title="Twin:te (ついんて)とは？" id="about"/>
     <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self">
       <div class="container">
         <h1 class="title">筑波大学生用の時間割アプリ</h1>
-        <h2 class="subtitle">
-          <a href>Hikaru Egashira</a>と
-          <a href>たこなす</a>が共同開発した、筑波大学生用の時間割アプリです。
-          Twinsで行った履修登録を見やすくするのが目的です。時間割は授業番号を入力するだけ、教室やシラバス情報まで見ることができます。（一部対応してない教科もあります）
-          現在もメンバーによる保守・アップデートが行われているため、新たな機能を提案していただくことも可能です。
-        </h2>
+        <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+          筑波大生による筑波大生のための時間割アプリです。
+          筑波大生に最適な設計になっており、いかに時間割を簡単に作るかに重きを置いています。
+          授業をアプリに登録する方法は様々で、数ステップで自動的に自分の時間割を作ることもできます。
+          現在も保守・アップデートが行われているため、新たな機能を提案していただくことも可能です。
+          また、OSSとして<a href="https://github.com/twin-te">GitHub</a>にて公開中ですので、機能改善にご協力ください。
+        </p>
       </div>
     </section>
 
-    <SectionTitle title="使い方"/>
+    <SectionTitle title="特徴"/>
     <section
       class="section"
       laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0"
@@ -51,34 +52,31 @@
       id="add_number"
     >
       <div class="container">
-        <h1 class="title">時間割追加 - 授業番号登録</h1>
+        <ul>
+        <li><h1 class="title">アカウント連携機能</h1>
         <h2
           class="subtitle"
-        >時間割ボタンをタップすると登録画面が出現します。そこに授業番号もしくは授業名を入力すると候補が出てくるので、登録したい授業を選択すると登録できます。</h2>
-      </div>
-    </section>
-
-    <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="pwa">
-      <div class="container">
-        <h1 class="title">アプリ化（オフラインでの利用）</h1>
+        >TwitterやGoogleアカウントでログインすると複数端末でデータの共有ができます。</h2></li>
+        <li><h1 class="title">自動登録機能</h1>
         <h2
           class="subtitle"
-        >ChromeもしくはSafariでTwin:teを開き、その状態でブラウザの設定画面を開きます。Chromeは「アプリに追加」、Safariは「ホーム画面に追加」ボタンを押すと、インストールが始まり。オフラインで使用することができるようになります。</h2>
+        >授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
+        また、自動登録された情報は皆さんご自身で変更していただくことが可能です。</h2></li>
+        <li><h1 class="title">メモ機能</h1>
+        <h2
+          class="subtitle"
+        >メモはもちろん、出席・欠席・遅刻回数を記録できます。
+        もちろんこれらの記録はログインすることで複数端末で共有されます。</h2></li>
+        <li><h1 class="title">豊富な授業登録方法</h1>
+        <h2
+          class="subtitle"
+        >手動で授業を登録することはもちろん、ご自身でTwinsにログインした上でTwin:teに授業を自動登録する機能や授業を検索して登録する方法など、多数ご用意しております。　</h2></li>
+      </ul>
       </div>
+      
     </section>
 
-    <section
-      class="section"
-      laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0"
-      laxxx-anchor="self"
-      id="detail"
-    >
-      <div class="container">
-        <h1 class="title">時間割画面詳細画面</h1>
-        <h2 class="subtitle">左下のシラバスボタンからその時間割のシラバス情報をみることができます。現在総合科目のみに対応しています。</h2>
-      </div>
-    </section>
-    <SectionTitle title="製作者紹介" id="member"/>
+    <SectionTitle title="Twin:te主メンバー" id="member"/>
 
     <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="hika">
       <div class="container">
@@ -88,13 +86,33 @@
         <a href="https://egahika.ml">>> ホームページ</a>
       </div>
     </section>
-
+        <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="tako">
+      <div class="container">
+        <h1 class="title">SIY1121</h1>
+        <h2 class="subtitle">バックエンド・Android版アプリ担当</h2>
+        <a href="https://twitter.com/SIY1121">>> Twitter</a>
+        <a href="https://siy.space/">>> ホームページ</a>
+      </div>
+    </section>
     <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="tako">
       <div class="container">
         <h1 class="title">たこなす</h1>
-        <h2 class="subtitle">バックエンド担当。Laravel(PHP)</h2>
+        <h2 class="subtitle">インフラ・iOS版アプリ担当</h2>
         <a href="https://twitter.com/ITF_tako">>> Twitter</a>
         <a href="https://takonasu.tk">>> ホームページ</a>
+      </div>
+    </section>
+
+
+    <SectionTitle title="お問い合わせ" id="info"/>
+    <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self">
+      <div class="container">
+        <p class="is-size-4">
+        <ul>
+          <li><a href="https://twitter.com\te_twin">公式Twitter</a>へDM・リプライ</li>
+          <li>メール: info@twinte.net</li>
+          </ul>
+          </p>
       </div>
     </section>
   </div>

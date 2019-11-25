@@ -3,7 +3,7 @@
     <div class="navbar-brand">
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a href="https://twinte.net" class="navbar-item title is-bold">Twin:te</a>
+          <a href="https://www.twinte.net" class="navbar-item title is-bold">Twin:te</a>
         </div>
       </div>
     </div>
@@ -11,7 +11,8 @@
       <div class="navbar-start">
         <a class="navbar-item" href="#about">Twin:teとは?</a>
         <a class="navbar-item" href="#about">使い方</a>
-        <a class="navbar-item" href="#member">製作者</a>
+        <a class="navbar-item" href="#member">主メンバー</a>
+        <a class="navbar-item" href="#info">お問い合わせ</a>
         <a class="navbar-item" href="https://twitter.com\te_twin">公式Twitter</a>
         <!-- <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">その他</a>

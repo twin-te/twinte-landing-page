@@ -6,7 +6,7 @@
       icon-right="github-circle"
       rounded
       tag="a"
-      href="https://github.com/HikaruEgashira"
+      href="https://github.com/twin-te"
       aria-label="Github"
       v-rellax="icon"
     ></b-button>
@@ -25,7 +25,7 @@
       <div class="circle top-7 left-3" v-rellax="{ speed: -4 }" v-if="load"></div>
     </transition>
     <transition name="bounce">
-      <div class="top-7 is-bold" id="name" v-if="load">Twin:te</div>
+      <div class="top-7 is-bold" id="images" v-if="load"><img src="~/assets/img/iPhone.jpg" style="height:50vh"></div>
     </transition>
   </div>
 </template>
@@ -72,8 +72,9 @@ export default class Index extends Vue {
   100%
     transform: scale(1)
 
-#name
+#images
   font-size: 90px
   position: absolute
-  right: 13vw
+  right: 16vw
+  top: 50vh
 </style>
