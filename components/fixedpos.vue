@@ -72,23 +72,18 @@ export default class Index extends Vue {
   100%
     transform: scale(1)
 
-$pc: 1300px
-$tab: 700px
+$pc: 1200px
+$tab: 600px
+$mobile: 200px
 
-#images
+@media (min-width: ($mobile))
+  #images
     position: absolute
     right: 0
     top: 50vh
     height: 45vh
     width: auto
 
-@media (min-width: ($pc))
-  #images
-    position: absolute
-    top: 20vh
-    right: 25vw
-    height: 80vh
-    width: auto
 
 @media (min-width: ($tab))
   #images
@@ -98,7 +93,13 @@ $tab: 700px
     height: 60vh
     width: auto
 
-
+@media (min-width: ($pc))
+  #images
+    position: absolute
+    top: 20vh
+    right: 25vw
+    height: 80vh
+    width: auto
 
 </style>
 <style lang="scss" scoped>
