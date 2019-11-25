@@ -6,7 +6,7 @@ const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 const baseDir = process.env.BASE_DIR || "/";
 
 const config: NuxtConfiguration = {
-  mode: "spa",
+  mode: "universal",
   head: {
     htmlAttrs: {
       lang: "ja",
@@ -25,7 +25,7 @@ const config: NuxtConfiguration = {
       {
         hid: "og:image",
         property: "og:image",
-        content: `${baseUrl}/icon.png`
+        content: `${baseUrl}/favicon.png`
       },
       { name: "twitter:card", content: baseDesc },
       { name: "twitter:site", content: "@te_twin" }
