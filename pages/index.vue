@@ -80,26 +80,25 @@
 
     <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="hika">
       <div class="container">
+        <ul>
+          <li>
         <h1 class="title">Hikaru Egashira</h1>
         <h2 class="subtitle">フロントエンド・デザイン担当。Nuxt(Vue.js)</h2>
         <a href="https://twitter.com/ITF_hikary">>> Twitter</a>
         <a href="https://egahika.ml">>> ホームページ</a>
-      </div>
-    </section>
-        <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="tako">
-      <div class="container">
-        <h1 class="title">SIY1121</h1>
+        </li>
+        <li>
+                  <h1 class="title">SIY1121</h1>
         <h2 class="subtitle">バックエンド・Android版アプリ担当</h2>
         <a href="https://twitter.com/SIY1121">>> Twitter</a>
         <a href="https://siy.space/">>> ホームページ</a>
-      </div>
-    </section>
-    <section class="section" laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0" laxxx-anchor="self" id="tako">
-      <div class="container">
-        <h1 class="title">たこなす</h1>
+
+          </li>
+          <li><h1 class="title">たこなす</h1>
         <h2 class="subtitle">インフラ・iOS版アプリ担当</h2>
         <a href="https://twitter.com/ITF_tako">>> Twitter</a>
-        <a href="https://takonasu.tk">>> ホームページ</a>
+        <a href="https://takonasu.tk">>> ホームページ</a></li>
+        </ul>
       </div>
     </section>
 

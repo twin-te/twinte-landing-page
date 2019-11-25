@@ -25,7 +25,7 @@
       <div class="circle top-7 left-3" v-rellax="{ speed: -4 }" v-if="load"></div>
     </transition>
     <transition name="bounce">
-      <div class="top-7 is-bold" id="images" v-if="load"><img src="~/assets/img/iPhone.jpg" style="height:50vh"></div>
+      <img src="~/assets/img/iPhone.png" class="top-7 is-bold" id="images" v-if="load">
     </transition>
   </div>
 </template>
@@ -73,8 +73,11 @@ export default class Index extends Vue {
     transform: scale(1)
 
 #images
-  font-size: 90px
   position: absolute
-  right: 16vw
-  top: 50vh
+  top: 20vh
+  right: 25vw
+  height: 80vh
+  width: auto
+
+
 </style>
