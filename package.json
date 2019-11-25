@@ -7,7 +7,7 @@
   "scripts": {
     "build": "nuxt build",
     "start": "nuxt build && nuxt start",
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 0.0.0.0",
     "format": "prettier --write \"{,!(node_modules|dist|build|coverage|.nuxt|.serverless)/**/}*.{ts,json,vue,md}\"",
     "lint": "eslint ./ --ext .ts --ext .vue --ignore-path .gitignore",
     "lint:fix": "yarn lint --fix",
