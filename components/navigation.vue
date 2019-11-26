@@ -25,7 +25,7 @@
       <div class="navbar-start">
         <a class="navbar-item" href="#about">Twin:teとは?</a>
         <a class="navbar-item" href="#feature">使い方</a>
-        <a class="navbar-item" href="#qa">使い方</a>
+        <a class="navbar-item" href="#qa">Q & A</a>
         <a class="navbar-item" href="#member">主メンバー</a>
         <a class="navbar-item" href="#info">お問い合わせ</a>
         <a class="navbar-item" href="https://twitter.com/te_twin"
