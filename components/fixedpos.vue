@@ -22,10 +22,19 @@
     ></b-button>
     <!-- 円1 -->
     <transition name="slide2">
-      <div class="circle top-7 left-3" v-rellax="{ speed: -4 }" v-if="load"></div>
+      <div
+        class="circle top-7 left-3"
+        v-rellax="{ speed: -4 }"
+        v-if="load"
+      ></div>
     </transition>
     <transition name="bounce">
-      <img src="~/assets/img/iPhone.png" class="top-7 is-bold" id="images" v-if="load">
+      <img
+        src="~/assets/img/iPhone.png"
+        class="top-7 is-bold"
+        id="images"
+        v-if="load"
+      />
     </transition>
   </div>
 </template>
@@ -100,7 +109,6 @@ $mobile: 200px
     right: 25vw
     height: 80vh
     width: auto
-
 </style>
 <style lang="scss" scoped>
 @mixin tab {
@@ -113,5 +121,4 @@ $mobile: 200px
     @content;
   }
 }
-
 </style>

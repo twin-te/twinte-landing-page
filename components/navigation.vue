@@ -17,10 +17,15 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-    <div class="navbar-menu" id="navbarBasic" :class="{'is-active': isActive}">
+    <div
+      class="navbar-menu"
+      id="navbarBasic"
+      :class="{ 'is-active': isActive }"
+    >
       <div class="navbar-start">
         <a class="navbar-item" href="#about">Twin:teとは?</a>
-        <a class="navbar-item" href="#howto">使い方</a>
+        <a class="navbar-item" href="#feature">使い方</a>
+        <a class="navbar-item" href="#qa">使い方</a>
         <a class="navbar-item" href="#member">主メンバー</a>
         <a class="navbar-item" href="#info">お問い合わせ</a>
         <a class="navbar-item" href="https://twitter.com/te_twin"
@@ -31,7 +36,7 @@
   </nav>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Vue } from "nuxt-property-decorator";
 @Component
 export default class Index extends Vue {
   isActive = false;
