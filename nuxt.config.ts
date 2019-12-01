@@ -47,7 +47,7 @@ const config: NuxtConfiguration = {
   modules: ["nuxt-buefy"],
   build: {
     analyze: {
-      analyzerMode: "static"
+      analyzerMode: "disabled"
     },
     cache: true,
     extend(config, _ctx) {

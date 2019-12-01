@@ -164,6 +164,12 @@
               <a href="https://twitter.com/ITF_tako">>> Twitter</a>
               <a href="https://takonasu.tk">>> ホームページ</a>
             </li>
+            <li>
+              <h1 class="title">kanade</h1>
+              <h2 class="subtitle">デザイナー</h2>
+              <a href="https://twitter.com/wasshoi_jolokia">>> Twitter</a>
+              <a href="https://kanade-works.web.app/">>> ホームページ</a>
+            </li>
           </ul>
         </div>
       </section>
