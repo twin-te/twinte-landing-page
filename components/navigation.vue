@@ -29,8 +29,9 @@
         <a class="navbar-item" href="#member">主メンバー</a>
         <a class="navbar-item" href="#info">お問い合わせ</a>
         <a class="navbar-item" href="https://twitter.com/te_twin"
-          >公式Twitter</a
-        >
+          >公式Twitter</a>
+        <nuxt-link  class="navbar-item" to="/terms">利用規約</nuxt-link>
+        <nuxt-link  class="navbar-item" to='policy'>プライバシーポリシー</nuxt-link>
       </div>
     </div>
   </nav>

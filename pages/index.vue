@@ -18,8 +18,7 @@
           <div class="container">
             <h2 class="subtitle">筑波大学生専用</h2>
             <h1 class="title">時間割管理アプリ<br />Twin:te</h1>
-          </div>
-          <b-button
+                      <b-button
             id="start"
             class="is-large is-primary"
             rounded
@@ -28,6 +27,8 @@
             aria-label="GetStart"
             >今すぐ使う</b-button
           >
+          </div>
+
         </div>
       </section>
     </transition>
@@ -104,8 +105,8 @@
                 A.
                 複数端末で共有するためTwin:teはユーザーがTwin:teのログインに利用したTwittterアカウント/Googleアカウントと、保存した時間割の情報（メモ・出席欠席遅刻回数・変更した教室情報等を含む）
                 を結び付けて保存します。この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
-                なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。そのようなことは技術的に不可能です。
-                詳細は利用規約をご覧ください。
+                なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
+                詳細は<nuxt-link to='/terms'>利用規約</nuxt-link>をご覧ください。
               </p>
             </li>
             <li>
@@ -120,7 +121,7 @@
               <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
                 A.　はい。ユーザーが自分でTwinsにログインしたあと、「Twin:teにインポート」ボタンを押すことで利用できます。
                 ユーザーが自分でTwinsにログインをするのでTwin:teはユーザーの学籍番号・パスワードを取得することはございません。
-                この機能はiOS版Twin:teのみで利用できます。
+                この機能はiOS・Android版Twin:teのみで利用できます。
                 この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
               </p>
             </li>
