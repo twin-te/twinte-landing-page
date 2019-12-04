@@ -63,29 +63,29 @@
           <ul>
             <li>
               <h1 class="title">アカウント連携機能</h1>
-              <h2 class="subtitle">
+              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
                 TwitterやGoogleアカウントでログインすると複数端末でデータの共有ができます。
-              </h2>
+              </p>
             </li>
             <li>
               <h1 class="title">自動登録機能</h1>
-              <h2 class="subtitle">
+              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
                 授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
                 また、自動登録された情報は皆さんご自身で変更していただくことが可能です。
-              </h2>
+              </p>
             </li>
             <li>
               <h1 class="title">メモ機能</h1>
-              <h2 class="subtitle">
+              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
                 メモはもちろん、出席・欠席・遅刻回数を記録できます。
                 もちろんこれらの記録はログインすることで複数端末で共有されます。
-              </h2>
+              </p>
             </li>
             <li>
               <h1 class="title">豊富な授業登録方法</h1>
-              <h2 class="subtitle">
+              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
                 手動で授業を登録することはもちろん、ご自身でTwinsにログインした上でTwin:teに授業を自動登録する機能や授業を検索して登録する方法など、多数ご用意しております。
-              </h2>
+              </p>
             </li>
           </ul>
         </div>
