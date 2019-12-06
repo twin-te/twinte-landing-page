@@ -18,17 +18,16 @@
           <div class="container">
             <h2 class="subtitle">筑波大学生専用</h2>
             <h1 class="title">時間割管理アプリ<br />Twin:te</h1>
-                      <b-button
-            id="start"
-            class="is-large is-primary"
-            rounded
-            tag="a"
-            href="https://app.twinte.net"
-            aria-label="GetStart"
-            >今すぐ使う</b-button
-          >
+            <b-button
+              id="start"
+              class="is-large is-primary"
+              rounded
+              tag="a"
+              href="https://app.twinte.net"
+              aria-label="GetStart"
+              >今すぐ使う</b-button
+            >
           </div>
-
         </div>
       </section>
     </transition>
@@ -106,7 +105,8 @@
                 複数端末で共有するためTwin:teはユーザーがTwin:teのログインに利用したTwittterアカウント/Googleアカウントと、保存した時間割の情報（メモ・出席欠席遅刻回数・変更した教室情報等を含む）
                 を結び付けて保存します。この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
                 なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
-                詳細は<nuxt-link to='/terms'>利用規約</nuxt-link>をご覧ください。
+                詳細は<nuxt-link to="/terms">利用規約</nuxt-link
+                >をご覧ください。
               </p>
             </li>
             <li>
