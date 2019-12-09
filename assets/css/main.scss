@@ -28,6 +28,7 @@ $warning: #e0f2f1;
 // length
 $navbar-height: 5rem;
 
+
 // 6. Import the rest of Bulma
 @import "~bulma/bulma";
 html {
@@ -51,10 +52,6 @@ html {
 
 li{
   margin-bottom:1rem;
-}
-
-.card {
-  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
 }
 
 article{

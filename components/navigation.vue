@@ -24,7 +24,7 @@
     >
       <div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
-<nuxt-link class="navbar-link" to="/">
+          <nuxt-link class="navbar-link" to="/">
             トップ
           </nuxt-link>
           <div class="navbar-dropdown is-boxed">
@@ -35,7 +35,7 @@
             <a class="navbar-item" href="/#info">お問い合わせ</a>
           </div>
         </div>
-        <nuxt-link class="navbar-item" to="/">使い方</nuxt-link>
+        <nuxt-link class="navbar-item" to="/howto">使い方</nuxt-link>
         <nuxt-link class="navbar-item" to="/terms">利用規約</nuxt-link>
         <nuxt-link class="navbar-item" to="policy"
           >プライバシーポリシー</nuxt-link

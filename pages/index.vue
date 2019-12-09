@@ -42,7 +42,7 @@
       >
         <div class="container">
           <h1 class="title">筑波大学生用の時間割アプリ</h1>
-          <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+          <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
             筑波大生による筑波大生のための時間割アプリです。
             筑波大生に最適な設計になっており、いかに時間割を簡単に作るかに重きを置いています。
             授業をアプリに登録する方法は様々で、数ステップで自動的に自分の時間割を作ることもできます。
@@ -63,27 +63,27 @@
           <ul>
             <li>
               <h1 class="title">アカウント連携機能</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 TwitterやGoogleアカウントでログインすると複数端末でデータの共有ができます。
               </p>
             </li>
             <li>
               <h1 class="title">自動登録機能</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
                 また、自動登録された情報は皆さんご自身で変更していただくことが可能です。
               </p>
             </li>
             <li>
               <h1 class="title">メモ機能</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 メモはもちろん、出席・欠席・遅刻回数を記録できます。
                 もちろんこれらの記録はログインすることで複数端末で共有されます。
               </p>
             </li>
             <li>
               <h1 class="title">豊富な授業登録方法</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 手動で授業を登録することはもちろん、ご自身でTwinsにログインした上でTwin:teに授業を自動登録する機能や授業を検索して登録する方法など、多数ご用意しております。
               </p>
             </li>
@@ -100,7 +100,7 @@
           <ul>
             <li>
               <h1 class="title">Q. Twin:teが保存するデータはなんですか？</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 A.
                 複数端末で共有するためTwin:teはユーザーがTwin:teのログインに利用したTwittterアカウント/Googleアカウントと、保存した時間割の情報（メモ・出席欠席遅刻回数・変更した教室情報等を含む）
                 を結び付けて保存します。この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
@@ -111,14 +111,14 @@
             </li>
             <li>
               <h1 class="title">Q. 利用は無料ですか？</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 A.　利用は完全無料です。また、広告もございません。
                 なお、寄付を受け付けております。
               </p>
             </li>
             <li>
               <h1 class="title">Q. Twinsの履修情報を自動で読み込めますか？</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 A.　はい。ユーザーが自分でTwinsにログインしたあと、「Twin:teにインポート」ボタンを押すことで利用できます。
                 ユーザーが自分でTwinsにログインをするのでTwin:teはユーザーの学籍番号・パスワードを取得することはございません。
                 この機能はiOS・Android版Twin:teのみで利用できます。
@@ -127,7 +127,7 @@
             </li>
             <li>
               <h1 class="title">Q. このサービスは大学公式のものですか？</h1>
-              <p class="is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 A.　いいえ。これは筑波大生によって構成されたグループ（Twin:te）が日常の不便を解消するために製作されたサービスです。
                 主な構成員は以下をご覧ください。
               </p>
@@ -182,7 +182,7 @@
         laxxx-anchor="self"
       >
         <div class="container">
-          <ul>
+          <ul class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
             <li>
               <a href="https://twitter.com\te_twin">公式Twitter</a
               >へDM・リプライ
