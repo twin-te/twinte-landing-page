@@ -1,5 +1,9 @@
 <template>
+  <div style="overflow: hidden; position: relative;" class="backall" v-show="load">
+    <navigation />
+
   <div class="container">
+    <article>
     <div class="content">
       <h1>利用規約</h1>
       <p>
@@ -176,5 +180,33 @@
 
       <p class="tR">以上</p>
     </div>
+    </article>
+  </div>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "nuxt-property-decorator";
+@Component({
+  components: {
+    navigation: () => import("~/components/navigation.vue"),
+    SectionTitle: () => import("~/components/section-title.vue"),
+    fixpos: () => import("~/components/fixedpos.vue")
+  }
+})
+export default class Index extends Vue {
+  public load: Boolean = false;
+  mounted(): void {
+    this.load = true;
+    // this.$nextTick(() => {
+    //   this.$nuxt.$loading.start();
+
+    //   setTimeout(() => this.$nuxt.$loading.finish(), 300);
+    // });
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import "~assets/css/subpage.scss";
+</style>
