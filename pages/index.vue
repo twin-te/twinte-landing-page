@@ -43,10 +43,13 @@
         <div class="container">
           <div id="badges">
             <a href="https://www.twinte.net">
-            <img src="~/assets/img/badge/app-store-badge.svg" class="badge" />
+              <img src="~/assets/img/badge/app-store-badge.svg" class="badge" />
             </a>
             <a href="https://www.twinte.net">
-            <img src="~/assets/img/badge/google-play-badge.png" class="badge" />
+              <img
+                src="~/assets/img/badge/google-play-badge.png"
+                class="badge"
+              />
             </a>
           </div>
         </div>
@@ -84,10 +87,7 @@
                 TwitterやGoogleアカウントでログインすると複数端末でデータの共有ができます。
               </p>
             </li>
-            <img
-              src="~/assets/img/MultiDevice.png"
-              style="height:40vh; float:right;"
-            />
+            <img src="~/assets/img/MultiDevice.png" id="multidevice" />
             <li>
               <h1 class="title">自動登録機能</h1>
               <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
@@ -267,12 +267,20 @@ $mobile: 200px;
     height: 3rem;
     margin: 0.3rem;
   }
+  #multidevice {
+    float: initial;
+  }
 }
 
 @media (min-width: ($tab)) {
   .badge {
     height: 10vh;
     margin-right: 40px;
+  }
+  #multidevice {
+    height: 40vh;
+    float: right;
+    margin-left: 10px;
   }
 }
 </style>
