@@ -21,12 +21,18 @@
             <li>
               メニューから「Twinsからインポートする」ボタンを押してTwinsにログインします。
             </li>
+
             <li>
               履修登録画面に行きます。まず「履修」ボタンを押してから、「履修登録・登録状況紹介」を押します。
             </li>
+            <img src="~/assets/img/howto/1.jpg" />
+            <img src="~/assets/img/howto/2.jpg" />
+
             <li>
               「Twin:teにインポート」ボタンがあるので、タップします。すると、現在表示している学期の授業がインポートされます。
             </li>
+            <img src="~/assets/img/howto/3.jpg" />
+
             <li>
               完了画面が出たら完了です。他の学期もインポートする場合はTwinsの画面を他の学期に切り替えてください。
             </li>
@@ -58,7 +64,18 @@
           laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0"
           laxxx-anchor="self"
         >
-          <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile"></p>
+          <ul class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
+            <li>編集したい講義をタップします。</li>
+            <li>
+              教室を変更したい場合は右下の「教室情報を編集」をタップします。メモのみする場合はこの動作は必要ありません。
+            </li>
+            <img src="~/assets/img/howto/4.jpg" />
+            <li>教室やメモを入力してください。</li>
+            <li>
+              入力が終わったら変更の保存を押してください。押さないとメモを含めて変更が保存されません。
+            </li>
+            <img src="~/assets/img/howto/5.jpg" />
+          </ul>
         </section>
       </div>
     </div>
@@ -95,5 +112,8 @@ export default class Index extends Vue {
 }
 li {
   list-style-type: decimal;
+}
+img {
+  height: 50vh;
 }
 </style>

@@ -67,6 +67,10 @@
                 TwitterやGoogleアカウントでログインすると複数端末でデータの共有ができます。
               </p>
             </li>
+            <img
+              src="~/assets/img/MultiDevice.png"
+              style="height:40vh; float:right;"
+            />
             <li>
               <h1 class="title">自動登録機能</h1>
               <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">

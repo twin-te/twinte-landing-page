@@ -40,6 +40,9 @@
         <nuxt-link class="navbar-item" to="policy"
           >プライバシーポリシー</nuxt-link
         >
+        <a href="https://twitter.com/te_twin" class="navbar-item"
+          >公式Twitter</a
+        >
       </div>
     </div>
   </nav>
