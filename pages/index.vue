@@ -15,9 +15,10 @@
         v-if="load"
       >
         <div class="hero-body">
-          <div class="container">
+          <div class="container" style="height:55vh;">
             <h2 class="subtitle">筑波大学生専用</h2>
             <h1 class="title">時間割管理アプリ<br />Twin:te</h1>
+
             <b-button
               id="start"
               class="is-large is-primary"
@@ -25,7 +26,7 @@
               tag="a"
               href="https://app.twinte.net"
               aria-label="GetStart"
-              >今すぐ使う</b-button
+              >今すぐ使う(PC)</b-button
             >
           </div>
         </div>
@@ -34,6 +35,22 @@
 
     <fixpos />
     <article>
+      <section
+        class="section"
+        laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0"
+        laxxx-anchor="self"
+      >
+        <div class="container">
+          <div id="badges">
+            <a href="https://www.twinte.net">
+            <img src="~/assets/img/badge/app-store-badge.svg" class="badge" />
+            </a>
+            <a href="https://www.twinte.net">
+            <img src="~/assets/img/badge/google-play-badge.png" class="badge" />
+            </a>
+          </div>
+        </div>
+      </section>
       <SectionTitle title="Twin:te (ついんて)とは？" id="about" />
       <section
         class="section"
@@ -238,4 +255,24 @@ export default class Index extends Vue {
   transition: transform .8s ease-in-out
 .slide1-enter
   transform: translateX(-90vw)
+</style>
+
+<style lang="scss" scoped>
+$pc: 1200px;
+$tab: 600px;
+$mobile: 200px;
+
+@media (min-width: ($mobile)) {
+  .badge {
+    height: 3rem;
+    margin: 0.3rem;
+  }
+}
+
+@media (min-width: ($tab)) {
+  .badge {
+    height: 10vh;
+    margin-right: 40px;
+  }
+}
 </style>

@@ -99,7 +99,7 @@ $mobile: 200px
     position: absolute
     top: 35vh
     right: 10vw
-    height: 60vh
+    height: 54vh
     width: auto
 
 @media (min-width: ($pc))
