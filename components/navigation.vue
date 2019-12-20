@@ -42,6 +42,8 @@
         >
         <a href="https://twitter.com/te_twin" class="navbar-item"
           >公式Twitter</a
+        ><a href="https://twinte.hatenablog.com/" class="navbar-item"
+          >開発者ブログ</a
         >
       </div>
     </div>
