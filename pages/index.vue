@@ -42,10 +42,10 @@
       >
         <div class="container">
           <div id="badges">
-            <a href="https://www.twinte.net">
+            <a href="https://apps.apple.com/us/app/twin-te/id1489274755?l=ja&ls=1">
               <img src="~/assets/img/badge/app-store-badge.svg" class="badge" />
             </a>
-            <a href="https://www.twinte.net">
+            <a href="https://play.google.com/store/apps/details?id=net.twinte.android">
               <img
                 src="~/assets/img/badge/google-play-badge.png"
                 class="badge"
