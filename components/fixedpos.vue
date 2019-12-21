@@ -81,8 +81,8 @@ export default class Index extends Vue {
   100%
     transform: scale(1)
 
-$pc: 1200px
-$tab: 600px
+$pc: 1450px
+$tab: 900px
 $mobile: 200px
 
 @media (min-width: ($mobile))
@@ -105,7 +105,7 @@ $mobile: 200px
 @media (min-width: ($pc))
   #images
     position: absolute
-    top: 20vh
+    top: 15vh
     right: 25vw
     height: 80vh
     width: auto

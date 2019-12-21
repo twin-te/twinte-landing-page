@@ -28,6 +28,7 @@
             トップ
           </nuxt-link>
           <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="/#install">今すぐ使う</a>
             <a class="navbar-item" href="/#about">Twin:teとは?</a>
             <a class="navbar-item" href="/#feature">特徴</a>
             <a class="navbar-item" href="/#qa">Q & A</a>
@@ -40,8 +41,7 @@
         <nuxt-link class="navbar-item" to="policy"
           >プライバシーポリシー</nuxt-link
         >
-        <a href="https://twitter.com/te_twin" class="navbar-item"
-          >公式Twitter</a
+        <a href="https://twitter.com/te_twin" class="navbar-item">公式Twitter</a
         ><a href="https://twinte.hatenablog.com/" class="navbar-item"
           >開発者ブログ</a
         >

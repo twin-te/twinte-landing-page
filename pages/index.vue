@@ -11,8 +11,9 @@
 
     <transition name="slide1">
       <section
-        class="hero is-warning is-large is-bold column is-10 slide"
+        class="hero is-large is-bold column is-10 slide"
         v-if="load"
+        style="height:100vh; background-color: #d9f1ed;"
       >
         <div class="hero-body">
           <div class="container" style="height:55vh;">
@@ -24,9 +25,9 @@
               class="is-large is-primary"
               rounded
               tag="a"
-              href="https://app.twinte.net"
+              href="/#install"
               aria-label="GetStart"
-              >今すぐ使う(PC)</b-button
+              >今すぐ使う</b-button
             >
           </div>
         </div>
@@ -35,6 +36,7 @@
 
     <fixpos />
     <article>
+      <SectionTitle id="install" title="インストール" />
       <section
         class="section"
         laxxx-opacity="(vh*0.5) 1, (vh*0.75) 0"
@@ -42,14 +44,21 @@
       >
         <div class="container">
           <div id="badges">
-            <a href="https://apps.apple.com/us/app/twin-te/id1489274755?l=ja&ls=1">
+            <a
+              href="https://apps.apple.com/us/app/twin-te/id1489274755?l=ja&ls=1"
+            >
               <img src="~/assets/img/badge/app-store-badge.svg" class="badge" />
             </a>
-            <a href="https://play.google.com/store/apps/details?id=net.twinte.android">
+            <a
+              href="https://play.google.com/store/apps/details?id=net.twinte.android"
+            >
               <img
                 src="~/assets/img/badge/google-play-badge.png"
                 class="badge"
               />
+            </a>
+            <a href="https://app.twinte.net">
+              <img src="~/assets/img/badge/twinte-pc.png" class="badge" />
             </a>
           </div>
         </div>
@@ -120,6 +129,13 @@
         <div class="container">
           <ul>
             <li>
+              <h1 class="title">Q. このサービスは大学公式のものですか？</h1>
+              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
+                A.　いいえ。これは筑波大生によって構成されたグループ（Twin:te）が日常の不便を解消するために製作されたサービスです。
+                主な構成員は以下をご覧ください。
+              </p>
+            </li>
+            <li>
               <h1 class="title">Q. Twin:teが保存するデータはなんですか？</h1>
               <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
                 A.
@@ -144,13 +160,6 @@
                 ユーザーが自分でTwinsにログインをするのでTwin:teはユーザーの学籍番号・パスワードを取得することはございません。
                 この機能はiOS・Android版Twin:teのみで利用できます。
                 この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
-              </p>
-            </li>
-            <li>
-              <h1 class="title">Q. このサービスは大学公式のものですか？</h1>
-              <p class="is-size-5-desktop is-size-5-tablet is-size-5-mobile">
-                A.　いいえ。これは筑波大生によって構成されたグループ（Twin:te）が日常の不便を解消するために製作されたサービスです。
-                主な構成員は以下をご覧ください。
               </p>
             </li>
           </ul>
@@ -259,7 +268,7 @@ export default class Index extends Vue {
 
 <style lang="scss" scoped>
 $pc: 1200px;
-$tab: 600px;
+$tab: 900px;
 $mobile: 200px;
 
 @media (min-width: ($mobile)) {
