@@ -1,34 +1,11 @@
 {
-  "name": "Twin-te",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Twin:te <info@twinte.net>",
+  "name": "twinte-landing-page",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
-    "start": "nuxt build && nuxt start",
-    "dev": "nuxt --hostname 0.0.0.0",
-    "format": "prettier --write \"{,!(node_modules|dist|build|coverage|.nuxt|.serverless)/**/}*.{ts,json,vue,md}\"",
-    "lint": "eslint ./ --ext .ts --ext .vue --ignore-path .gitignore",
-    "lint:fix": "yarn lint --fix",
-    "generate": "nuxt generate"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.6.3",
-    "@typescript-eslint/parser": "^1.9.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.17.0",
-    "sass-loader": "^7.1.0",
-    "vue-eslint-parser": "^6.0.4"
-  },
-  "dependencies": {
-    "nuxt": "^2.6.3",
-    "nuxt-buefy": "^0.3.6",
-    "nuxt-property-decorator": "^2.1.3",
-    "ts-node": "^8.1.0",
-    "vue-laxxx": "^0.2.0",
-    "vue-rellax": "^0.1.0"
+    "@types/node": "^13.1.1"
   }
 }

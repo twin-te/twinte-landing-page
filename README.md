@@ -1,43 +1,37 @@
-# twinte
+# Twinte landing page
+
+html 版です
 
 ## Development
 
-リポジトリをクローンして依存ライブラリをインストールします。
+### 環境
 
-```
-$ git clone git@github.com:twin-te/twinte-front.git
-$ cd twinte-front
-$ yarn
-```
+yarn と parcel をインストールしてください
 
-ローカルホストで動かします。
+- parcel のインストール
 
-```
-$ yarn dev
+```shell
+yarn global add parcel-bundler
 ```
 
-ビルドします。`.nuxt`に吐き出します。
+- 依存のインストール
 
-```
-$ yarn build
-```
-
-ビルドしてスタートします。`.nuxt`に吐き出してスタートします。
-
-```
-$ yarn start
+```shell
+yarn # 依存のインストール
 ```
 
-リントします。`@typescript-eslint/parser`を使っているのでちょっと遅いです。fix までするときは`:fix`をつけます。
+### 起動
 
-```
-$ yarn lint
-or
-$ yarn lint:fix
+```shell
+yarn start # parcel src/index.html
 ```
 
-フォーマットをします。Prettier の標準ルールに準拠しています。
+- http://localhost:1234 が立ち上がる。
 
+## ビルド
+
+```shell
+yarn build # parcel build src/index.html
 ```
-$ yarn format
-```
+
+- dist に生成
