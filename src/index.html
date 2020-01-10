@@ -6,235 +6,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
     <title>Twin:te</title>
 </head>
 
 <body>
     <header>
-        <img class="head-logo" />
-        <nav class="head-menu">
-            <ul>
+        <img class="head-logo" src="images/Twintelogo-colorA.png" />
+        <nav>
+          <div>
+          <a class="hamburger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          </div>
+            <ul class="head-menu">
                 <li>
-                    <a href=""></a>
+                    <a href="">トップ</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">Twin:teとは？</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">使い方</a>
                 </li>
                 <li>
-                    <a href=""></a>
+                    <a href="">Q&A</a>
+                </li>
+                <li>
+                    <a href="">製作メンバー</a>
+                </li>
+                <li>
+                    <a href="">リンク</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <section id="eyecatch">
-        <title></title>
         <img class="title-logo" />
-        <div class="download-btn"></div>
+        <div class="app-download-btn"></div>
+        <a href="">
+            <div class="pc-download-btn">今すぐ使う（PC版）</div>
+        </a>
     </section>
 
-    <article id="overview">
-        <h1></h1>
-        <img class="overview-img" />
-        <h2></h2>
-        <p></p>
-        <section class="feature">
-            <h2></h2>
-            <img class="feature-img" />
-            <p></p>
+    <main>
+        <article id="overview">
+            <section class="overview">
+                <h1>Twin:teとは？</h1>
+                <img class="overview-img" src="images/4-screens.png" />
+                <h2>筑波大生による筑波大生のための時間割アプリ</h2>
+                <p>
+                    筑波大生に最適な設計になっており、いかに時間割を簡単に作るかに重きを置いています。わずか数ステップで時間割を作成・管理することができます。
+                    <br /> 現在もOSSとして保守・アップデートが行われているため、新たな機能を提案していただくことも可能です。
+                </p>
+            </section>
+            <section class="feature" id="feature1">
+                <img class="feature-img" />
+                <h2>Twinsから安全に時間割を自動登録</h2>
+                <p>
+                    Twin:teではTwinsの時間割データを用いて簡単に時間割を作成することができます。 また昨今の危険性が指摘されている時間割アプリのように、学籍番号やパスワードといった情報をサーバー側で取得することはございません。
+                    <br />
+                    <span>（どのような動作原理なのかは<a href=""> 開発者ブログ</a
+              >をご参照ください。また全てのソースコードを<a href="">Github</a>
+              にて公開しています。）</span
+            >
+          </p>
         </section>
-        <section class="feature">
-            <h2></h2>
-            <img class="feature-img" />
-            <p></p>
+        <section class="feature" id="feature2">
+          <img class="feature-img" />
+          <h2>シラバスやメモ、出欠も簡単に管理</h2>
+          <p>
+            授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
+            メモや出欠のカウント機能もあります。
+          </p>
         </section>
-        <section class="feature">
-            <h2></h2>
-            <img class="feature-img" />
-            <p></p>
+        <section class="feature" id="feature3">
+          <img class="feature-img" />
+          <h2>どの端末でもデータ共有 アカウント連携機能</h2>
+          <p>
+            TwitterやGoogleアカウント、Appleアカウントでログインすると、複数端末でデータの共有ができます。
+          </p>
         </section>
-    </article>
+      </article>
 
-    <article id="usages">
-        <h1></h1>
+      <article id="usages">
+        <h1>使い方</h1>
+        <p>
+          授業をアプリに登録する方法は様々です。また、メモの編集に加えて、自動登録された情報も皆さんご自身で変更していただくことが可能です。
+        </p>
         <section class="usage">
-            <h3></h3>
-            <p></p>
-            <button class="more-btn"></button>
+          <h3>授業をTwinsからインポートする方法</h3>
+          <p>
+            ご自身でTwinsにログインした上で、Twin:teに授業を自動登録する方法です。
+          </p>
+          <button class="more-btn">詳しく▼</button>
         </section>
         <section class="usage">
-            <h3></h3>
-            <p></p>
-            <button class="more-btn"></button>
+          <h3>授業を手動で登録する方法</h3>
+          <p>
+            授業名や授業番号から、授業を手動で登録する方法です。kdbから授業を検索できます。
+          </p>
+          <button class="more-btn">詳しく▼</button>
         </section>
         <section class="usage">
-            <h3></h3>
-            <p></p>
-            <button class="more-btn"></button>
+          <h3>メモや教室情報を編集する方法</h3>
+          <p>メモや教室の情報を編集する方法です。</p>
+          <button class="more-btn">詳しく▼</button>
         </section>
-    </article>
+      </article>
 
-    <article id="q-and-a">
-        <h1></h1>
+      <article id="q-and-a">
+        <h1>Q&A</h1>
         <section>
-            <div class="question">
-                <span></span>
-                <h2></h2>
-            </div>
-            <div class="answer">
-                <span></span>
-                <h2></h2>
-                <p></p>
-            </div>
+          <div class="question">
+            <h3>このサービスは大学公式のものですか？</h3>
+          </div>
+          <div class="answer">
+            <h3>いいえ。筑波大生の有志によるものです。</h3>
+            <p>
+              これは筑波大生によって構成されたグループ（Twin:te）が、日常の不便を解消するために製作したサービスです。
+              <br />主な構成員は制作メンバーをご覧ください。
+            </p>
+          </div>
         </section>
         <section>
-            <div class="question">
-                <span></span>
-                <h2></h2>
-            </div>
-            <div class="answer">
-                <span></span>
-                <h2></h2>
-                <p></p>
-            </div>
+          <div class="question">
+            <h3>Twin:teが保存するデータは何ですか？</h3>
+          </div>
+          <div class="answer">
+            <h3>
+              ユーザーの複数端末を紐付けるためのデータのみを保存しています。
+            </h3>
+            <p>
+              複数端末で共有するためTwin:teはユーザーがTwin:teのログインに利用したTwittterアカウント/Googleアカウントと、保存した時間割の情報（メモ・出席欠席遅刻回数・変更した教室情報等を含む）
+              を結び付けて保存します。
+              <br />この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
+              <br />なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
+              詳細は利用規約をご覧ください。
+            </p>
+          </div>
         </section>
         <section>
-            <div class="question">
-                <span></span>
-                <h2></h2>
-            </div>
-            <div class="answer">
-                <span></span>
-                <h2></h2>
-                <p></p>
-            </div>
+          <div class="question">
+            <h3>利用は無料ですか？</h3>
+          </div>
+          <div class="answer">
+            <h3>利用は完全無料です。</h3>
+            <p>また、広告もございません。 なお、寄付を受け付けております。</p>
+          </div>
         </section>
         <section>
-            <div class="question">
-                <span></span>
-                <h2></h2>
-            </div>
-            <div class="answer">
-                <span></span>
-                <h2></h2>
-                <p></p>
-            </div>
+          <div class="question">
+            <h3>Twinsの履修情報を自動で読み込めますか ?</h3>
+          </div>
+          <div class="answer">
+            <h3>
+              はい。Twin:teのサーバーがユーザーの情報を取得することなく、Twinsの情報を読み込めます。
+            </h3>
+            <p>
+              ユーザーが自分でTwinsにログインしたあと、「Twin:teにインポート」ボタンを押すことで利用できます。
+              <br />ユーザーが自分でTwinsにログインをするので、Twin:teはユーザーの学籍番号・パスワードを取得することはございません。
+              <br />この機能はiOS・Android版Twin:teのみで利用できます。
+              この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
+            </p>
+          </div>
         </section>
-    </article>
+      </article>
 
-    <article id="members">
-        <h1></h1>
+      <article id="members">
+        <h1>制作メンバー</h1>
         <section class="profile">
-            <img class="profile-img" />
-            <h2></h2>
-            <p></p>
+          <img class="profile-img" />
+          <div>
+            <h2>Hikaru Egashira</h2>
+            <p>
+              フロントエンド・デザイン担当。<br />Nuxt(Vue.js)。筑波大coins所属。
+            </p>
             <ul class="profile-links">
-                <li>
-                    <a href="">Twitter<span></span></a>
-                </li>
-                <li>
-                    <a href="">ホームページ<span></span></a>
-                </li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">ホームページ</a>
+              </li>
             </ul>
+          </div>
         </section>
         <section class="profile">
-            <img class="profile-img" />
-            <h2></h2>
-            <p></p>
+          <img class="profile-img" />
+          <div>
+            <h2>SIY1121</h2>
+            <p>バックエンド・Android版アプリ担当。 <br />筑波大学coins所属。</p>
             <ul class="profile-links">
-                <li>
-                    <a href="">Twitter<span></span></a>
-                </li>
-                <li>
-                    <a href="">ホームページ<span></span></a>
-                </li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">ホームページ</a>
+              </li>
             </ul>
+          </div>
         </section>
         <section class="profile">
-            <img class="profile-img" />
-            <h2></h2>
-            <p></p>
+          <img class="profile-img" />
+          <div>
+            <h2>たこなす</h2>
+            <p>インフラ・iOS版アプリ担当。 <br />筑波大学coins所属。</p>
             <ul class="profile-links">
-                <li>
-                    <a href="">Twitter<span></span></a>
-                </li>
-                <li>
-                    <a href="">ホームページ<span></span></a>
-                </li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">ホームページ</a>
+              </li>
             </ul>
+          </div>
         </section>
         <section class="profile">
-            <img class="profile-img" />
-            <h2></h2>
-            <p></p>
+          <img class="profile-img" />
+          <div>
+            <h2>Kanade Nishizawa</h2>
+            <p>デザイナー。 <br />筑波大学芸専所属。</p>
             <ul class="profile-links">
-                <li>
-                    <a href="">Twitter<span></span></a>
-                </li>
-                <li>
-                    <a href="">ホームページ<span></span></a>
-                </li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">ホームページ</a>
+              </li>
             </ul>
+          </div>
         </section>
-    </article>
+      </article>
 
-    <article id="link">
-        <h1></h1>
+      <article id="link">
+        <h1>リンク</h1>
         <a href="">
-            <h2></h2>
+          <h2>公式Twitter</h2>
         </a>
-        <p></p>
+        <p>更新情報 や障害情報などをお知らせします。お問い合わせはDMまで。</p>
         <a href="">
-            <h2></h2>
+          <h2>開発者ブログ</h2>
         </a>
-        <p></p>
+        <p>Twin:te開発にまつわる記事を書いていきます。</p>
         <a href="">
-            <h2></h2>
+          <h2>GitHub</h2>
         </a>
-        <p></p>
+        <p>OSSとして公開中ですので、機能改善にご協力ください。</p>
+
         <section class="download-link">
-            <h2></h2>
+          <h2>Twin:teを今すぐ使う</h2>
+          <div>
             <a href="">
-                <h3></h3>
+              <h3>App Store</h3>
             </a>
-            <p></p>
-            <h2></h2>
+            <p>iPhone, iPadでのご利用はこちらから。</p>
             <a href="">
-                <h3></h3>
+              <h3>Google Play</h3>
             </a>
-            <p></p>
-            <h2></h2>
+            <p>Android端末でのご利用はこちらから。</p>
             <a href="">
-                <h3></h3>
+              <h3>PC版</h3>
             </a>
-            <p></p>
+            <p>PCでのご利用はこちらから(WebAppが開きます)。</p>
+          </div>
         </section>
-    </article>
+      </article>
+    </main>
 
     <footer>
-        <img class="foot-logo" />
-        <nav>
-            <ul>
-                <li>
-                    <a href=""> </a>
-                </li>
-                <li>
-                    <a href=""> </a>
-                </li>
-                <li>
-                    <p>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </p>
-                </li>
-            </ul>
-        </nav>
+      <img class="foot-logo" src="images/Twintelogo-white1A.png" />
+      <nav>
+        <ul>
+          <li>
+            <a href="">利用規約</a>
+          </li>
+          <li>
+            <a href="">プライバシーポリシー</a>
+          </li>
+          <li>
+            <a href="">お問い合わせ</a>
+          </li>
+          <li>
+            <a href="">サイト内チャット</a>
+          </li>
+          <li>
+            <a href="">公式Twitter（@te_twin)</a>
+          </li>
+          <li>
+            <a href="">メール（info@twinte.net)</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-</body>
-<script async src="./scripts/main.js "></script>
-<script defer src="./scripts/ga.js "></script>
-
+  </body>
+  <script async src="./scripts/main.js "></script>
+  <script defer src="./scripts/ga.js "></script>
 </html>

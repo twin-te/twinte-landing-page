@@ -1,7 +1,470 @@
+:root {
+    --theme-color: #00c0c0;
+    --main-text-color: #555555;
+    --sub-text-color: #9a9a9a;
+    --accent-text-color: #06aaaa;
+    --sub-background-color1: #f3f3f3;
+    --sub-background-color2: #f8f8f8;
+    --sub-background-color3: #48c3c3;
+    --main-font-size: 1.7rem;
+    --sub-font-size: 1.5rem;
+    --boxshadow-color: rgba(0, 0, 0, 0.096);
+}
+
 html {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 50%;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 62.5%;
+    }
 }
 
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-size: 1.6em;
+}
+
+main {
+    color: var(--main-text-color);
+    font-size: var(--main-font-size);
+}
+
+article {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 4% 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 3.4rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+p {
+    line-height: calc(1.8 * var(--main-font-size));
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    display: flex;
+}
+
+header nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header nav div {
+    position: absolute;
+    right: 3vh;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.head-menu {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    height: 4vh;
+    width: 5vh;
+}
+
+.hamburger,
+.hamburger span {
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.4vh;
+    background-color: var(--sub-text-color);
+}
+
+.hamburger span:nth-of-type(1) {
+    top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .hamburger {
+        display: none;
+    }
+    .head-menu {
+        position: absolute;
+        right: 2rem;
+        display: flex;
+        margin: 0;
+    }
+    .head-menu li a {
+        font-size: 1.4rem;
+        line-height: 9vh;
+        margin: 0 2rem;
+        color: var(--sub-text-color);
+    }
+}
+
+.head-logo {
+    display: inline-block;
+    position: absolute;
+    height: 4vh;
+    left: 2rem;
+    top: 4.5vh;
+    transform: translateY(-62%);
+}
+
+#eyecatch {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../images/topbackground.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.pc-download-btn {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    .pc-download-btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: var(--accent-text-color);
+        background-color: white;
+        box-shadow: 0.5rem 0.5rem 0.3rem var(--boxshadow-color);
+        padding: 1% 2.5%;
+        border-radius: 100vh;
+    }
+}
+
+.overview {
+    padding: 2% 7% 5%;
+}
+
+@media screen and (min-width: 600px) {
+    .overview {
+        padding: 2% 10% 5%;
+    }
+}
+
+.overview h2,
+.feature h2 {
+    color: var(--theme-color);
+}
+
+.overview-img {
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.feature {
+    padding: 5% 7%;
+}
+
+@media screen and (min-width: 600px) {
+    .feature {
+        padding: 5% 10%;
+    }
+}
+
+.feature:nth-child(odd) {
+    background-color: var(--sub-background-color1);
+}
+
+.feature:nth-child(even) {
+    background-color: var(--sub-background-color2);
+}
+
+#usages {
+    padding: 2% 7% 5%;
+    background-color: var(--sub-background-color3);
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    #usages {
+        padding: 2% 10% 5%;
+    }
+}
+
+.usage {
+    background-color: white;
+    width: 90%;
+    padding: 2% 5%;
+    margin-top: 2%;
+    border-radius: 0.6rem;
+}
+
+.usage h3 {
+    color: var(--accent-text-color);
+    line-height: 3.2rem;
+}
+
+.usage p {
+    color: var(--sub-text-color);
+    font-size: var(--sub-font-size);
+    line-height: calc(1.6 * var(--sub-font-size));
+    margin-bottom: 2%;
+}
+
+.more-btn {
+    background-color: #9e9e9e;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem;
+    appearance: none;
+    color: white;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 9rem;
+}
+
+#q-and-a {
+    padding: 2% 5% 5%;
+}
+
+@media screen and (min-width: 600px) {
+    #q-and-a {
+        padding: 2% 10% 3%;
+    }
+}
+
+.question {
+    position: relative;
+    display: inline-block;
+    border: 0.1rem solid var(--theme-color);
+    background-color: white;
+    border-radius: 10vh;
+    z-index: 2;
+    padding: 0 3%;
+}
+
+.question h3 {
+    font-size: 1.5rem;
+    line-height: 4.3rem;
+    margin: 0;
+}
+
+.question h3::before {
+    content: 'Q. ';
+    font-size: 2.5rem;
+    color: var(--theme-color);
+    line-height: 2.8rem;
+}
+
+.answer {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 78%;
+    border-radius: 1rem;
+    margin-top: -2%;
+    margin-bottom: 4%;
+    padding: 3% 8% 4%;
+    background-color: var(--sub-background-color1);
+    z-index: 1;
+}
+
+.answer h3 {
+    margin: 0;
+    line-height: 2.8rem;
+}
+
+.answer h3::before {
+    content: 'A. ';
+    font-size: 3rem;
+    color: var(--theme-color);
+}
+
+.answer p {
+    font-size: var(--sub-font-size);
+    line-height: calc(1.8 * var(--sub-font-size));
+}
+
+#members {
+    clear: both;
+    background-color: var(--sub-background-color2);
+    padding: 2% 5% 5%;
+}
+
+@media screen and (min-width: 600px) {
+    #members {
+        padding: 2% 10% 3%;
+    }
+}
+
+.profile {
+    display: flex;
+    width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
+    margin-bottom: 2%;
+    background-color: white;
+    padding: 4% 5%;
+}
+
+.profile h2 {
+    padding-left: 0.8rem;
+    margin: 0 0 2% 0;
+    border-left: 0.4rem solid #00c0c0;
+    height: 2.3rem;
+    line-height: 2.3rem;
+}
+
+.profile p {
+    font-size: var(--sub-font-size);
+    line-height: calc(1.7 * var(--sub-font-size));
+}
+
+.profile-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-links li {
+    padding-right: 5rem;
+}
+
+.profile-links li a {
+    font-size: var(--sub-font-size);
+    line-height: calc(1.7 * var(--sub-font-size));
+    color: var(--sub-text-color);
+}
+
+.profile-links li a::after {
+    font-family: 'Material Icons';
+    content: '\e5cc';
+    font-size: calc(1.5 * var(--main-font-size));
+    /* line-height: calc(0.5 * var(--main-font-size)); */
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+#link {
+    padding: 2% 7% 5%;
+}
+
+@media screen and (min-width: 600px) {
+    #link {
+        padding: 2% 10% 5%;
+    }
+}
+
+#link p {
+    margin-bottom: 3%;
+}
+
+.download-link {
+    margin-top: 6%;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
+    background-color: white;
+}
+
+.download-link h2 {
+    font-size: 2.1rem;
+    color: white;
+    background-color: var(--theme-color);
+    height: 5.5rem;
+    line-height: 5.5rem;
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+.download-link div {
+    padding: 3% 5% 4%;
+}
+
+.download-link h3 {
+    font-size: 2rem;
+    color: var(--theme-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    font-size: var(--sub-font-size);
+    line-height: calc(1.8 * var(--sub-font-size));
+    background-image: url('../images/topbackground.jpg');
+    background-size: cover;
+    bottom: 0;
+    padding: 2% 0 2% 5vw;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        padding: 2% 10% 2%;
+    }
+}
+
+.foot-logo {
+    height: 4vh;
+    margin-right: 5%;
+    margin-top: -3%;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+ul li:nth-child(n+4) a {
+    font-weight: normal;
 }
