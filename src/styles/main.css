@@ -6,6 +6,7 @@
     --sub-background-color1: #f3f3f3;
     --sub-background-color2: #f8f8f8;
     --sub-background-color3: #48c3c3;
+    --border-bottom-color: #c7c7c7;
     --main-font-size: 1.7rem;
     --sub-font-size: 1.5rem;
     --boxshadow-color: rgba(0, 0, 0, 0.096);
@@ -35,6 +36,16 @@ body {
 main {
     color: var(--main-text-color);
     font-size: var(--main-font-size);
+}
+
+.wrap {
+    padding: 2% 7% 5%;
+}
+
+@media screen and (min-width: 600px) {
+    .wrap {
+        padding: 2% 10% 5%;
+    }
 }
 
 ul {
@@ -74,11 +85,14 @@ p {
 }
 
 header {
+    position: fixed;
     margin: 0;
     width: 100%;
     height: 9vh;
     background-color: white;
     display: flex;
+    border-bottom: 0.3vh solid var(--border-bottom-color);
+    z-index: 100;
 }
 
 header nav {
@@ -89,8 +103,8 @@ header nav {
 
 header nav div {
     position: absolute;
-    right: 3vh;
-    top: 50%;
+    right: 3.5vh;
+    top: 51%;
     transform: translateY(-50%);
 }
 
@@ -100,8 +114,8 @@ header nav div {
 
 .hamburger {
     position: relative;
-    height: 4vh;
-    width: 5vh;
+    height: 3vh;
+    width: 4vh;
 }
 
 .hamburger,
@@ -182,16 +196,6 @@ header nav div {
     }
 }
 
-.overview {
-    padding: 2% 7% 5%;
-}
-
-@media screen and (min-width: 600px) {
-    .overview {
-        padding: 2% 10% 5%;
-    }
-}
-
 .overview h2,
 .feature h2 {
     color: var(--theme-color);
@@ -205,17 +209,16 @@ header nav div {
 }
 
 .feature {
-    padding: 5% 7%;
+    display: flex;
 }
 
 @media screen and (min-width: 600px) {
-    .feature {
-        padding: 5% 10%;
-    }
+    .feature {}
 }
 
 .feature:nth-child(odd) {
     background-color: var(--sub-background-color1);
+    flex-direction: row-reverse;
 }
 
 .feature:nth-child(even) {
@@ -223,15 +226,8 @@ header nav div {
 }
 
 #usages {
-    padding: 2% 7% 5%;
     background-color: var(--sub-background-color3);
     color: white;
-}
-
-@media screen and (min-width: 600px) {
-    #usages {
-        padding: 2% 10% 5%;
-    }
 }
 
 .usage {
@@ -268,16 +264,6 @@ header nav div {
     margin-left: auto;
     margin-right: 0;
     width: 9rem;
-}
-
-#q-and-a {
-    padding: 2% 5% 5%;
-}
-
-@media screen and (min-width: 600px) {
-    #q-and-a {
-        padding: 2% 10% 3%;
-    }
 }
 
 .question {
@@ -333,15 +319,7 @@ header nav div {
 }
 
 #members {
-    clear: both;
     background-color: var(--sub-background-color2);
-    padding: 2% 5% 5%;
-}
-
-@media screen and (min-width: 600px) {
-    #members {
-        padding: 2% 10% 3%;
-    }
 }
 
 .profile {
@@ -390,16 +368,6 @@ header nav div {
     /* line-height: calc(0.5 * var(--main-font-size)); */
     display: inline-flex;
     vertical-align: middle;
-}
-
-#link {
-    padding: 2% 7% 5%;
-}
-
-@media screen and (min-width: 600px) {
-    #link {
-        padding: 2% 10% 5%;
-    }
 }
 
 #link p {
@@ -468,14 +436,14 @@ footer ul li:nth-child(n+4) a {
     font-weight: normal;
 }
 
-#policy {
-    margin: 4% 7%;
-}
-
 @media screen and (min-width: 600px) {
     #policy {
         margin: 3% 10%;
     }
+}
+
+#policy h1 {
+    color: var(--theme-color);
 }
 
 #policy ol {

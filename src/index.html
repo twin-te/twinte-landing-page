@@ -15,13 +15,13 @@
     <header>
         <img class="head-logo" src="images/Twintelogo-colorA.png" />
         <nav>
-          <div>
-          <a class="hamburger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          </div>
+            <div>
+                <a class="hamburger" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
             <ul class="head-menu">
                 <li>
                     <a href="">トップ</a>
@@ -54,9 +54,9 @@
     </section>
 
     <main>
-        <article id="overview">
+        <section id="overview" class="wrap">
+            <h1>Twin:te（ついんて）とは？</h1>
             <section class="overview">
-                <h1>Twin:teとは？</h1>
                 <img class="overview-img" src="images/4-screens.png" />
                 <h2>筑波大生による筑波大生のための時間割アプリ</h2>
                 <p>
@@ -64,36 +64,43 @@
                     <br /> 現在もOSSとして保守・アップデートが行われているため、新たな機能を提案していただくことも可能です。
                 </p>
             </section>
-            <section class="feature" id="feature1">
+        </section>
+        <section class="feature wrap">
+                  <img class="feature-img" />
+                  <div>
+            <h2>Twinsから安全に時間割を自動登録</h2>
+            <p>
+                Twin:teではTwinsの時間割データを用いて簡単に時間割を作成することができます。 また昨今の危険性が指摘されている時間割アプリのように、学籍番号やパスワードといった情報をサーバー側で取得することはございません。
+                <br />
+                <span>（どのような動作原理なのかは<a href=""> 開発者ブログ</a
+            >をご参照ください。また全てのソースコードを<a href="">Github</a>
+            にて公開しています。）</span
+          >
+        </p>
+</div>
+      </section>
+      <section class="feature wrap">
+        <img class="feature-img" />
+        <div>
+        <h2>シラバスやメモ、出欠も簡単に管理</h2>
+        <p>
+          授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
+          メモや出欠のカウント機能もあります。
+        </p>
+        </div>
+      </section>
+      <section class="feature wrap">
                 <img class="feature-img" />
-                <h2>Twinsから安全に時間割を自動登録</h2>
-                <p>
-                    Twin:teではTwinsの時間割データを用いて簡単に時間割を作成することができます。 また昨今の危険性が指摘されている時間割アプリのように、学籍番号やパスワードといった情報をサーバー側で取得することはございません。
-                    <br />
-                    <span>（どのような動作原理なのかは<a href=""> 開発者ブログ</a
-              >をご参照ください。また全てのソースコードを<a href="">Github</a>
-              にて公開しています。）</span
-            >
-          </p>
-        </section>
-        <section class="feature" id="feature2">
-          <img class="feature-img" />
-          <h2>シラバスやメモ、出欠も簡単に管理</h2>
-          <p>
-            授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
-            メモや出欠のカウント機能もあります。
-          </p>
-        </section>
-        <section class="feature" id="feature3">
-          <img class="feature-img" />
+        <div>
           <h2>どの端末でもデータ共有 アカウント連携機能</h2>
           <p>
             TwitterやGoogleアカウント、Appleアカウントでログインすると、複数端末でデータの共有ができます。
           </p>
-        </section>
-      </article>
+        </div>
 
-      <article id="usages">
+      </section>
+
+      <section id="usages" class="wrap">
         <h1>使い方</h1>
         <p>
           授業をアプリに登録する方法は様々です。また、メモの編集に加えて、自動登録された情報も皆さんご自身で変更していただくことが可能です。
@@ -117,9 +124,9 @@
           <p>メモや教室の情報を編集する方法です。</p>
           <button class="more-btn">詳しく▼</button>
         </section>
-      </article>
+      </section>
 
-      <article id="q-and-a">
+      <section id="q-and-a" class="wrap">
         <h1>Q&A</h1>
         <section>
           <div class="question">
@@ -175,9 +182,9 @@
             </p>
           </div>
         </section>
-      </article>
+      </section>
 
-      <article id="members">
+      <section id="members" class="wrap">
         <h1>制作メンバー</h1>
         <section class="profile">
           <img class="profile-img" />
@@ -241,9 +248,9 @@
             </ul>
           </div>
         </section>
-      </article>
+      </section>
 
-      <article id="link">
+      <section id="link" class="wrap">
         <h1>リンク</h1>
         <a href="">
           <h2>公式Twitter</h2>
@@ -275,7 +282,7 @@
             <p>PCでのご利用はこちらから(WebAppが開きます)。</p>
           </div>
         </section>
-      </article>
+      </section>
     </main>
 
     <footer>
@@ -289,13 +296,13 @@
             <a href="">プライバシーポリシー</a>
           </li>
           <li>
-            <a href="">お問い合わせ</a>
+            <a href="">お問い合わせは下記まで</a>
           </li>
           <li>
             <a href="">サイト内チャット</a>
           </li>
           <li>
-            <a href="">公式Twitter（@te_twin)</a>
+            <a href="https://twitter.com\te_twin">公式Twitter（@te_twin)</a>
           </li>
           <li>
             <a href="">メール（info@twinte.net)</a>
