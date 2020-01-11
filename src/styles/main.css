@@ -437,20 +437,24 @@ footer ul li:nth-child(n+4) a {
 }
 
 @media screen and (min-width: 600px) {
-    #policy {
+    #policy,
+    #terms {
         margin: 3% 10%;
     }
 }
 
-#policy h1 {
+#policy h1,
+#terms h1 {
     color: var(--theme-color);
 }
 
-#policy ol {
+#policy ol,
+#terms ol {
     margin: 0;
 }
 
-#policy section {
+#policy section,
+#terms section {
     margin-bottom: 3%;
     line-height: calc(1.7 * var(--main-font-size));
 }
