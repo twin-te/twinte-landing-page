@@ -37,13 +37,12 @@ main {
     font-size: var(--main-font-size);
 }
 
-article {
-    margin: 0;
-    padding: 0;
+ul {
+    list-style: none;
 }
 
-li {
-    list-style: none;
+ol {
+    list-style-type: decimal;
 }
 
 a {
@@ -465,6 +464,25 @@ footer a {
     font-weight: bold;
 }
 
-ul li:nth-child(n+4) a {
+footer ul li:nth-child(n+4) a {
     font-weight: normal;
+}
+
+#policy {
+    margin: 4% 7%;
+}
+
+@media screen and (min-width: 600px) {
+    #policy {
+        margin: 3% 10%;
+    }
+}
+
+#policy ol {
+    margin: 0;
+}
+
+#policy section {
+    margin-bottom: 3%;
+    line-height: calc(1.7 * var(--main-font-size));
 }
