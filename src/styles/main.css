@@ -38,6 +38,11 @@ main {
     font-size: var(--main-font-size);
 }
 
+.scroll-margin {
+    margin-top: -9vh;
+    padding-top: 9vh;
+}
+
 .wrap {
     padding: 2% 7% 6%;
 }
@@ -84,6 +89,11 @@ p {
     margin: 0;
 }
 
+.feature a,
+.q-and-a a {
+    color: rgb(98, 127, 180);
+}
+
 header {
     position: fixed;
     margin: 0;
@@ -105,36 +115,40 @@ header nav {
     display: none;
 }
 
-.checkbox-hide {
-    display: none;
-}
-
-.hamburger-contents {
-    top: 0;
-    overflow: auto;
-    position: fixed;
-    width: 100%;
-    background-color: white;
+#hamburger-contents:not(:target) {
     max-height: 0;
     z-index: 1;
     line-height: 0;
     opacity: 0;
     visibility: hidden;
     transition: line-height 0.15s ease-in-out;
+}
+
+#hamburger-contents:target {
+    top: 0;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    max-height: 100vh;
+    line-height: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: line-height 0.15s ease-in-out;
     text-align: center;
     box-shadow: 1vh 1vh 1vh var(--boxshadow-color);
     padding: 6% 0 6%;
 }
 
-.hamburger-contents h1 {
+#hamburger-contents h1 {
     color: var(--main-text-color);
 }
 
-.hamburger-contents ul {
+#hamburger-contents ul {
     padding: 0 7% 2%;
 }
 
-.hamburger-contents ul li {
+#hamburger-contents ul li {
     margin: 0;
     height: 8.7vh;
     border-bottom: 0.2vh solid var(--border-bottom-color);
@@ -142,13 +156,16 @@ header nav {
     position: relative;
 }
 
-.hamburger-contents ul li a {
+#hamburger-contents ul li a {
     font-size: calc(1.1 * var(--main-font-size));
     line-height: 8.7vh;
     padding-left: 2rem;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
-.hamburger-contents ul li a::after {
+#hamburger-contents ul li a::after {
     position: absolute;
     font-family: 'Material Icons';
     content: '\e5cc';
@@ -159,16 +176,9 @@ header nav {
     right: 0;
 }
 
-.hamburger-contents p {
+#hamburger-contents a {
     font-size: var(--sub-font-size);
     color: var(--sub-text-color);
-}
-
-.checkbox-hide:checked~.hamburger-contents {
-    max-height: 100vh;
-    line-height: 1;
-    opacity: 1;
-    visibility: visible;
 }
 
 .hamburger-icon {
@@ -176,20 +186,25 @@ header nav {
     display: block;
     height: 3vh;
     width: 4vh;
-    right: 4.5vw;
+    margin-right: 4.5vw;
+    margin-left: auto;
     top: 50%;
     transform: translateY(-50%);
-    float: right;
-    z-index: 30;
     background-color: white;
 }
 
-.hamburger-icon,
-.hamburger-icon span {
-    display: inline-block;
+.hamburger-icon a {
+    display: block;
+    height: 9vh;
+    width: 9vh;
 }
 
-.hamburger-icon span {
+#open,
+#open span {
+    display: block;
+}
+
+#open span {
     position: absolute;
     left: 0;
     width: 100%;
@@ -197,46 +212,66 @@ header nav {
     background-color: var(--sub-text-color);
 }
 
-.hamburger-icon span:nth-of-type(1) {
+#open span:nth-of-type(1) {
     top: 0;
 }
 
-.hamburger-icon span:nth-of-type(2) {
+#open span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.hamburger-icon span:nth-of-type(3) {
+#open span:nth-of-type(3) {
     bottom: 0;
 }
 
-.checkbox-hide:checked~.hamburger-icon span:nth-of-type(1) {
-    transform: translateY(1.25vh) rotate(-45deg);
+#close,
+#close span {
+    display: block;
 }
 
-.checkbox-hide:checked~.hamburger-icon span:nth-of-type(2) {
-    display: none;
+#close span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.4vh;
+    background-color: var(--sub-text-color);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.checkbox-hide:checked~.hamburger-icon span:nth-of-type(3) {
-    transform: translateY(-1.25vh) rotate(45deg);
+#close span:nth-of-type(1) {
+    transform: rotate(-45deg);
+}
+
+#close span:nth-of-type(2) {
+    transform: rotate(45deg);
 }
 
 @media screen and (min-width: 767px) {
-    .hamburger-icon {
-        display: none;
-    }
     .head-menu {
         position: absolute;
+        top: 0;
         right: 2rem;
         display: flex;
         margin: 0;
+        height: 100%;
+    }
+    .head-menu li {
+        margin: 0;
+        padding: 0;
     }
     .head-menu li a {
         font-size: 1.4rem;
         line-height: 9vh;
         margin: 0 2rem;
         color: var(--sub-text-color);
+        display: block;
+        height: 9vh;
+    }
+    #open,
+    #close {
+        display: none;
     }
 }
 
@@ -249,7 +284,7 @@ header nav {
     transform: translateY(-62%);
 }
 
-#eyecatch {
+.eyecatch {
     width: 100%;
     height: 80vh;
     background-image: url('../images/topbackground.jpg');
@@ -302,7 +337,12 @@ header nav {
     background-color: var(--sub-background-color2);
 }
 
-#usages {
+.feature span {
+    color: var(--sub-text-color);
+    font-size: var(--sub-font-size);
+}
+
+.usages {
     background-color: var(--sub-background-color3);
     color: white;
 }
@@ -339,6 +379,11 @@ header nav {
     font-weight: bold;
 }
 
+.usage span {
+    font-size: var(--sub-font-size);
+    color: var(--sub-text-color);
+}
+
 .more-btn {
     background-color: #9e9e9e;
     cursor: pointer;
@@ -360,6 +405,10 @@ header nav {
     display: inline-flex;
     vertical-align: middle;
     margin-top: -0.2rem;
+}
+
+.checkbox-hide {
+    display: none;
 }
 
 .checkbox-hide:checked~.more-btn::after {
@@ -442,7 +491,7 @@ header nav {
     line-height: calc(1.8 * var(--sub-font-size));
 }
 
-#members {
+.members {
     background-color: var(--sub-background-color2);
 }
 
@@ -473,6 +522,7 @@ header nav {
     display: flex;
     padding: 0;
     margin: 0;
+    vertical-align: middle;
 }
 
 .profile-links li {
@@ -489,12 +539,11 @@ header nav {
     font-family: 'Material Icons';
     content: '\e5cc';
     font-size: calc(1.5 * var(--main-font-size));
-    /* line-height: calc(0.5 * var(--main-font-size)); */
     display: inline-flex;
     vertical-align: middle;
 }
 
-#link p {
+.link p {
     margin-bottom: 3%;
 }
 
@@ -561,24 +610,35 @@ footer ul li:nth-child(n+4) a {
 }
 
 @media screen and (min-width: 600px) {
-    #policy,
-    #terms {
-        margin: 3% 10%;
+    .policy,
+    .terms {
+        padding: calc(9vh + 3%) 10%;
     }
 }
 
-#policy h1,
-#terms h1 {
+.policy h1,
+.terms h1 {
     color: var(--theme-color);
 }
 
-#policy ol,
-#terms ol {
+.policy ol,
+.terms ol {
     margin: 0;
 }
 
-#policy section,
-#terms section {
+.policy section,
+.terms section {
     margin-bottom: 3%;
     line-height: calc(1.7 * var(--main-font-size));
+}
+
+.exit-btn {
+    display: block;
+    background-color: var(--theme-color);
+    padding: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    width: 20rem;
+    text-align: center;
+    margin: 5% auto 0 auto;
 }
