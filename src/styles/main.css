@@ -39,7 +39,7 @@ main {
 }
 
 .wrap {
-    padding: 2% 7% 5%;
+    padding: 2% 7% 6%;
 }
 
 @media screen and (min-width: 600px) {
@@ -101,30 +101,95 @@ header nav {
     height: 100%;
 }
 
-header nav div {
-    position: absolute;
-    right: 3.5vh;
-    top: 51%;
-    transform: translateY(-50%);
-}
-
 .head-menu {
     display: none;
 }
 
-.hamburger {
+.checkbox-hide {
+    display: none;
+}
+
+.hamburger-contents {
+    top: 0;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    max-height: 0;
+    z-index: 1;
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: line-height 0.15s ease-in-out;
+    text-align: center;
+    box-shadow: 1vh 1vh 1vh var(--boxshadow-color);
+    padding: 6% 0 6%;
+}
+
+.hamburger-contents h1 {
+    color: var(--main-text-color);
+}
+
+.hamburger-contents ul {
+    padding: 0 7% 2%;
+}
+
+.hamburger-contents ul li {
+    margin: 0;
+    height: 8.7vh;
+    border-bottom: 0.2vh solid var(--border-bottom-color);
+    text-align: left;
     position: relative;
+}
+
+.hamburger-contents ul li a {
+    font-size: calc(1.1 * var(--main-font-size));
+    line-height: 8.7vh;
+    padding-left: 2rem;
+}
+
+.hamburger-contents ul li a::after {
+    position: absolute;
+    font-family: 'Material Icons';
+    content: '\e5cc';
+    font-size: calc(1.9 * var(--main-font-size));
+    display: inline-flex;
+    vertical-align: middle;
+    color: var(--theme-color);
+    right: 0;
+}
+
+.hamburger-contents p {
+    font-size: var(--sub-font-size);
+    color: var(--sub-text-color);
+}
+
+.checkbox-hide:checked~.hamburger-contents {
+    max-height: 100vh;
+    line-height: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hamburger-icon {
+    position: relative;
+    display: block;
     height: 3vh;
     width: 4vh;
+    right: 4.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    z-index: 30;
+    background-color: white;
 }
 
-.hamburger,
-.hamburger span {
+.hamburger-icon,
+.hamburger-icon span {
     display: inline-block;
-    transition: all 0.3s;
 }
 
-.hamburger span {
+.hamburger-icon span {
     position: absolute;
     left: 0;
     width: 100%;
@@ -132,21 +197,33 @@ header nav div {
     background-color: var(--sub-text-color);
 }
 
-.hamburger span:nth-of-type(1) {
+.hamburger-icon span:nth-of-type(1) {
     top: 0;
 }
 
-.hamburger span:nth-of-type(2) {
+.hamburger-icon span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.hamburger span:nth-of-type(3) {
+.hamburger-icon span:nth-of-type(3) {
     bottom: 0;
 }
 
+.checkbox-hide:checked~.hamburger-icon span:nth-of-type(1) {
+    transform: translateY(1.25vh) rotate(-45deg);
+}
+
+.checkbox-hide:checked~.hamburger-icon span:nth-of-type(2) {
+    display: none;
+}
+
+.checkbox-hide:checked~.hamburger-icon span:nth-of-type(3) {
+    transform: translateY(-1.25vh) rotate(45deg);
+}
+
 @media screen and (min-width: 767px) {
-    .hamburger {
+    .hamburger-icon {
         display: none;
     }
     .head-menu {
@@ -238,25 +315,34 @@ header nav div {
     border-radius: 0.6rem;
 }
 
-.usage h3 {
+.usage h2 {
     color: var(--accent-text-color);
     line-height: 3.2rem;
 }
 
 .usage p {
     color: var(--sub-text-color);
-    font-size: var(--sub-font-size);
-    line-height: calc(1.6 * var(--sub-font-size));
     margin-bottom: 2%;
+}
+
+.usage ol {
+    padding: 0 8%;
+    margin: 0;
+    color: var(--sub-text-color);
+}
+
+.usage li {
+    margin-bottom: 0;
+}
+
+.usage li span {
+    font-weight: bold;
 }
 
 .more-btn {
     background-color: #9e9e9e;
-    border: none;
     cursor: pointer;
-    outline: none;
-    padding: 0.5rem;
-    appearance: none;
+    padding: 0.5rem 0.4rem 0.5rem 1rem;
     color: white;
     border-radius: 0.2rem;
     font-size: 1.5rem;
@@ -264,6 +350,44 @@ header nav div {
     margin-left: auto;
     margin-right: 0;
     width: 9rem;
+    text-align: center;
+}
+
+.more-btn::after {
+    font-family: 'Material Icons';
+    content: '\e5cf';
+    font-size: calc(1.5 * var(--main-font-size));
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: -0.2rem;
+}
+
+.checkbox-hide:checked~.more-btn::after {
+    font-family: 'Material Icons';
+    content: '\e5ce';
+}
+
+.discription-contents {
+    max-height: 0;
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkbox-hide:checked~.discription-contents {
+    max-height: 1000px;
+    line-height: 1.5;
+    opacity: 1;
+    visibility: visible;
+}
+
+.checkbox-hide:checked~.discription-contents ol {
+    margin-top: 2%
+}
+
+.checkbox-hide:checked~.discription-contents li {
+    margin-bottom: 2rem;
 }
 
 .question {
