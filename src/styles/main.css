@@ -312,6 +312,7 @@ header nav {
     .head-menu li {
         margin: 0;
         padding: 0;
+        height: 9vh;
     }
     .head-menu li a {
         font-size: 1.4rem;
@@ -319,7 +320,16 @@ header nav {
         margin: 0 2rem;
         color: var(--sub-text-color);
         display: block;
-        height: 9vh;
+        border-left: 0;
+    }
+    .head-menu li a:hover {
+        color: var(--accent-text-color);
+        transform: scale(1.05);
+        transition: all 0.15s;
+    }
+    .head-menu li a:active {
+        color: var(--accent-text-color);
+        transform: scale(0.95);
     }
     #open,
     #close {
@@ -416,6 +426,14 @@ header nav {
         height: 4.7vw;
         line-height: 4.7vw;
         border-radius: 100vh;
+    }
+    .pc-download-btn:hover {
+        transform: scale(1.05);
+        transition: all 0.15s ease-in-out;
+    }
+    .pc-download-btn:active {
+        background-color: #d3d3d3;
+        transform: scale(0.9);
     }
 }
 
@@ -662,7 +680,7 @@ header nav {
 .profile h2 {
     padding-left: 0.8rem;
     margin: 0 0 0.4rem;
-    border-left: 0.4rem solid #00c0c0;
+    border-left: 0.4rem solid var(--theme-color);
     line-height: 2.3rem;
 }
 
