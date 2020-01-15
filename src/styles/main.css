@@ -39,6 +39,7 @@ main {
 }
 
 .scroll-margin {
+    /* ページ内ジャンプ用 ジャンプ時にコンテンツがヘッダーに被らないようにする  */
     margin-top: -9vh;
     padding-top: 9vh;
 }
@@ -51,6 +52,13 @@ main {
     .wrap {
         padding: 2% 10% 5%;
     }
+}
+
+.for-max-width {
+    /* 横長になりすぎないようにする用、カードや画像・文字等のコンテンツのみを囲う */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
 }
 
 ul {
@@ -98,6 +106,9 @@ img {
     color: rgb(98, 127, 180);
 }
 
+
+/* スマホ（600px以下）時に表示させたいものには.sp、pc時に表示させたいものには.pcをつける。 */
+
 .pc {
     display: none;
 }
@@ -106,7 +117,7 @@ img {
     display: block;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
     .pc {
         display: block;
     }
@@ -114,6 +125,9 @@ img {
         display: none;
     }
 }
+
+
+/* 縦長時に表示させたいものには.port、横長時に表示させたいものには.landをつける。 */
 
 .port {
     display: block;
@@ -350,7 +364,7 @@ header nav {
     justify-content: center;
     align-items: center;
     height: 6vh;
-    margin: 1.3vh 0 1.8vh;
+    margin: 1.3vh 0 1.8vh 10px;
 }
 
 .app-download-btn {
@@ -386,7 +400,7 @@ header nav {
         margin-bottom: 3vh;
     }
     .app-download-btns {
-        margin-bottom: 2vh;
+        margin-bottom: 2.5vh;
     }
     .devices-img {
         width: 45vw;
@@ -439,6 +453,7 @@ header nav {
     width: 38vw;
     height: 100%;
     margin: 0 2%;
+    max-width: calc(900px * 0.38);
 }
 
 .discript-wrap {
@@ -472,7 +487,7 @@ header nav {
 .usage {
     background-color: white;
     width: 90%;
-    padding: 2% 5%;
+    padding: 2vmin 5vmin;
     margin-top: 2%;
     border-radius: 0.6rem;
 }
@@ -488,7 +503,7 @@ header nav {
 }
 
 .usage ol {
-    padding: 0 8%;
+    padding: 0 8vmin;
     margin: 0;
     color: var(--sub-text-color);
 }
@@ -554,7 +569,7 @@ header nav {
 }
 
 .checkbox-hide:checked~.discription-contents ol {
-    margin-top: 2%
+    margin-top: 2%;
 }
 
 .checkbox-hide:checked~.discription-contents li {
@@ -592,7 +607,7 @@ header nav {
     border-radius: 1rem;
     margin-top: -2%;
     margin-bottom: 4%;
-    padding: 3% 8% 4%;
+    padding: 3vmin 8vmin 4vmin;
     background-color: var(--sub-background-color1);
     z-index: 1;
 }
@@ -618,7 +633,7 @@ header nav {
     padding: 6% 3%;
 }
 
-@media scren and(min-width:600px) {
+@media screen and (min-width: 600px) {
     .members {
         padding: 4% 7%;
     }
@@ -626,34 +641,41 @@ header nav {
 
 .profile {
     display: flex;
-    width: 93%;
+    width: calc(100%-3vmin);
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
-    margin-bottom: 2%;
+    margin: 0 auto 2% auto;
     background-color: white;
-    padding: 3vmin 4vw;
+    padding: 3vmin 3vw;
     align-items: center;
 }
 
 .profile-img {
-    width: 23vmin;
+    width: 22%;
     height: 100%;
     border-radius: 50% 50%;
     margin-right: 3vmin;
+    border: 0.4vmin solid #acacac;
+    filter: brightness(120%) contrast(80%);
 }
 
 .profile h2 {
     padding-left: 0.8rem;
-    margin: 0 0 2% 0;
+    margin: 0 0 0.4rem;
     border-left: 0.4rem solid #00c0c0;
-    height: 2.3rem;
     line-height: 2.3rem;
 }
 
 .profile p {
     font-size: var(--sub-font-size);
     line-height: calc(1.7 * var(--sub-font-size));
-    width: 58vw;
+}
+
+@media screen and (min-width: 600px) {
+    .profile p {
+        font-size: var(--main-font-size);
+        line-height: calc(2 * var(--main-font-size));
+    }
 }
 
 .profile-links {
@@ -661,6 +683,7 @@ header nav {
     padding: 0;
     margin: 0;
     vertical-align: middle;
+    width: 58vw;
 }
 
 .profile-links li {
