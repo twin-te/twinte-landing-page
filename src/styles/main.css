@@ -7,8 +7,8 @@
   --sub-background-color2: #f8f8f8;
   --sub-background-color3: #48c3c3;
   --border-bottom-color: #c7c7c7;
-  --main-font-size: 1.7rem;
-  --sub-font-size: 1.5rem;
+  --main-font-size: 1.55rem;
+  --sub-font-size: 1.4rem;
   --boxshadow-color: rgba(0, 0, 0, 0.096);
 }
 
@@ -16,7 +16,7 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 50%;
+  font-size: 55%;
   box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 3.4rem;
   font-weight: bolder;
   margin: 0;
@@ -466,7 +466,7 @@ header nav {
   width: 38vw;
   height: 100%;
   margin: 0 2%;
-  max-width: calc(900px * 0.38);
+  max-width: calc(750px * 0.38);
 }
 
 .discript-wrap {
@@ -481,14 +481,14 @@ header nav {
 
 @media screen and (min-width: 600px) {
   .feature {
-    padding: 6% 7%;
+    padding: 4% 7%;
   }
   .discript-wrap {
-    width: 37vw;
-    margin: 0 3%;
+    width: 36vw;
+    margin: 0 2%;
   }
   .feature-img {
-    margin: 0 3%;
+    margin: 0 2%;
   }
 }
 
@@ -581,7 +581,7 @@ header nav {
 }
 
 .checkbox-hide:checked ~ .discription-contents {
-  max-height: 1000px;
+  max-height: 3000px;
   line-height: 1.5;
   opacity: 1;
   visibility: visible;
@@ -606,14 +606,14 @@ header nav {
 }
 
 .question h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 4.3rem;
   margin: 0;
 }
 
 .question h3::before {
   content: 'Q. ';
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--theme-color);
   line-height: 2.8rem;
 }
@@ -632,13 +632,14 @@ header nav {
 }
 
 .answer h3 {
+  font-size: 1.4rem;
   margin: 0;
   line-height: 2.8rem;
 }
 
 .answer h3::before {
   content: 'A. ';
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: var(--theme-color);
 }
 
@@ -647,14 +648,15 @@ header nav {
   line-height: calc(1.8 * var(--sub-font-size));
 }
 
+/* menberのセクションのみコンテンツ幅が他より広いので、wrapクラスを使わずにpaddingを設定する */
 .members {
   background-color: var(--sub-background-color2);
-  padding: 6% 3%;
+  padding: 2% 3%;
 }
 
 @media screen and (min-width: 600px) {
   .members {
-    padding: 4% 7%;
+    padding: 2% 7%;
   }
 }
 
@@ -665,7 +667,7 @@ header nav {
   box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
   margin: 0 auto 2% auto;
   background-color: white;
-  padding: 3vmin 3vw;
+  padding: 2vh 3vw;
   align-items: center;
 }
 
@@ -749,7 +751,7 @@ header nav {
 }
 
 .download-link h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--theme-color);
 }
 
