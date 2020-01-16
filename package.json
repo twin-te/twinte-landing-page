@@ -1,11 +1,12 @@
 {
-  "name": "twinte-landing-page",
-  "license": "MIT",
-  "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
-  "devDependencies": {
-    "@types/node": "^13.1.1"
-  }
+    "name": "twinte-landing-page",
+    "license": "MIT",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html"
+    },
+    "devDependencies": {
+        "@types/node": "^13.1.1",
+        "cssnano": "^4.1.10"
+    }
 }
