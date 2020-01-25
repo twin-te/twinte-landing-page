@@ -45,7 +45,7 @@ main {
 }
 
 .wrap {
-  padding: 2% 7% 6%;
+  padding: 7% 8% 12%;
 }
 
 @media screen and (min-width: 600px) {
@@ -81,10 +81,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 3.4rem;
   font-weight: bolder;
-  margin: 0;
+  margin-bottom: 3%;
 }
 
 h3 {
@@ -93,7 +93,7 @@ h3 {
 }
 
 p {
-  line-height: calc(2 * var(--main-font-size));
+  line-height: calc(2.1 * var(--main-font-size));
   margin: 0;
 }
 
@@ -395,6 +395,7 @@ header nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4%;
   }
   .title-wrap {
     width: 36vw;
@@ -442,11 +443,11 @@ header nav {
 .overview-img {
   width: 90%;
   height: auto;
-  margin: 0 auto 2% auto;
+  margin: 2% auto 4% auto;
 }
 
 .feature {
-  padding: 6% 5%;
+  padding: 15% 5%;
 }
 
 .feature:nth-child(odd) {
@@ -461,6 +462,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2%;
 }
 
 .feature-img {
@@ -502,7 +504,7 @@ header nav {
   background-color: white;
   width: 90%;
   padding: 2vmin 5vmin;
-  margin-top: 2%;
+  margin-top: 4%;
   border-radius: 0.6rem;
 }
 
@@ -626,7 +628,7 @@ header nav {
   width: 78%;
   border-radius: 1rem;
   margin-top: -2%;
-  margin-bottom: 4%;
+  margin-bottom: 6%;
   padding: 3vmin 8vmin 4vmin;
   background-color: var(--sub-background-color1);
   z-index: 1;
@@ -652,7 +654,7 @@ header nav {
 /* menberのセクションのみコンテンツ幅が他より広いので、wrapクラスを使わずにpaddingを設定する */
 .members {
   background-color: var(--sub-background-color2);
-  padding: 2% 3%;
+  padding: 6% 3%;
 }
 
 @media screen and (min-width: 600px) {
@@ -666,7 +668,7 @@ header nav {
   width: calc(100%-3vmin);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
-  margin: 0 auto 2% auto;
+  margin: 3% auto 2% auto;
   background-color: white;
   padding: 2vh 3vw;
   align-items: center;
