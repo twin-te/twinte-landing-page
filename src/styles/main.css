@@ -792,11 +792,9 @@ footer ul li:nth-child(n + 4) a {
   font-weight: normal;
 }
 
-@media screen and (min-width: 600px) {
-  .policy,
-  .terms {
-    padding: calc(9vh + 3%) 10%;
-  }
+.policy,
+.terms {
+  padding: calc(9vh + 3%) 10%;
 }
 
 .policy h1,
