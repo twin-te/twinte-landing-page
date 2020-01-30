@@ -18,6 +18,7 @@ html {
   width: 100%;
   font-size: 55%;
   box-sizing: border-box;
+  overflow-x: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -31,6 +32,7 @@ body {
   padding: 0;
   font-family: 'Noto Sans Japanese', sans-serif;
   font-size: 1.6em;
+  overflow-x: hidden;
 }
 
 main {
