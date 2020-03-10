@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 59%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1.6em;
+  overflow-x: hidden;
+}
+
+main {
+  color: $main-text-color;
+  font-size: $main-font-size;
+}
+
+.scroll-margin {
+  /* ページ内ジャンプ用 ジャンプ時にコンテンツがヘッダーに被らないようにする  */
+  margin-top: -9vh;
+  padding-top: 9vh;
+}
+
+.wrap {
+  padding: 7% 8% 12%;
+}
+
+@media screen and (min-width: 600px) {
+  .wrap {
+    padding: 2% 10% 5%;
+  }
+}
+
+.for-max-width {
+  /* 横長になりすぎないようにする用、カードや画像・文字等のコンテンツのみを囲う */
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+a {
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 4% 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 3.4rem;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+p {
+  line-height: 2.1 * $main-font-size;
+  margin: 0;
+}
+
+img {
+  object-fit: contain;
+}
+
+.feature a,
+.q-and-a a {
+  color: rgb(98, 127, 180);
+}
+
+/* スマホ（600px以下）時に表示させたいものには.sp、pc時に表示させたいものには.pcをつける。 */
+.pc {
+  display: none;
+}
+
+.sp,
+.port {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .pc {
+    display: block;
+  }
+
+  .sp {
+    display: none;
+  }
+}
+
+/* 縦長時に表示させたいものには.port、横長時に表示させたいものには.landをつける。 */
+.land {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  .port {
+    display: none;
+  }
+
+  .land {
+    display: block;
+  }
+}

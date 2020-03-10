@@ -25,7 +25,7 @@
     <link rel="canonical" href="https://www.twinte.net" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@te_twin" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/import.scss" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -36,19 +36,19 @@
     />
     <script src="https://embed.small.chat/TJEQ7GKUHGST8SFRFG.js" async></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-153429703-2"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-153429703-2');
-      </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-153429703-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-153429703-2');
+    </script>
   </head>
 
   <body>
@@ -187,18 +187,17 @@
         <section class="overview wrap">
           <!-- 以下max-widthを適用させる背景色抜きのコンテンツ -->
           <div class="for-max-width">
-            <h1 class="bottom">Twin:te（ついんて）とは？</h1>
+            <h1 class="">Twin:te（ついんて）とは？</h1>
             <section class="overview">
               <img
                 src="images/4screens.jpg"
-                class="overview-img bottom
-                                "
+                class="overview-img bottom"
                 alt="スクリーンショット"
               />
-              <h2 class="opacity">
+              <h2 class="opacity bottom">
                 筑波大生による筑波大生のための時間割アプリ
               </h2>
-              <p class="opacity">
+              <p class="opacity bottom">
                 筑波大生に最適な設計になっており、いかに時間割を簡単に作るかに重きを置いています。わずか数ステップで時間割を作成・管理することができます。
                 <br />
                 現在もOSSとして保守・アップデートが行われているため、新たな機能を提案していただくことも可能です。
@@ -208,17 +207,16 @@
         </section>
 
         <!-- 以下背景色込みの固有のセクション -->
-        <section class="feature left">
+        <section class="feature ">
           <!-- 以下max-widthを適用させる背景色抜きのコンテンツ -->
           <div class="for-max-width">
             <div class="feature-wrap">
               <img
                 src="images/feature1.png"
-                class="feature-img
-                                "
+                class="feature-img right"
                 alt="Twinsからインポート"
               />
-              <div class="discript-wrap">
+              <div class="discript-wrap right-d">
                 <h2>Twinsから安全に時間割を自動登録</h2>
                 <p class="pc">
                   Twin:teではTwinsの時間割データを用いて簡単に時間割を作成することができます。
@@ -240,7 +238,7 @@
             </div>
 
             <!-- ↓スマホレイアウト時のみ表示させる用の本文。長いのでここのpだけはスマホ時にflexを適用させない。 -->
-            <p class="sp">
+            <p class="sp right">
               Twin:teではTwinsの時間割データを用いて簡単に時間割を作成することができます。
               また昨今の危険性が指摘されている時間割アプリのように、学籍番号やパスワードといった情報をサーバー側で取得することはございません。
               <br />
@@ -260,10 +258,10 @@
         </section>
 
         <!-- 以下背景色込みの固有のセクション -->
-        <section class="feature right">
+        <section class="feature">
           <!-- 以下max-widthを適用させる背景色抜きのコンテンツ -->
           <div class="for-max-width feature-wrap">
-            <div class="discript-wrap">
+            <div class="discript-wrap left-d">
               <h2>シラバスやメモ、出欠も簡単に管理</h2>
               <p>
                 授業を選択するだけで時間割に授業名・教室・講師等が自動登録されます。
@@ -272,22 +270,22 @@
             </div>
             <img
               src="images/feature2.png"
-              class="feature-img"
+              class="feature-img left"
               alt="時間割データの自動登録"
             />
           </div>
         </section>
 
         <!-- 以下背景色込みの固有のセクション -->
-        <section class="feature left">
+        <section class="feature ">
           <!-- 以下max-widthを適用させる背景色抜きのコンテンツ -->
           <div class="for-max-width  feature-wrap">
             <img
               src="images/feature3.png"
-              class="feature-img"
+              class="feature-img right"
               alt="アカウント連携"
             />
-            <div class="discript-wrap">
+            <div class="discript-wrap right-d">
               <h2>どの端末でもデータ共有<br />アカウント連携機能</h2>
               <p>
                 TwitterやGoogleアカウント、Appleアカウントでログインすると、複数端末でデータの共有ができます。
@@ -566,17 +564,17 @@
           <div class="for-max-width opacity">
             <h1>リンク</h1>
             <a href="https://twitter.com/te_twin">
-              <h2>公式Twitter</h2>
+              <h3>公式Twitter</h3>
             </a>
             <p>
               更新情報 や障害情報などをお知らせします。お問い合わせはDMまで。
             </p>
             <a href="https://twinte.hatenablog.com/">
-              <h2>開発者ブログ</h2>
+              <h3>開発者ブログ</h3>
             </a>
             <p>Twin:te開発にまつわる記事を書いていきます。</p>
             <a href="https://github.com/twin-te">
-              <h2>GitHub</h2>
+              <h3>GitHub</h3>
             </a>
             <p>OSSとして公開中ですので、機能改善にご協力ください。</p>
             <!--
@@ -653,40 +651,58 @@
     <script>
       ScrollReveal().reveal('.bottom', {
         easing: 'ease-in-out',
-        duration: 400,
-        delay: 200,
+        duration: 340,
+        delay: 100,
         distance: '50px',
         opacity: 0,
         scale: 1
       });
       ScrollReveal().reveal('.opacity', {
-        duration: 500,
-        delay: 300,
+        duration: 300,
+        delay: 100,
         opacity: 0,
         scale: 1
       });
       ScrollReveal().reveal('.scale', {
         easing: 'ease-in-out',
-        duration: 300,
-        delay: 200,
+        duration: 250,
+        delay: 100,
         opacity: 0,
         scale: 0.9
       });
       ScrollReveal().reveal('.right', {
         origin: 'right',
         easing: 'ease-in-out',
-        duration: 800,
-        distance: '100px',
-        delay: 700,
+        duration: 500,
+        distance: '60px',
+        delay: 200,
+        opacity: 0,
+        scale: 1
+      });
+      ScrollReveal().reveal('.right-d', {
+        origin: 'right',
+        easing: 'ease-in-out',
+        duration: 500,
+        distance: '60px',
+        delay: 350,
         opacity: 0,
         scale: 1
       });
       ScrollReveal().reveal('.left', {
         origin: 'left',
         easing: 'ease-in-out',
-        duration: 800,
-        distance: '100px',
-        delay: 700,
+        duration: 500,
+        distance: '60px',
+        delay: 200,
+        opacity: 0,
+        scale: 1
+      });
+      ScrollReveal().reveal('.left-d', {
+        origin: 'left',
+        easing: 'ease-in-out',
+        duration: 500,
+        distance: '60px',
+        delay: 350,
         opacity: 0,
         scale: 1
       });
