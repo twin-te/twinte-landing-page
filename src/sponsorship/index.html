@@ -96,22 +96,25 @@
       </ul>
     </nav>
   </header>
-  <div id="sponsorship">
+  <main id="sponsorship">
     <h1>寄付者一覧</h1>
     <p>
       Twin:teに寄付頂いた方で、許可頂いた方を掲載いたします。（敬称略）
     </p>
 
+    <hr>
+
     <transition name="fade">
       <p v-if="amount">
-        総寄付額 {{ amount }} 円
+        総寄付額 <strong>{{ amount }}</strong> 円
       </p>
     </transition>
     <transition name="fade">
       <p v-if="count">
-        計 {{ count }} 人の方に寄付いただきました。
+        計 <strong>{{ count }}</strong> 人の方に寄付いただきました。
       </p>
     </transition>
+
     <transition name="fade">
       <div class="users" v-if="count && users">
         <a v-for="u in users" :href="u.link" target="_blank">
@@ -122,7 +125,7 @@
     <div class="loading" v-if="!count || !users">
       Loading
     </div>
-  </div>
+  </main>
 
   <script>
     var app = new Vue({

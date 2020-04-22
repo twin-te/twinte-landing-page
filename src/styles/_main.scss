@@ -709,15 +709,18 @@ footer {
     text-align: center;
   }
   .users {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     a {
       display: block;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
     }
   }
-
+  hr {
+    border-top: 1px solid $theme-color;
+  }
   .fade-enter-active,
   .fade-leave-active {
     transition: all 0.3s;
