@@ -702,24 +702,65 @@ footer {
 
 #sponsorship {
   padding: calc(9vh + 3%) 10%;
+  text-align: center;
   h1 {
     color: $theme-color;
   }
-  p {
-    text-align: center;
+  h2 {
+    margin-top: 6%;
+  }
+  .sponsor-wrap {
+    margin: 4% auto;
+  }
+  .amount {
+    color: $accent-text-color;
+    padding: 1rem;
+  }
+  .count {
+    color: $accent-text-color;
   }
   .users {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: 0.2s;
     a {
       display: block;
       padding: 0.5rem 1rem;
+
+      &:hover {
+        color: lighten($main-text-color, 30%);
+      }
+      &:hover .linkicon {
+        opacity: 1;
+      }
+    }
+    .linkicon {
+      opacity: 0;
+      display: inline-flex;
+      font-family: 'Material Icons';
+      color: $sub-text-color;
+      content: '\e157';
+      vertical-align: middle;
+      transition: 0.2s;
     }
   }
+
   hr {
     border-top: 1px solid $theme-color;
+  }
+  .sponsorpage-btn {
+    width: 40rem;
+    max-width: 80vw;
+    height: auto;
+    transition: 0.1s ease-in;
+    &:hover {
+      filter: contrast(80%) brightness(1.2);
+    }
+    &:active {
+      filter: contrast(100%) brightness(1);
+    }
   }
   .fade-enter-active,
   .fade-leave-active {
