@@ -699,3 +699,51 @@ footer {
   text-align: center;
   margin: 5% auto 0 auto;
 }
+
+#sponsorship {
+  padding: calc(9vh + 3%) 10%;
+  h1 {
+    color: $theme-color;
+  }
+  p {
+    text-align: center;
+  }
+  .users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      display: block;
+      padding: 1rem;
+    }
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.3s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  @keyframes loading-title-anim {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  .loading {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2em;
+    animation: 1s ease 0s infinite normal none running loading-title-anim;
+  }
+}
