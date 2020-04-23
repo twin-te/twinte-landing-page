@@ -30,7 +30,9 @@
           <span></span>
         </a>
       </div>
+      <!-- 以下ハンバーガーの中身 -->
       <div id="hamburger-contents">
+        <!-- ハンバーガーを閉じる用のボタン -->
         <div class="hamburger-icon" id="close">
           <a href="#">
             <span></span>
@@ -74,7 +76,11 @@
           </a>
         </p>
 
+        <!-- ここまでハンバーガーの中身 -->
       </div>
+      <!-- ここまでハンバーガーメニュー -->
+
+      <!-- 以下タブレット、PC用の横並びメニュー vw~860pxでは非表示 -->
       <ul class="head-menu">
         <li>
           <a href="../index.html#eyecatch">トップ</a>
@@ -100,6 +106,7 @@
           </a>
         </li>
       </ul>
+      <!-- ここまで横並びメニュー -->
     </nav>
   </header>
   <main id="sponsorship">
@@ -108,15 +115,16 @@
       Twin:teに寄付をしていただき、許可いただいた方を掲載いたします。（敬称略）
     </p>
 
-    <hr>
+    <div class="sponsor-wrap"></div>
+    <hr />
 
     <transition name="fade">
-      <p v-if="amount">
+      <p class="amount" v-if="amount">
         総寄付額 <strong>{{ amount }}</strong> 円
       </p>
     </transition>
     <transition name="fade">
-      <p v-if="count">
+      <p class="count" v-if="count">
         計 <strong>{{ count }}</strong> 人の方に寄付いただきました。
       </p>
     </transition>
@@ -125,12 +133,17 @@
       <div class="users" v-if="count && users">
         <a v-for="u in users" :href="u.link" target="_blank">
           {{ u.nickname }}
+          <i class="material-icons linkicon">link</i>
         </a>
       </div>
     </transition>
     <div class="loading" v-if="!count || !users">
       Loading
     </div>
+    <h2 v-if="count && users">寄付はこちらから</h2>
+    <a href="https://sponsorship.twinte.net" 　v-if="count && users">
+      <img class="sponsorpage-btn" src="../images/sponsor-ogp.png" />
+    </a>
   </main>
 
   <script>
@@ -138,23 +151,23 @@
       el: '#sponsorship',
       mounted() {
         fetch('https://api.twinte.net/v1/payment/users')
-          .then(res => res.json())
-          .then(data => {
-            this.count = data.count
-            this.users = data.users
-          })
+          .then((res) => res.json())
+          .then((data) => {
+            this.count = data.count;
+            this.users = data.users;
+          });
         fetch('https://api.twinte.net/v1/payment/totalAmount')
-          .then(res => res.json())
-          .then(data => {
-            this.amount = data.total
-          })
+          .then((res) => res.json())
+          .then((data) => {
+            this.amount = data.total;
+          });
       },
       data: {
         count: null,
         users: null,
         amount: null
       }
-    })
+    });
   </script>
 </body>
 
