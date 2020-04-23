@@ -156,7 +156,7 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 860px) {
   .head-menu {
     position: absolute;
     top: 0;
@@ -698,4 +698,97 @@ footer {
   width: 20rem;
   text-align: center;
   margin: 5% auto 0 auto;
+}
+
+#sponsorship {
+  padding: calc(9vh + 3%) 10%;
+  text-align: center;
+  h1 {
+    color: $theme-color;
+  }
+  h2 {
+    margin: 7% auto 1%;
+  }
+  .sponsor-wrap {
+    margin: 6% auto;
+  }
+  .amount {
+    color: $accent-text-color;
+    padding-top: 1rem;
+  }
+  .count {
+    color: $accent-text-color;
+  }
+  .users {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.2s;
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+    }
+    a.user-link {
+      &:hover {
+        color: lighten($main-text-color, 30%);
+      }
+      &:hover .linkicon {
+        opacity: 1;
+      }
+    }
+    .linkicon {
+      opacity: 0;
+      display: inline-flex;
+      font-family: 'Material Icons';
+      color: $sub-text-color;
+      content: '\e157';
+      vertical-align: middle;
+      transition: 0.2s;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $theme-color;
+  }
+  .sponsorpage-btn {
+    width: 40rem;
+    max-width: 80vw;
+    height: auto;
+    transition: 0.1s ease-in;
+    &:hover {
+      filter: contrast(80%) brightness(1.2);
+    }
+    &:active {
+      filter: contrast(100%) brightness(1);
+    }
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all 0.3s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  @keyframes loading-title-anim {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  .loading {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2em;
+    animation: 1s ease 0s infinite normal none running loading-title-anim;
+  }
 }
