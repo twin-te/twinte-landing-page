@@ -728,7 +728,8 @@ footer {
     a {
       display: block;
       padding: 0.5rem 1rem;
-
+    }
+    a.user-link {
       &:hover {
         color: lighten($main-text-color, 30%);
       }
