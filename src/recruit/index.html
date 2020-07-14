@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Twin:te" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Twin:te新メンバー募集ページ" />
+    <meta
+      property="og:description"
+      content="一緒にTwin:teを運営する仲間を募集します。"
+    />
+    <meta property="og:image" content="https://www.twinte.net/ogp.jpg" />
+    <title>Twin:te新メンバー募集ページ</title>
+    <link rel="stylesheet" href="../styles/import.scss" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+    />
+    <style>
+      section a {
+        color: rgb(98, 127, 180);
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Twin:te" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Twin:te新メンバー募集ページ" />
-  <meta property="og:description" content="一緒にTwin:teを運営する仲間を募集します。" />
-  <meta property="og:image" content="https://www.twinte.net/ogp.jpg" />
-  <title>Twin:te新メンバー募集ページ</title>
-  <link rel="stylesheet" href="../styles/import.scss" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
-  <style>
-    section a {
-      color: rgb(98, 127, 180);
-    }
+      section ul {
+        list-style: initial;
+      }
 
-    section ul {
-      list-style: initial;
-    }
+      h2 {
+        margin: 1rem 0 1rem 0;
+      }
+    </style>
+  </head>
 
-    h2 {
-      margin: 1rem 0 1rem 0;
-    }
-  </style>
-</head>
-
-<body>
-  <header ontouchstart="">
-    <a href="../index.html">
-      <img class="head-logo" src="../images/Twintelogo-colorA.png" alt="Twin:te" />
-    </a>
-    <nav>
-      <div class="hamburger-icon" id="open">
-        <a href="#hamburger-contents">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <!-- 以下ハンバーガーの中身 -->
-      <div id="hamburger-contents">
-        <!-- ハンバーガーを閉じる用のボタン -->
-        <div class="hamburger-icon" id="close">
-          <a href="#">
+  <body>
+    <header ontouchstart="">
+      <a href="../index.html">
+        <img
+          class="head-logo"
+          src="../images/Twintelogo-colorA.png"
+          alt="Twin:te"
+        />
+      </a>
+      <nav>
+        <div class="hamburger-icon" id="open">
+          <a href="#hamburger-contents">
+            <span></span>
             <span></span>
             <span></span>
           </a>
         </div>
-        <h1>Menu</h1>
-        <ul>
+        <!-- 以下ハンバーガーの中身 -->
+        <div id="hamburger-contents">
+          <!-- ハンバーガーを閉じる用のボタン -->
+          <div class="hamburger-icon" id="close">
+            <a href="#">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <h1>Menu</h1>
+          <ul>
+            <li>
+              <a href="../index.html#eyecatch">トップ</a>
+            </li>
+            <li>
+              <a href="../index.html#overview">Twin:teとは？</a>
+            </li>
+            <li>
+              <a href="../index.html#usages">使い方</a>
+            </li>
+            <li>
+              <a href="../index.html#q-and-a">Q&A</a>
+            </li>
+            <li>
+              <a href="../index.html#members">製作メンバー</a>
+            </li>
+            <li>
+              <a href="../index.html#link">リンク</a>
+            </li>
+            <li>
+              <a href="/sponsorship/index.html">
+                寄付者一覧
+              </a>
+            </li>
+          </ul>
+          <p>
+            <a href="/terms/index.html">
+              利用規約
+            </a>
+          </p>
+          <p>
+            <a href="/policy/index.html">
+              プライバシーポリシー
+            </a>
+          </p>
+
+          <!-- ここまでハンバーガーの中身 -->
+        </div>
+        <!-- ここまでハンバーガーメニュー -->
+
+        <!-- 以下タブレット、PC用の横並びメニュー vw~860pxでは非表示 -->
+        <ul class="head-menu">
           <li>
             <a href="../index.html#eyecatch">トップ</a>
           </li>
@@ -77,126 +130,83 @@
             </a>
           </li>
         </ul>
+        <!-- ここまで横並びメニュー -->
+      </nav>
+    </header>
+
+    <div id="policy">
+      <main class="policy">
+        <h1>新メンバー募集に関して</h1>
         <p>
-          <a href="/terms/index.html">
-            利用規約
-          </a>
+          Twin:teでは、長期運営を目的に新メンバーを募集することにいたしましたので、下記の通りお知らせします。
         </p>
-        <p>
-          <a href="/policy/index.html">
-            プライバシーポリシー
-          </a>
-        </p>
+        <section>
+          <h2>応募要件</h2>
+          <h3>【MUST 必須条件】</h3>
+          <ul>
+            <li>2020年4月に筑波大学に入学された新1年生</li>
+            <li>
+              運営や技術の面からTwin:teに関わることに興味のある方
+            </li>
+          </ul>
+          <h3>【WANT 歓迎条件】</h3>
+          <ul>
+            <li>Webフロントの知識がある方（特にVue.js）</li>
+            <li>
+              iOS開発の知識がある方（Swift）
+            </li>
+            <li>
+              Android開発の知識がある方（Kotlin）
+            </li>
+            <li>Webバックエンドの知識がある方（言語は問いません）</li>
+            <li>インフラの構築、設計、運用の知識がある方</li>
+            <li>GitHubの利用経験がある方</li>
+          </ul>
 
-        <!-- ここまでハンバーガーの中身 -->
-      </div>
-      <!-- ここまでハンバーガーメニュー -->
+          <h2>メンバーになったらできること</h2>
+          <p>
+            時間割アプリだけでなく、新しいアプリ・サービスを提案して制作していただくことももちろん可能です。<br />
+            Twin:teの利用者は筑波大学生の50%弱にあたる4000人ですので、自分の作ったサービスを多くの筑波大生に使ってもらうことができます。<br />
+            また、寄付金を利用することで個人では多少利用しにくいサービス（AWS等）を利用してプロダクトを作ることができます。<br />
+            Twin:teのメンバーはかなりフリーダムですので基本なにしても許可されます。（相当変なことでない限り）
+          </p>
+          <h2>その他</h2>
+          <p>
+            中心となってTwin:teを長期運用がしたい方（およそ卒業まで）を募集します。<br />
+            全員完全ボランティアなので報酬等はありません。（さすがに寄付金を手元に入れることはできないので・・・）<br />
+            Twin:teの運営よりも既存のサービスに協力されたい方は、メンバーにならなくとも<a
+              href="https://github.com/twin-te"
+              >こちら</a
+            >からコントリビューターとして協力いただけます。<br />
+            なお、今回はデザイナーの募集は行いません。<br />
+            Twin:teはサークルではなく、有志が集まっているグループです。
+            質問等がある方は気軽にTwitterのDMやinfo@twinte.netにメールをください！
+          </p>
 
-      <!-- 以下タブレット、PC用の横並びメニュー vw~860pxでは非表示 -->
-      <ul class="head-menu">
-        <li>
-          <a href="../index.html#eyecatch">トップ</a>
-        </li>
-        <li>
-          <a href="../index.html#overview">Twin:teとは？</a>
-        </li>
-        <li>
-          <a href="../index.html#usages">使い方</a>
-        </li>
-        <li>
-          <a href="../index.html#q-and-a">Q&A</a>
-        </li>
-        <li>
-          <a href="../index.html#members">製作メンバー</a>
-        </li>
-        <li>
-          <a href="../index.html#link">リンク</a>
-        </li>
-        <li>
-          <a href="/sponsorship/index.html">
-            寄付者一覧
-          </a>
-        </li>
-      </ul>
-      <!-- ここまで横並びメニュー -->
-    </nav>
-  </header>
+          <h2>応募とその後の流れ</h2>
+          <ul style="list-style: decimal;">
+            <li>
+              応募される方は<a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeaiM3KT-aCyPZF4z7AYB9pkVsfYV0-q1T5e5XVbmJZLg2cGA/viewform?usp=sf_link"
+                >こちら</a
+              >のGoogleフォームから情報を入力してください。
+            </li>
+            <li>
+              こちらからメールを差し上げます。
+            </li>
+            <li>
+              オンラインもしくは対面で面談します。
+            </li>
+            <li>
+              結果のメールをこちらから差し上げます。
+            </li>
+          </ul>
+        </section>
 
-  <div id="policy">
-    <main class="policy">
-      <h1>新メンバー募集に関して</h1>
-      <p>
-        Twin:teでは、長期運営を目的に新メンバーを募集することにいたしましたので、下記の通りお知らせします。
-      </p>
-      <section>
-        <h2>応募要件</h2>
-        <h3>【MUST 必須条件】</h3>
-        <ul>
-          <li>2020年4月に筑波大学に入学された新1年生</li>
-          <li>
-            運営や技術の面からTwin:teに関わることに興味のある方
-          </li>
-        </ul>
-        <h3>【WANT 歓迎条件】</h3>
-        <ul>
-          <li>Webフロントの知識がある方（特にVue.js）</li>
-          <li>
-            iOS開発の知識がある方（Swift）
-          </li>
-          <li>
-            Android開発の知識がある方（Kotlin）
-          </li>
-          <li>Webバックエンドの知識がある方（言語は問いません）</li>
-          <li>インフラの構築、設計、運用の知識がある方</li>
-          <li>GitHubの利用経験がある方</li>
-        </ul>
-
-        <h2>メンバーになったらできること</h2>
-        <p>
-          時間割アプリだけでなく、新しいアプリ・サービスを提案して制作していただくことももちろん可能です。<br>
-          Twin:teの利用者は筑波大学生の50%弱にあたる4000人ですので、自分の作ったサービスを多くの筑波大生に使ってもらうことができます。<br>
-          また、寄付金を利用することで個人では多少利用しにくいサービス（AWS等）を利用してプロダクトを作ることができます。<br>
-          Twin:teのメンバーはかなりフリーダムですので基本なにしても許可されます。（相当変なことでない限り）
-        </p>
-        <h2>その他</h2>
-        <p>
-          中心となってTwin:teを長期運用がしたい方（およそ卒業まで）を募集します。<br>
-          全員完全ボランティアなので報酬等はありません。（さすがに寄付金を手元に入れることはできないので・・・）<br>
-          Twin:teの運営よりも既存のサービスに協力されたい方は、メンバーにならなくとも<a
-            href="https://github.com/twin-te">こちら</a>からコントリビューターとして協力いただけます。<br>
-          なお、今回はデザイナーの募集は行いません。<br>
-          Twin:teはサークルではなく、有志が集まっているグループです。
-          質問等がある方は気軽にTwitterのDMやinfo@twinte.netにメールをください！
-        </p>
-
-        <h2>応募とその後の流れ</h2>
-        <p>
-        <ul style="list-style: decimal;">
-          <li>
-            応募される方は<a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeaiM3KT-aCyPZF4z7AYB9pkVsfYV0-q1T5e5XVbmJZLg2cGA/viewform?usp=sf_link">こちら</a>のGoogleフォームから情報を入力してください。
-          </li>
-          <li>
-            こちらからメールを差し上げます。
-          </li>
-          <li>
-            オンラインもしくは対面で面談します。
-          </li>
-          <li>
-            結果のメールをこちらから差し上げます。
-          </li>
-        </ul>
-
-        </p>
-
-      </section>
-
-      <a href="../index.html">
-        <div class="exit-btn">トップへ戻る</div>
-      </a>
-      </section>
-    </main>
-  </div>
-</body>
-
+        <a href="../index.html">
+          <div class="exit-btn">トップへ戻る</div>
+        </a>
+      </main>
+    </div>
+  </body>
 </html>
