@@ -1,46 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Twin:te" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Twin:te寄付者一覧" />
+    <meta
+      property="og:description"
+      content="時間割をtwinsからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大生のためのアプリTwin:teです。"
+    />
+    <meta property="og:image" content="https://www.twinte.net/ogp.jpg" />
+    <title>Twin:te寄付者一覧</title>
+    <link rel="stylesheet" href="../styles/import.scss" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Twin:te" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Twin:te寄付者一覧" />
-  <meta property="og:description" content="時間割をtwinsからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大生のためのアプリTwin:teです。" />
-  <meta property="og:image" content="https://www.twinte.net/ogp.jpg" />
-  <title>Twin:te寄付者一覧</title>
-  <link rel="stylesheet" href="../styles/import.scss" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
-
-<body>
-  <header ontouchstart="">
-    <a href="../index.html">
-      <img class="head-logo" src="../images/Twintelogo-colorA.png" alt="Twin:te" />
-    </a>
-    <nav>
-      <div class="hamburger-icon" id="open">
-        <a href="#hamburger-contents">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <!-- 以下ハンバーガーの中身 -->
-      <div id="hamburger-contents">
-        <!-- ハンバーガーを閉じる用のボタン -->
-        <div class="hamburger-icon" id="close">
-          <a href="#">
+  <body>
+    <header ontouchstart="">
+      <a href="../index.html">
+        <img
+          class="head-logo"
+          src="../images/Twintelogo-colorA.png"
+          alt="Twin:te"
+        />
+      </a>
+      <nav>
+        <div class="hamburger-icon" id="open">
+          <a href="#hamburger-contents">
+            <span></span>
             <span></span>
             <span></span>
           </a>
         </div>
-        <h1>Menu</h1>
-        <ul>
+        <!-- 以下ハンバーガーの中身 -->
+        <div id="hamburger-contents">
+          <!-- ハンバーガーを閉じる用のボタン -->
+          <div class="hamburger-icon" id="close">
+            <a href="#">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <h1>Menu</h1>
+          <ul>
+            <li>
+              <a href="../index.html#eyecatch">トップ</a>
+            </li>
+            <li>
+              <a href="../index.html#overview">Twin:teとは？</a>
+            </li>
+            <li>
+              <a href="../index.html#usages">使い方</a>
+            </li>
+            <li>
+              <a href="../index.html#q-and-a">Q&A</a>
+            </li>
+            <li>
+              <a href="../index.html#members">製作メンバー</a>
+            </li>
+            <li>
+              <a href="../index.html#link">リンク</a>
+            </li>
+            <li>
+              <a href="/sponsorship/index.html">
+                寄付者一覧
+              </a>
+            </li>
+          </ul>
+          <p>
+            <a href="/terms/index.html">
+              利用規約
+            </a>
+          </p>
+          <p>
+            <a href="/policy/index.html">
+              プライバシーポリシー
+            </a>
+          </p>
+
+          <!-- ここまでハンバーガーの中身 -->
+        </div>
+        <!-- ここまでハンバーガーメニュー -->
+
+        <!-- 以下タブレット、PC用の横並びメニュー vw~860pxでは非表示 -->
+        <ul class="head-menu">
           <li>
             <a href="../index.html#eyecatch">トップ</a>
           </li>
@@ -65,114 +118,80 @@
             </a>
           </li>
         </ul>
-        <p>
-          <a href="/terms/index.html">
-            利用規約
-          </a>
-        </p>
-        <p>
-          <a href="/policy/index.html">
-            プライバシーポリシー
-          </a>
-        </p>
-
-        <!-- ここまでハンバーガーの中身 -->
-      </div>
-      <!-- ここまでハンバーガーメニュー -->
-
-      <!-- 以下タブレット、PC用の横並びメニュー vw~860pxでは非表示 -->
-      <ul class="head-menu">
-        <li>
-          <a href="../index.html#eyecatch">トップ</a>
-        </li>
-        <li>
-          <a href="../index.html#overview">Twin:teとは？</a>
-        </li>
-        <li>
-          <a href="../index.html#usages">使い方</a>
-        </li>
-        <li>
-          <a href="../index.html#q-and-a">Q&A</a>
-        </li>
-        <li>
-          <a href="../index.html#members">製作メンバー</a>
-        </li>
-        <li>
-          <a href="../index.html#link">リンク</a>
-        </li>
-        <li>
-          <a href="/sponsorship/index.html">
-            寄付者一覧
-          </a>
-        </li>
-      </ul>
-      <!-- ここまで横並びメニュー -->
-    </nav>
-  </header>
-  <main id="sponsorship">
-    <h1>寄付者一覧</h1>
-    <p>
-      Twin:teに寄付をしていただき、許可いただいた方を掲載いたします。（敬称略）
-    </p>
-    <p>
-      なお、収支報告書を<a href="https://drive.google.com/drive/folders/1nHj8w5LELC5ZTFnWvgF7HXPriMRovFSp?usp=sharing"
-        style="color: #627fb4;">こちら</a>にて公開しております。
-    </p>
-
-    <div class="sponsor-wrap"></div>
-    <hr />
-
-    <transition name="fade">
-      <p class="amount" v-if="amount">
-        総寄付額 <strong>{{ amount }}</strong> 円
+        <!-- ここまで横並びメニュー -->
+      </nav>
+    </header>
+    <main id="sponsorship">
+      <h1>寄付者一覧</h1>
+      <p>
+        Twin:teに寄付をしていただき、許可いただいた方を掲載いたします。（敬称略）
       </p>
-    </transition>
-    <transition name="fade">
-      <p class="count" v-if="count">
-        計 <strong>{{ count }}</strong> 人の方に寄付いただきました。
+      <p>
+        なお、収支報告書を<a
+          href="https://drive.google.com/drive/folders/1nHj8w5LELC5ZTFnWvgF7HXPriMRovFSp?usp=sharing"
+          style="color: #627fb4;"
+          >こちら</a
+        >にて公開しております。
       </p>
-    </transition>
 
-    <transition name="fade">
-      <div class="users" v-if="count && users">
-        <a v-for="u in users" :href="u.link" :class="[u.link != null ? 'user-link' : '']" target="_blank">
-          {{ u.nickname }}
-          <i class="material-icons linkicon">link</i>
-        </a>
+      <div class="sponsor-wrap"></div>
+      <hr />
+
+      <transition name="fade">
+        <p class="amount" v-if="amount">
+          総寄付額 <strong>{{ amount }}</strong> 円
+        </p>
+      </transition>
+      <transition name="fade">
+        <p class="count" v-if="count">
+          計 <strong>{{ count }}</strong> 人の方に寄付いただきました。
+        </p>
+      </transition>
+
+      <transition name="fade">
+        <div class="users" v-if="count && users">
+          <a
+            v-for="u in users"
+            :href="u.link"
+            :class="[u.link != null ? 'user-link' : '']"
+            target="_blank"
+          >
+            {{ u.nickname }}
+            <i class="material-icons linkicon">link</i>
+          </a>
+        </div>
+      </transition>
+      <div class="loading" v-if="!count || !users">
+        Loading
       </div>
-    </transition>
-    <div class="loading" v-if="!count || !users">
-      Loading
-    </div>
-    <h2 v-if="count && users">寄付はこちらから</h2>
-    <a href="https://sponsorship.twinte.net" 　v-if="count && users">
-      <img class="sponsorpage-btn" src="../images/sponsor-ogp.png" />
-    </a>
-  </main>
+      <h2 v-if="count && users">寄付はこちらから</h2>
+      <a href="https://sponsorship.twinte.net" 　v-if="count && users">
+        <img class="sponsorpage-btn" src="../images/sponsor-ogp.png" />
+      </a>
+    </main>
 
-  <script>
-    var app = new Vue({
-      el: '#sponsorship',
-      mounted() {
-        fetch('https://api.twinte.net/v1/payment/users')
-          .then((res) => res.json())
-          .then((data) => {
-            this.count = data.count;
-            this.users = data.users;
-          });
-        fetch('https://api.twinte.net/v1/payment/totalAmount')
-          .then((res) => res.json())
-          .then((data) => {
-            this.amount = data.total;
-          });
-      },
-      data: {
-        count: null,
-        users: null,
-        amount: null
-      }
-    });
-  </script>
-</body>
-
+    <script>
+      var app = new Vue({
+        el: '#sponsorship',
+        mounted() {
+          fetch('https://api.twinte.net/v1/payment/users')
+            .then((res) => res.json())
+            .then((data) => {
+              this.count = data.count;
+              this.users = data.users;
+            });
+          fetch('https://api.twinte.net/v1/payment/totalAmount')
+            .then((res) => res.json())
+            .then((data) => {
+              this.amount = data.total;
+            });
+        },
+        data: {
+          count: null,
+          users: null,
+          amount: null
+        }
+      });
+    </script>
+  </body>
 </html>
