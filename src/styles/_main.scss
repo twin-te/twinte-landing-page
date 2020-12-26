@@ -77,7 +77,7 @@ header {
           font-size: 1.9 * $main-font-size;
           display: inline-flex;
           vertical-align: middle;
-          color: $theme-color;
+          color: $primary-color;
           right: 0;
         }
       }
@@ -220,21 +220,22 @@ header {
 
 .title-wrap {
   display: inline-block;
-  margin: 0 auto 0;
+  margin: 1rem auto 0;
   text-align: center;
 }
 
 .title-logo {
-  height: 12vh;
+  height: 7.5rem;
   margin-bottom: 2vh;
   margin-right: 5%;
+  filter: drop-shadow(0.1rem 0.1rem 3rem rgba(0, 0, 0, 0.301));
 }
 
 .app-download-btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6vh;
+  height: 5rem;
   margin: 1.3vh 0 1.8vh 10px;
 }
 
@@ -265,17 +266,17 @@ header {
   .title-wrap {
     width: 36vw;
     height: auto;
-    margin: 0 5vw 0;
+    margin: 0 5rem 0;
   }
 
   .title-logo {
-    width: 34vw;
-    height: auto;
-    margin-bottom: 3vh;
+    width: auto;
+    height: 12rem;
+    margin-bottom: 4rem;
   }
 
   .app-download-btns {
-    margin-bottom: 2.5vh;
+    margin-bottom: 2rem;
   }
 
   .devices-img {
@@ -285,14 +286,12 @@ header {
 
   .pc-download-btn {
     display: inline-block;
-    font-size: 2vw;
+    font-size: 2rem;
     color: $accent-text-color;
     background-color: white;
     box-shadow: 0.5rem 0.5rem 0.3rem $boxshadow-color;
-    width: 23vw;
-    height: 4.7vw;
-    line-height: 4.7vw;
-    border-radius: 100vh;
+    padding: 1.2rem 4rem;
+    border-radius: 40rem;
 
     &:hover {
       transform: scale(1.05);
@@ -308,45 +307,37 @@ header {
 
 .overview h2,
 .feature h2 {
-  color: $theme-color;
+  color: $primary-color;
 }
 
 .overview-img {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 2% auto 4%;
 }
 
 .feature {
-  padding: 15% 5%;
-
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
   &:nth-child(odd) {
-    background-color: #f2fafa;
+    flex-direction: column-reverse;
   }
 
   &:nth-child(even) {
-    background-color: #f8fdfd;
+    flex-direction: column;
   }
 }
-
-.feature-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2%;
-}
-
 .feature-img {
-  width: 38vw;
+  width: 90%;
   height: 100%;
   margin: 0 2%;
   max-width: calc(750px * 0.38);
 }
 
 .discript-wrap {
-  width: 45vw;
-  height: auto;
   margin: 0 2%;
 }
 
@@ -356,16 +347,25 @@ header {
 
 @media screen and (min-width: 600px) {
   .feature {
-    padding: 8% 7%;
+    flex-direction: row;
+    padding: 4rem 2rem;
+    &:nth-child(odd) {
+      flex-direction: row;
+    }
+    &:nth-child(even) {
+      flex-direction: row;
+    }
   }
 
   .discript-wrap {
-    width: 36vw;
+    width: 35vw;
     margin: 0 2%;
   }
 
   .feature-img {
     margin: 0 2%;
+    width: 50%;
+    max-width: 100%;
   }
 }
 
@@ -376,9 +376,8 @@ header {
 
 .usage {
   background-color: white;
-  width: 90%;
-  padding: 2vmin 5vmin;
-  margin-top: 4%;
+  padding: 2rem 2.4rem;
+  margin: 2rem 0;
   border-radius: 0.6rem;
 
   img {
@@ -387,7 +386,7 @@ header {
     margin-top: 4%;
   }
 
-  h2 {
+  h3 {
     color: $accent-text-color;
     line-height: 3.2rem;
   }
@@ -445,18 +444,14 @@ header {
 }
 
 .discription-contents {
-  max-height: 0;
-  line-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  padding-top: 2rem;
+  display: none;
 }
 
 .checkbox-hide:checked ~ .discription-contents {
   max-height: 3000px;
-  line-height: 1.5;
-  opacity: 1;
-  visibility: visible;
+  line-height: 180%;
+  display: block;
 
   ol {
     margin-top: 2%;
@@ -468,48 +463,24 @@ header {
 }
 
 .question {
-  position: relative;
-  display: inline-block;
-  border: 0.1rem solid $theme-color;
-  background-color: white;
-  border-radius: 2.25rem;
-  z-index: 2;
-  padding: 0 3%;
-
+  margin-bottom: 2.2rem;
   h3 {
-    line-height: 4.3rem;
-    margin: 0;
-
     &::before {
       content: 'Q. ';
       font-size: 2.3rem;
-      color: $theme-color;
-      line-height: 2.8rem;
+      color: $primary-color;
     }
   }
 }
 
 .answer {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  width: 78%;
-  border-radius: 1rem;
-  margin-top: -2%;
-  margin-bottom: 6%;
-  padding: 3vmin 8vmin 4vmin;
-  background-color: $sub-background-color1;
-  z-index: 1;
-
+  margin-bottom: 6rem;
   h3 {
-    font-size: 1.4rem;
-    margin: 0;
-    line-height: 2.8rem;
-
+    margin-bottom: 1rem;
     &::before {
       content: 'A. ';
       font-size: 2.3rem;
-      color: $theme-color;
+      color: $primary-sub-color;
     }
   }
 
@@ -537,9 +508,9 @@ header {
   width: calc(100%-3vmin);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 0.6rem rgba(0, 0, 0, 0.096);
-  margin: 3% auto 2% auto;
+  margin: 2rem auto;
   background-color: white;
-  padding: 2vh 3vw;
+  padding: 2rem 2.4rem;
   align-items: center;
 }
 
@@ -556,7 +527,7 @@ header {
   h2 {
     padding-left: 0.8rem;
     margin: 0 0 0.4rem;
-    border-left: 0.4rem solid $theme-color;
+    border-left: 0.4rem solid $primary-color;
     line-height: 2.3rem;
   }
 
@@ -601,11 +572,11 @@ header {
 
 .link {
   p {
-    margin-bottom: 3%;
+    margin-bottom: 3rem;
   }
   h3 {
     font-size: 1.7rem;
-    color: $theme-color;
+    color: $primary-color;
   }
 }
 
@@ -618,15 +589,15 @@ header {
   h2 {
     font-size: 2.1rem;
     color: white;
-    background-color: $theme-color;
-    height: 5.5rem;
-    line-height: 5.5rem;
+    background-color: $primary-color;
+    height: 6.8rem;
+    line-height: 6.8rem;
     border-radius: 1rem 1rem 0 0;
     text-align: center;
   }
 
   div {
-    padding: 3% 5% 4%;
+    padding: 2rem 2.4rem;
   }
 }
 
@@ -675,7 +646,7 @@ footer {
 
 .policy h1,
 .terms h1 {
-  color: $theme-color;
+  color: $primary-color;
 }
 
 .policy ol,
@@ -691,7 +662,7 @@ footer {
 
 .exit-btn {
   display: block;
-  background-color: $theme-color;
+  background-color: $primary-color;
   padding: 1rem;
   color: white;
   border-radius: 0.5rem;
@@ -704,7 +675,7 @@ footer {
   padding: calc(9vh + 3%) 10%;
   text-align: center;
   h1 {
-    color: $theme-color;
+    color: $primary-color;
   }
   h2 {
     margin: 7% auto 1%;
@@ -749,7 +720,7 @@ footer {
   }
 
   hr {
-    border-top: 1px solid $theme-color;
+    border-top: 1px solid $primary-color;
   }
   .sponsorpage-btn {
     width: 40rem;
