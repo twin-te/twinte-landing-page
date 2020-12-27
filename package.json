@@ -10,7 +10,7 @@
     "cssnano": "^4.1.10",
     "sass": "^1.26.2"
   },
-   "browserslist": [
+  "browserslist": [
     "last 2 versions",
     "not edge 85",
     "not firefox 81",
