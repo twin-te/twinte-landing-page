@@ -8,14 +8,12 @@
   "devDependencies": {
     "@types/node": "^13.1.1",
     "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.2"
   },
-   "browserslist": [
-    "last 2 versions",
-    "not edge 85",
-    "not firefox 81",
-    "not op_mob 59",
-    "not opera > 69",
-    "not dead"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
   ]
 }
