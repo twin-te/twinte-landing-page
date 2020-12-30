@@ -6,13 +6,7 @@ html 版です
 
 ### 環境
 
-yarn と parcel をインストールしてください
-
-- parcel のインストール
-
-```shell
-yarn global add parcel-bundler
-```
+yarn をインストールしてください
 
 - 依存のインストール
 
