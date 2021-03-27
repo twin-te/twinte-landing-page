@@ -5,10 +5,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@mixin void-text-liner {
-  background-clip: none;
-  -webkit-text-fill-color: inherit;
-}
 @mixin ellipsis {
   overflow: hidden;
   white-space: nowrap;
@@ -24,56 +20,21 @@
   line-height: $single-line;
 }
 
-// button
-@mixin button-cursor {
-  user-select: none;
-  cursor: pointer;
-}
-@mixin button-active($negative-shadow-convex: 0 0 0 #00000000) {
-  background: $primary-liner;
-  box-shadow: $negative-shadow-convex, $negative-shadow-convex,
-    $shadow-primary-concave;
-}
-@mixin button-active-danger($negative-shadow-convex: 0 0 0 #00000000) {
-  background: $danger;
-  box-shadow: $negative-shadow-convex, $negative-shadow-convex,
-    $shadow-danger-concave;
-}
-@mixin button-inactive($negative-shadow-concave: inset 0 0 0 #00000000) {
-  box-shadow: $shadow-convex, $negative-shadow-concave;
-}
-@mixin button-hover {
-  box-shadow: $shadow-convex-hover;
-}
-
 // icon
 @mixin icon-cursor {
   user-select: none;
   cursor: default;
 }
 
-// スクロール用マスク
-// (↓スクロールさせたい要素をwrapする親要素に設定する。)
+// img用マスク
+// (↓グラデーションマスクをかける要素をwrapする親要素に設定する。)
 @mixin scroll-mask {
   -webkit-mask-image: linear-gradient(
     180deg,
-    rgba(196, 196, 196, 0) 0%,
-    rgba(196, 196, 196, 10) 1.2rem,
-    rgba(196, 196, 196, 10) 92.71%,
+    #c4c4c4 86.81%,
+    rgba(196, 196, 196, 0) 96.74%,
     rgba(196, 196, 196, 0) 100%
   );
-  mask-image: linear-gradient(
-    180deg,
-    rgba(196, 196, 196, 0) 0%,
-    rgba(196, 196, 196, 10) 1.2rem,
-    rgba(196, 196, 196, 10) 92.71%,
-    rgba(196, 196, 196, 0) 100%
-  );
-}
-
-// Home以外のページで使う。
-@mixin max-width {
-  max-width: $max-pc-item-width;
 }
 
 @mixin flexible() {
@@ -106,31 +67,23 @@
 }
 
 // Media Queries
-@mixin tab-and-pc {
-  @media only screen and (min-height: $pc-and-tab-height) {
-    // 画面の高さが一定以上ある場合(このブレイクポイントでrootのremの大きさを切り替える)
+@mixin sp {
+  @media only screen and (max-width: 677px) {
+    // スマホレイアウト
     @content;
   }
 }
 
-@mixin landscape {
-  @media screen and (orientation: landscape) {
-    // 画面が横向きの場合
+@mixin tablet {
+  @media screen and (min-width: 678px) and(max-width: 999px) {
+    // タブレットレイアウト
     @content;
   }
 }
 
-@mixin portrait {
-  @media screen and (orientation: portrait) {
-    // 画面が縦向きの場合
-    @content;
-  }
-}
-
-@mixin large-screen {
-  @media only screen and (min-height: $pc-and-tab-height),
-    (orientation: landscape) {
-    // 画面の高さが一定以上or画面が横向きの場合
+@mixin pc {
+  @media screen and (min-width: 1000) {
+    // パソコンレイアウト
     @content;
   }
 }
