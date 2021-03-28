@@ -1,4 +1,17 @@
 // text
+@mixin feature-title {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160%;
+}
+@mixin text-discription {
+  color: $text-main;
+  font-size: $font-medium;
+  line-height: 180%;
+  font-weight: regular;
+}
 @mixin text-liner {
   color: #6bcedc; // baakground-clip に対応していない場合の色
   background: $primary-liner;
@@ -9,15 +22,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-@mixin heading-1 {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 140%;
-  color: $text-main;
-}
-@mixin html {
-  line-height: 140%;
 }
 
 // icon
@@ -36,6 +40,8 @@
     rgba(196, 196, 196, 0) 100%
   );
 }
+
+// layout
 
 @mixin flexible() {
   display: inline-block;
