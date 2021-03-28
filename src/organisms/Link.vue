@@ -59,9 +59,16 @@ export default defineComponent({
 
 .link {
   background: $base;
-  padding: 8rem 2rem 14rem;
 
-  @include tab-and-pc {
+  @include sp {
+    padding: 8rem 2rem;
+  }
+
+  @include tablet {
+    padding: 8rem 6rem;
+  }
+
+  @include pc {
     padding: 8rem 27rem 14rem;
   }
 }
