@@ -41,7 +41,7 @@ export default defineComponent({
 .link-item {
   &__title {
     font-size: $font-large;
-    line-height: $single-line;
+    line-height: 140%;
 
     margin: 4.2rem 0 1.2rem 0;
     a {
