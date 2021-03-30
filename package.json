@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format:fix": "prettier ./src --write"
   },
   "dependencies": {
     "vue": "^3.0.5",
