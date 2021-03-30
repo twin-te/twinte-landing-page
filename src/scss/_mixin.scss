@@ -74,14 +74,14 @@
 
 // Media Queries
 @mixin sp {
-  @media only screen and (max-width: 677px) {
+  @media only screen and (max-width: 500px) {
     // スマホレイアウト
     @content;
   }
 }
 
 @mixin tablet {
-  @media screen and (min-width: 678px) and(max-width: 999px) {
+  @media screen and (min-width: 501px) and(max-width: 999px) {
     // タブレットレイアウト
     @content;
   }
