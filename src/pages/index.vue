@@ -1,7 +1,7 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
   <!-- 後で消す -->
-  <div @click="clickHandler" class="image"></div>
+  <div class="image"></div>
   <div class="image-bottom"></div>
   <Link />
 </template>
