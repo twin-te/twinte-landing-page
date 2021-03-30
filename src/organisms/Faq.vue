@@ -1,0 +1,88 @@
+<template>
+  <section class="faq">
+    <SectionTitle title="Q&A" />
+    <div class="faq__row">
+      <FaqItem
+        question="このサービスは大学公式のものですか？"
+        answer="いいえ。筑波大生の有志によるものです。"
+      >
+        <template #body>
+          これは筑波大生によって構成されたグループ（Twin:te）が、日常の不便を解消するために製作したサービスです。
+          主な構成員は<a href="#menber">制作メンバー</a>をご覧ください。
+        </template>
+      </FaqItem>
+    </div>
+    <div class="faq__row">
+      <FaqItem
+        question="Twin:teが保存するデータは何ですか？"
+        answer="ユーザーの複数端末を紐付けるためのデータのみを保存しています。"
+      >
+        <template #body>
+          複数端末で共有するためTwin:teはユーザーがTwin:teのログインに利用したTwittterアカウント/Googleアカウントと、保存した時間割の情報（メモ・出席欠席遅刻回数・変更した教室情報等を含む）
+          を結び付けて保存します。
+          この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
+          なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
+          詳細は<a href="example.com">利用規約</a>をご覧ください。
+        </template>
+      </FaqItem>
+    </div>
+    <div class="faq__row">
+      <FaqItem question="利用は無料ですか？" answer="利用は完全無料です。">
+        <template #body>
+          また、広告もございません。 なお、<a href="example.com">こちら</a
+          >にて寄付を受け付けております。
+          これまでの寄付金総額や寄付にご協力いただいた方々は<a
+            href="example.com"
+            >こちら</a
+          >のページに掲載しています。
+        </template>
+      </FaqItem>
+    </div>
+    <div class="faq__row">
+      <FaqItem
+        question="Twinsの履修情報を自動で読み込めますか ?"
+        answer="はい。Twin:teのサーバーがユーザーの情報を取得することなく、Twinsの情報を読み込めます。"
+      >
+        <template #body>
+          ユーザーが自分でTwinsにログインしたあと、「Twin:teにインポート」ボタンを押すことで利用できます。
+          ユーザーが自分でTwinsにログインをするので、Twin:teはユーザーの学籍番号・パスワードを取得することはございません。
+          この機能はiOS・Android版Twin:teのみで利用できます。
+          この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
+        </template>
+      </FaqItem>
+    </div>
+  </section>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import FaqItem from "~/components/FaqItem.vue";
+import SectionTitle from "~/components/SectionTitle.vue";
+
+export default defineComponent({
+  components: { FaqItem, SectionTitle },
+});
+</script>
+
+<style lang="scss" scoped>
+@import "~/scss/main.scss";
+
+.faq {
+  background: url(~/images/bg-graphic2.jpg);
+  background-size: cover;
+  &__row {
+    margin-bottom: 3.2rem;
+  }
+  @include sp {
+    padding: 8rem 2rem;
+  }
+
+  @include tablet {
+    padding: 8rem 6rem;
+  }
+
+  @include pc {
+    padding: 8rem 27rem 8rem;
+  }
+}
+</style>
