@@ -4,6 +4,7 @@
   <div class="image"></div>
   <div class="image-bottom"></div>
   <Link />
+  <OptionFeatures />
   <Faq />
 </template>
 
@@ -11,6 +12,7 @@
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
 import Link from "~/organisms/Link.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
+import OptionFeatures from "~/organisms/OptionFeatures.vue";
 import Faq from "~/organisms/Faq.vue";
 
 export default defineComponent({
@@ -18,6 +20,7 @@ export default defineComponent({
   components: {
     HeaderMenu,
     Link,
+    OptionFeatures,
     Faq,
   },
   setup: () => {
