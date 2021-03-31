@@ -66,7 +66,7 @@ export default defineComponent({
   &__item {
     width: 100%;
     @include pc {
-      width: 25%;
+      width: 272px;
     }
   }
   &__title-image {
@@ -83,7 +83,7 @@ export default defineComponent({
   flex-direction: column;
   @include pc {
     margin: auto;
-    max-width: 900px;
+    max-width: 928px;
     flex-direction: row;
   }
 }
