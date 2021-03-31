@@ -23,3 +23,11 @@ a {
     text-decoration: none;
   }
 }
+.pc {
+  @include sp {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}

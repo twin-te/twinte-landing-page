@@ -1,16 +1,18 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
   <Top />
+  <Feature />
   <Link />
   <Faq />
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
+import Link from "~/organisms/Link.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
 import Faq from "~/organisms/Faq.vue";
-import Link from "~/organisms/Link.vue";
 import Top from "~/organisms/Top.vue";
+import Feature from "~/organisms/Feature.vue";
 
 export default defineComponent({
   name: "Home",
@@ -19,6 +21,7 @@ export default defineComponent({
     Link,
     Faq,
     Top,
+    Feature,
   },
   setup: () => {
     const inTop = ref(false);
