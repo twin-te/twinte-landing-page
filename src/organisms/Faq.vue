@@ -8,7 +8,7 @@
       >
         <template #body>
           これは筑波大生によって構成されたグループ（Twin:te）が、日常の不便を解消するために製作したサービスです。
-          主な構成員は<a href="#menber">制作メンバー</a>をご覧ください。
+          主な構成員は<a href="#member">制作メンバー</a>をご覧ください。
         </template>
       </FaqItem>
     </div>
@@ -22,17 +22,18 @@
           を結び付けて保存します。
           この情報はログインしたユーザーのみが見ることができる物であり、他のユーザーには共有されません。
           なお、Twin:teはログインに利用したTwittterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
-          詳細は<a href="example.com">利用規約</a>をご覧ください。
+          詳細は<a href="/terms">利用規約</a>をご覧ください。
         </template>
       </FaqItem>
     </div>
     <div class="faq__row">
       <FaqItem question="利用は無料ですか？" answer="利用は完全無料です。">
         <template #body>
-          また、広告もございません。 なお、<a href="example.com">こちら</a
+          また、広告もございません。 なお、<a
+            href="https://sponsorship.twinte.net"
+            >こちら</a
           >にて寄付を受け付けております。
-          これまでの寄付金総額や寄付にご協力いただいた方々は<a
-            href="example.com"
+          これまでの寄付金総額や寄付にご協力いただいた方々は<a href="/sponsor"
             >こちら</a
           >のページに掲載しています。
         </template>
