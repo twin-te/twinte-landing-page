@@ -3,11 +3,13 @@
   <Top />
   <Link />
   <Faq />
+  <Bottom />
   <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
+import Bottom from "~/organisms/Bottom.vue";
 import Faq from "~/organisms/Faq.vue";
 import Footer from "~/organisms/Footer.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
@@ -17,6 +19,7 @@ import Top from "~/organisms/Top.vue";
 export default defineComponent({
   name: "Home",
   components: {
+    Bottom,
     Faq,
     Footer,
     HeaderMenu,
