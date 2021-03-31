@@ -69,6 +69,12 @@ export default defineComponent({
 @import "~/scss/main.scss";
 
 .faq {
+  a {
+    &:link {
+      color: $text-link;
+      text-decoration: none;
+    }
+  }
   background: url(~/images/bg-graphic2.jpg);
   background-size: cover;
   &__row {

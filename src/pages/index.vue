@@ -2,8 +2,8 @@
   <HeaderMenu v-model:inTop="inTop" />
   <Top />
   <Feature />
-  <Link />
   <Faq />
+  <Link />
 </template>
 
 <script lang="ts">

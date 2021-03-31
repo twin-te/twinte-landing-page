@@ -17,12 +17,6 @@ body {
   font-family: Material Icons;
   @include iconlayout;
 }
-a {
-  &:link {
-    color: $text-link;
-    text-decoration: none;
-  }
-}
 .pc {
   @include sp {
     display: none;

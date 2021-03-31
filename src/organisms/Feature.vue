@@ -16,7 +16,7 @@
         <img
           id="colon1"
           alt="マスコットキャラクター"
-          src="src/images/colon1.png"
+          src="../images/colon1.png"
         />
       </section>
       <section class="feature__img-mask">
@@ -24,15 +24,15 @@
           <img
             id="tsukuba"
             alt="スクリーンショット"
-            src="src/images/tsukuba.png"
+            src="../images/tsukuba.png"
           />
-          <img id="main" alt="スクリーンショット" src="src/images/main.png" />
+          <img id="main" alt="スクリーンショット" src="../images/main.png" />
         </div>
       </section>
       <img
         id="eyecatch"
         alt="スクリーンショット"
-        src="src/images/eyecatch-sp.png"
+        src="../images/eyecatch-sp.png"
       />
     </div>
     <div class="feature__item">
@@ -41,12 +41,12 @@
           <img
             id="timetable-1"
             alt="スクリーンショット"
-            src="src/images/timetable-1.png"
+            src="../images/timetable-1.png"
           />
           <img
             id="timetable-2"
             alt="スクリーンショット"
-            src="src/images/timetable-2.png"
+            src="../images/timetable-2.png"
           />
         </div>
       </section>
@@ -61,7 +61,7 @@
         <img
           id="colon2"
           alt="マスコットキャラクター"
-          src="src/images/colon2.png"
+          src="../images/colon2.png"
         />
       </section>
     </div>
@@ -79,9 +79,9 @@
       </FeatureDiscription>
       <section class="feature__img-mask">
         <div class="feature__img-container">
-          <img id="add-1" alt="スクリーンショット" src="src/images/add-1.png" />
-          <img id="add-2" alt="スクリーンショット" src="src/images/add-2.png" />
-          <img id="add-3" alt="スクリーンショット" src="src/images/add-3.png" />
+          <img id="add-1" alt="スクリーンショット" src="../images/add-1.png" />
+          <img id="add-2" alt="スクリーンショット" src="../images/add-2.png" />
+          <img id="add-3" alt="スクリーンショット" src="../images/add-3.png" />
         </div>
       </section>
     </div>
@@ -89,7 +89,7 @@
       <img
         id="detail-1"
         alt="スクリーンショット"
-        src="src/images/detail-1.png"
+        src="../images/detail-1.png"
       />
       <div class="feature__wrap">
         <FeatureDiscription>
@@ -105,12 +105,12 @@
             <img
               id="detail-2"
               alt="スクリーンショット"
-              src="src/images/detail-2.png"
+              src="../images/detail-2.png"
             />
             <img
               id="detail-3"
               alt="スクリーンショット"
-              src="src/images/detail-3.png"
+              src="../images/detail-3.png"
             />
           </div>
         </section>
