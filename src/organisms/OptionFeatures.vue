@@ -53,7 +53,7 @@ export default defineComponent({
     width: 272px;
   }
   @include sp {
-    padding: 8rem 2rem;
+    padding: 8rem 5rem;
   }
 
   @include tablet {
