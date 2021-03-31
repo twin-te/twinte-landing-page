@@ -40,7 +40,4 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
-.link {
-  margin-bottom: 50rem;
-}
 </style>
