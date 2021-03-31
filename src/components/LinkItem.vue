@@ -50,7 +50,7 @@ export default defineComponent({
     }
   }
   &__description {
-    // @include html;
+    @include text-discription;
   }
 }
 </style>

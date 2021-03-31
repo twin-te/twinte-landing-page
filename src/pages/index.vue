@@ -1,11 +1,10 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
-  <!-- 後で消す -->
-  <div class="image"></div>
-  <div class="image-bottom"></div>
-  <Link />
   <OptionFeatures />
+  <Top />
+  <Feature />
   <Faq />
+  <Link />
 </template>
 
 <script lang="ts">
@@ -14,6 +13,8 @@ import Link from "~/organisms/Link.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
 import OptionFeatures from "~/organisms/OptionFeatures.vue";
 import Faq from "~/organisms/Faq.vue";
+import Top from "~/organisms/Top.vue";
+import Feature from "~/organisms/Feature.vue";
 
 export default defineComponent({
   name: "Home",
@@ -22,6 +23,8 @@ export default defineComponent({
     Link,
     OptionFeatures,
     Faq,
+    Top,
+    Feature,
   },
   setup: () => {
     const inTop = ref(false);
@@ -32,7 +35,7 @@ export default defineComponent({
           inTop.value = entries[0].isIntersecting;
         });
       });
-      const target = document.querySelector(".image");
+      const target = document.querySelector(".top");
       observer.observe(target as Element);
     });
 
@@ -43,15 +46,4 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
-
-// 後で消す
-.image {
-  width: 100%;
-  height: 10rem;
-  background: $primary-liner;
-}
-.image-bottom {
-  height: 30rem;
-  background: $base;
-}
 </style>
