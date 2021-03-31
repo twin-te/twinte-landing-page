@@ -30,6 +30,12 @@
   cursor: default;
 }
 
+// button
+@mixin button-cursor {
+  user-select: none;
+  cursor: pointer;
+}
+
 // img用マスク
 // (↓グラデーションマスクをかける要素をwrapする親要素に設定する。)
 @mixin scroll-mask {
@@ -55,7 +61,7 @@
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-@mixin center-asolute {
+@mixin center-absolute {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,15 +87,21 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: 501px) and(max-width: 999px) {
+  @media only screen and (min-width: 501px) and(max-width: 999px) {
     // タブレットレイアウト
     @content;
   }
 }
 
 @mixin pc {
-  @media screen and (min-width: 1000) {
+  @media only screen and (min-width: 1000px) {
     // パソコンレイアウト
+    @content;
+  }
+}
+
+@mixin tab-and-sp {
+  @media only screen and (max-width: 999px) {
     @content;
   }
 }
