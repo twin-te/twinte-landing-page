@@ -21,7 +21,7 @@ export default defineComponent({
 
 .section-title {
   @include center-flex(column);
-  @include heading-1;
+  // @include heading-1;
   margin-bottom: 6rem;
 
   &::after {
