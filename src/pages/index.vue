@@ -4,18 +4,21 @@
   <div class="image"></div>
   <div class="image-bottom"></div>
   <Link />
+  <Faq />
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
 import Link from "~/organisms/Link.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
+import Faq from "~/organisms/Faq.vue";
 
 export default defineComponent({
   name: "Home",
   components: {
     HeaderMenu,
     Link,
+    Faq,
   },
   setup: () => {
     const inTop = ref(false);
