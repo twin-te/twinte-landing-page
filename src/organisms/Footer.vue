@@ -27,7 +27,6 @@ export default defineComponent({
 
 .footer {
   background: $base;
-  width: 100%;
   display: grid;
   @include pc {
     padding: 1.8rem 0 1.8rem 7.2rem;

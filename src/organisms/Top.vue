@@ -8,18 +8,29 @@
         class="logo-and-link__title-logo"
       />
       <img
-        @click="externalLink('https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8')"
+        @click="
+          externalLink(
+            'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8'
+          )
+        "
         src="../images/app-store.png"
         alt="Apple Store からダウンロード"
         class="logo-and-link__apple-store"
       />
       <img
-        @click="externalLink('https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1')"
+        @click="
+          externalLink(
+            'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+          )
+        "
         src="../images/google-play.png"
         alt="Google Play からダウンロード"
         class="logo-and-link__google-play"
       />
-      <div @click="externalLink('https://app.twinte.net/')" class="logo-and-link__pc-button">
+      <div
+        @click="externalLink('https://app.twinte.net/')"
+        class="logo-and-link__pc-button"
+      >
         <span>PC版</span>
       </div>
     </div>

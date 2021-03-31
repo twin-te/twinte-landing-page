@@ -86,7 +86,6 @@ export default defineComponent({
   top: 0;
   left: 0;
   z-index: 10;
-  width: 100%;
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
   backdrop-filter: blur(8px);
