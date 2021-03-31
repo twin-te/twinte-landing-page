@@ -1,5 +1,6 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
+  <OptionFeatures />
   <Top />
   <Feature />
   <Faq />
@@ -10,6 +11,7 @@
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
 import Link from "~/organisms/Link.vue";
 import HeaderMenu from "~/organisms/HeaderMenu.vue";
+import OptionFeatures from "~/organisms/OptionFeatures.vue";
 import Faq from "~/organisms/Faq.vue";
 import Top from "~/organisms/Top.vue";
 import Feature from "~/organisms/Feature.vue";
@@ -19,6 +21,7 @@ export default defineComponent({
   components: {
     HeaderMenu,
     Link,
+    OptionFeatures,
     Faq,
     Top,
     Feature,
