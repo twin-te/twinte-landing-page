@@ -32,16 +32,6 @@
         'header-menu__item--in-top': inTop,
         'header-menu__item--opened': opened,
       }"
-      href="#usage"
-    >
-      使い方
-    </a>
-    <a
-      :class="{
-        'header-menu__item': true,
-        'header-menu__item--in-top': inTop,
-        'header-menu__item--opened': opened,
-      }"
       href="#member"
     >
       主メンバー
@@ -95,6 +85,7 @@ export default defineComponent({
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
@@ -125,7 +116,7 @@ export default defineComponent({
     @include button-cursor;
     @include pc {
       margin-top: 4.2rem;
-      &:nth-child(5) {
+      &:nth-child(4) {
         margin-right: 7.4rem;
       }
     }
@@ -143,7 +134,7 @@ export default defineComponent({
       &:nth-child(1) {
         margin-top: 11.6rem;
       }
-      &:nth-child(5) {
+      &:nth-child(4) {
         margin-bottom: 3.2rem;
       }
     }
