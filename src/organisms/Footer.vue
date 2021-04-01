@@ -5,7 +5,9 @@
       alt="Twin-teのロゴ"
       class="footer__logo"
     />
-    <div class="footer__email">email: info@twinte.net</div>
+    <a href="mailto:info@twinte.net" class="footer__email"
+      >email: info@twinte.net</a
+    >
     <div class="footer__links">
       <a href="/sponsor"> 寄付者一覧 </a>
       <a href="/policy"> プライバシーポリシー </a>
@@ -60,11 +62,16 @@ export default defineComponent({
   }
   &__email {
     grid-area: email;
-    color: $button-gray;
     line-height: 140%;
+    color: $button-gray;
+    text-decoration: none;
+    &:link {
+      color: $button-gray;
+    }
   }
   &__links {
     grid-area: links;
+    font-weight: 400;
     @include pc {
       grid-auto-flow: column;
       display: grid;
