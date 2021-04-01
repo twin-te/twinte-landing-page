@@ -10,4 +10,10 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style lang="scss">
+@import "~/scss/main.scss";
+html {
+  height: 100%;
+  background: $base-liner;
+}
+</style>
