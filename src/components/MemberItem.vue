@@ -76,6 +76,7 @@ export default defineComponent({
     "icon-link"
     / 1fr;
   text-align: center;
+  border-radius: 1.2rem;
   @include sp {
     width: 100%;
     grid-template:
