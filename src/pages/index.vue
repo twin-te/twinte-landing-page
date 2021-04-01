@@ -11,19 +11,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, watchEffect } from "vue";
-import Bottom from "~/organisms/Bottom.vue";
-import Faq from "~/organisms/Faq.vue";
-import Footer from "~/organisms/Footer.vue";
-import HeaderMenu from "~/organisms/HeaderMenu.vue";
-import Link from "~/organisms/Link.vue";
-import OptionFeatures from "~/organisms/OptionFeatures.vue";
-import Top from "~/organisms/Top.vue";
-import Feature from "~/organisms/Feature.vue";
-import Member from "~/organisms/Member.vue";
+import { defineComponent, onMounted, ref, watchEffect, nextTick } from 'vue';
+import Bottom from '~/organisms/Bottom.vue';
+import Faq from '~/organisms/Faq.vue';
+import Footer from '~/organisms/Footer.vue';
+import HeaderMenu from '~/organisms/HeaderMenu.vue';
+import Link from '~/organisms/Link.vue';
+import OptionFeatures from '~/organisms/OptionFeatures.vue';
+import Top from '~/organisms/Top.vue';
+import Feature from '~/organisms/Feature.vue';
+import Member from '~/organisms/Member.vue';
+import ScrollReveal from 'scrollreveal';
 
 export default defineComponent({
-  name: "Home",
+  name: 'Home',
   components: {
     Bottom,
     Faq,
@@ -38,13 +39,56 @@ export default defineComponent({
   setup: () => {
     const inTop = ref(false);
 
+    nextTick(() => {
+      ScrollReveal().reveal('.bottom', {
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        duration: 340,
+        delay: 100,
+        distance: '50px',
+        opacity: 0,
+        scale: 1,
+      });
+      ScrollReveal().reveal('.bottom-delay', {
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        duration: 340,
+        delay: 300,
+        distance: '50px',
+        opacity: 0,
+        scale: 1,
+      });
+      ScrollReveal().reveal('.top', {
+        origin: 'top',
+        easing: 'ease-in-out',
+        duration: 340,
+        delay: 100,
+        distance: '50px',
+        opacity: 0,
+        scale: 1,
+      });
+      ScrollReveal().reveal('.opacity', {
+        duration: 300,
+        delay: 100,
+        opacity: 0,
+        scale: 1,
+      });
+      ScrollReveal().reveal('.scale', {
+        easing: 'ease-in-out',
+        duration: 250,
+        delay: 100,
+        opacity: 0,
+        scale: 0.9,
+      });
+    });
+
     onMounted(() => {
       const observer = new IntersectionObserver((entries) => {
         watchEffect(() => {
           inTop.value = entries[0].isIntersecting;
         });
       });
-      const target = document.querySelector(".top");
+      const target = document.querySelector('.top');
       observer.observe(target as Element);
     });
 
@@ -54,5 +98,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 </style>
