@@ -61,6 +61,7 @@ export default defineComponent({
   }
   @include tablet {
     height: 130vw;
+    max-height: 845px;
   }
   @include sp {
     height: 100vh;
@@ -78,6 +79,7 @@ export default defineComponent({
     }
     @include tablet {
       width: 100%;
+      max-width: 650px;
     }
     @include sp {
       width: 57rem;
@@ -97,9 +99,10 @@ export default defineComponent({
     }
     @include tablet {
       width: 50vw;
+      max-width: 325px;
       position: absolute;
       right: 7vw;
-      bottom: 9vw;
+      bottom: 10vmax;
     }
     @include sp {
       @include center-absolute;
@@ -120,7 +123,7 @@ export default defineComponent({
       "... ... ..." 16%
       "apple ... google" auto
       "... ... ..." 8%
-      "pc pc pc" 14%
+      "pc pc pc" 20%
       / 1fr 1.6% 1fr;
   }
   &__title-logo {

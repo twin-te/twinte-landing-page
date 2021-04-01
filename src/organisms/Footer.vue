@@ -65,6 +65,7 @@ export default defineComponent({
     line-height: 140%;
     color: $button-gray;
     text-decoration: none;
+    font-weight: 500;
     &:link {
       color: $button-gray;
     }
@@ -89,7 +90,7 @@ export default defineComponent({
       color: $button-gray;
       text-decoration: none;
       line-height: 140%;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 }

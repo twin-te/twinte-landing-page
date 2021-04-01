@@ -20,6 +20,8 @@ export default defineComponent({
 @import "~/scss/main.scss";
 
 .section-title {
+  font-weight: bold;
+  font-size: 2rem;
   @include center-flex(column);
   margin-bottom: 6rem;
 

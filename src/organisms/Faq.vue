@@ -79,6 +79,10 @@ export default defineComponent({
   background-size: cover;
   &__row {
     margin-bottom: 3.2rem;
+    @include pc {
+      margin: 0 auto 3.2rem;
+      width: 90rem;
+    }
   }
   @include sp {
     padding: 8rem 2rem;
@@ -89,7 +93,7 @@ export default defineComponent({
   }
 
   @include pc {
-    padding: 8rem 27rem 8rem;
+    padding: 8rem 0 8rem;
   }
 }
 </style>

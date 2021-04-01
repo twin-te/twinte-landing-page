@@ -69,7 +69,9 @@ export default defineComponent({
   }
 
   @include pc {
-    padding: 8rem 27rem 14rem;
+    padding: 8rem 0 14rem;
+    width: 90rem;
+    margin: 0 auto;
   }
 }
 </style>

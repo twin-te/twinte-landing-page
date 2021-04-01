@@ -65,15 +65,15 @@ export default defineComponent({
   display: grid;
   width: 220px;
   grid-template:
-    "icon     "
+    "icon     " 120px
     "...      " 28px
     "name     "
     "...      " 8px
-    "desc     "
+    "desc     " 66px
     "...      " 16px
-    "link     "
+    "link     " 22px
     "...      " 12px
-    "icon-link"
+    "icon-link" 30px
     / 1fr;
   text-align: center;
   border-radius: 1.2rem;
@@ -129,6 +129,7 @@ export default defineComponent({
     grid-area: icon-link;
     display: flex;
     justify-content: center;
+    bottom: 0;
     @include sp {
       justify-content: flex-start;
     }
