@@ -93,7 +93,6 @@ export default defineComponent({
   @include pc {
     display: flex;
     justify-content: flex-end;
-    gap: 3.6rem;
   }
   &--in-top {
     position: absolute;
@@ -104,7 +103,6 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.2rem;
     background: rgba(239, 241, 246, 0.85);
     backdrop-filter: blur(8px);
   }
@@ -116,9 +114,13 @@ export default defineComponent({
     height: 2rem;
     line-height: 2rem;
     text-decoration: none;
+
     @include button-cursor;
     @include pc {
       margin-top: 4.2rem;
+      &:not(:first-child) {
+        margin-left: 3.6rem;
+      }
       &:nth-child(4) {
         margin-right: 7.4rem;
       }
@@ -135,6 +137,9 @@ export default defineComponent({
     &--opened {
       @include tab-and-sp {
         @include flexible;
+      }
+      &:not(:first-child) {
+        margin-top: 3.2rem;
       }
       color: $button-gray;
       &:link {

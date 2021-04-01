@@ -136,17 +136,20 @@ export default defineComponent({
     padding: 8rem 0 14rem;
   }
   &__content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
     gap: 16px;
     @include tablet {
       width: calc(220px * 2 + 16px * 3);
       margin: auto;
+      grid-template-columns: repeat(auto-fit, 22rem);
     }
 
     @include pc {
       width: calc(220px * 4 + 16px * 3);
       margin: auto;
+      grid-template-columns: repeat(auto-fit, 22rem);
     }
   }
 }
