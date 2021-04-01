@@ -1,30 +1,36 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
-  <OptionFeatures />
   <Top />
+  <OptionFeatures />
   <Feature />
   <Faq />
   <Link />
+  <Bottom />
+  <Footer />
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, watchEffect } from "vue";
-import Link from "~/organisms/Link.vue";
-import HeaderMenu from "~/organisms/HeaderMenu.vue";
-import OptionFeatures from "~/organisms/OptionFeatures.vue";
+import Bottom from "~/organisms/Bottom.vue";
 import Faq from "~/organisms/Faq.vue";
-import Top from "~/organisms/Top.vue";
 import Feature from "~/organisms/Feature.vue";
+import Footer from "~/organisms/Footer.vue";
+import HeaderMenu from "~/organisms/HeaderMenu.vue";
+import Link from "~/organisms/Link.vue";
+import OptionFeatures from "~/organisms/OptionFeatures.vue";
+import Top from "~/organisms/Top.vue";
 
 export default defineComponent({
   name: "Home",
   components: {
+    Bottom,
+    Faq,
+    Feature,
+    Footer,
     HeaderMenu,
     Link,
     OptionFeatures,
-    Faq,
     Top,
-    Feature,
   },
   setup: () => {
     const inTop = ref(false);

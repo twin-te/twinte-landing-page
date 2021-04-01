@@ -82,11 +82,11 @@ export default defineComponent({
 @import "~/scss/main.scss";
 
 .header-menu {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  width: 100%;
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
   backdrop-filter: blur(8px);
@@ -110,6 +110,9 @@ export default defineComponent({
   }
   &__item {
     color: $button-gray;
+    &:link {
+      color: $button-gray;
+    }
     height: 2rem;
     line-height: 2rem;
     text-decoration: none;
@@ -125,12 +128,18 @@ export default defineComponent({
     }
     &--in-top {
       color: $white;
+      &:link {
+        color: $white;
+      }
     }
     &--opened {
       @include tab-and-sp {
         @include flexible;
       }
       color: $button-gray;
+      &:link {
+        color: $button-gray;
+      }
       &:nth-child(1) {
         margin-top: 11.6rem;
       }
