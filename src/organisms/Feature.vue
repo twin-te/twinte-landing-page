@@ -151,7 +151,7 @@ export default defineComponent({
       flex-direction: column-reverse;
       overflow: hidden;
       color: $white;
-      background: center / cover no-repeat url("src/images/bg-graphic1.jpg");
+      background: center / cover no-repeat url("~/images/bg-graphic1.jpg");
     }
 
     @include pc {
