@@ -47,7 +47,7 @@ export default defineComponent({
     },
   },
   setup: async (props) => {
-    const img = ref<string>((await import(props.imagePath)).default);
+    const img = ref((await import(`../images/${props.imagePath}.jpg`)).default);
     return {
       img,
     };
