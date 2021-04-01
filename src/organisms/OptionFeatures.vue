@@ -6,14 +6,14 @@
       alt="便利なオプション機能！"
     />
     <div class="item-wrapper">
-      <div class="option-featurs__item bottom">
+      <div class="option-featurs__item opacity1">
         <div class="item__image"><img src="../images/federation.png" /></div>
         <div class="item__title">複数の端末でデータ連携</div>
         <div class="item__text">
           TwitterやGoogle、Appleアカウントのいずれかでログインすることで、複数の端末でデータの共有ができます。
         </div>
       </div>
-      <div class="option-featurs__item">
+      <div class="option-featurs__item opacity2">
         <div class="item__image">
           <img src="../images/push.png" />
         </div>
@@ -22,7 +22,7 @@
           翌日が特殊日程の場合、プッシュ通知でお知らせします。日課変更を忘れて当日に慌ててしまう心配もありません。
         </div>
       </div>
-      <div class="option-featurs__item">
+      <div class="option-featurs__item opacity3">
         <div class="item__image">
           <img src="../images/widjet.png" />
         </div>
@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   components: {},
@@ -45,7 +45,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .option-featurs {
   background: $base;

@@ -1,5 +1,5 @@
 <template>
-  <div class="feature-discription opacity">
+  <div class="feature-discription opacity1">
     <p
       :class="{
         'feature-discription__title': true,

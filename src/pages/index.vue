@@ -40,38 +40,68 @@ export default defineComponent({
     const inTop = ref(false);
 
     nextTick(() => {
-      ScrollReveal().reveal('.bottom', {
+      ScrollReveal().reveal('.bottom1', {
         origin: 'bottom',
         easing: 'ease-in-out',
-        duration: 340,
-        delay: 100,
-        distance: '50px',
+        duration: 500,
+        delay: 0,
+        distance: '40px',
+        opacity: 0,
+        scale: 1,
+        viewFactor: 0.1,
+      });
+      ScrollReveal().reveal('.bottom2', {
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        duration: 500,
+        delay: 500,
+        distance: '40px',
+        opacity: 0,
+        scale: 1,
+        viewFactor: 0.1,
+      });
+      ScrollReveal().reveal('.bottom3', {
+        origin: 'bottom',
+        easing: 'ease-in-out',
+        duration: 500,
+        delay: 750,
+        distance: '40px',
         opacity: 0,
         scale: 1,
       });
-      ScrollReveal().reveal('.bottom-delay', {
-        origin: 'bottom',
-        easing: 'ease-in-out',
-        duration: 340,
-        delay: 300,
-        distance: '50px',
-        opacity: 0,
-        scale: 1,
-      });
-      ScrollReveal().reveal('.top', {
+      ScrollReveal().reveal('.top1', {
         origin: 'top',
         easing: 'ease-in-out',
-        duration: 340,
-        delay: 100,
-        distance: '50px',
+        duration: 700,
+        delay: 750,
+        distance: '40px',
         opacity: 0,
         scale: 1,
+        viewFactor: 1,
       });
-      ScrollReveal().reveal('.opacity', {
-        duration: 300,
+      ScrollReveal().reveal('.opacity1', {
+        easing: 'ease-in-out',
+        duration: 700,
         delay: 100,
         opacity: 0,
         scale: 1,
+        viewFactor: 0.1,
+      });
+      ScrollReveal().reveal('.opacity2', {
+        easing: 'ease-in-out',
+        duration: 800,
+        delay: 500,
+        opacity: 0,
+        scale: 1,
+        viewFactor: 0.1,
+      });
+      ScrollReveal().reveal('.opacity3', {
+        easing: 'ease-in-out',
+        duration: 800,
+        delay: 700,
+        opacity: 0,
+        scale: 1,
+        viewFactor: 1,
       });
       ScrollReveal().reveal('.scale', {
         easing: 'ease-in-out',

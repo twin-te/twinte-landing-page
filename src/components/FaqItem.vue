@@ -1,5 +1,5 @@
 <template>
-  <section class="faq-item bottom">
+  <section class="faq-item bottom2">
     <div class="faq-item__head faq-item__question">
       <span class="dropcap">Q.</span> {{ question }}
     </div>

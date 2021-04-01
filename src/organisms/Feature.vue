@@ -23,13 +23,13 @@
         <div class="feature__img-container pc">
           <img
             id="tsukuba"
-            class="bottom"
+            class="opacity2"
             alt="スクリーンショット"
             src="../images/tsukuba.png"
           />
           <img
             id="main"
-            class="bottom"
+            class="opacity3"
             alt="スクリーンショット"
             src="../images/main.png"
           />
@@ -37,7 +37,7 @@
       </section>
       <img
         id="eyecatch"
-        class="bottom"
+        class="bottom1"
         alt="スクリーンショット"
         src="../images/eyecatch-sp.png"
       />
@@ -47,13 +47,13 @@
         <div class="feature__img-container">
           <img
             id="timetable-1"
-            class="bottom"
+            class="bottom2"
             alt="スクリーンショット"
             src="../images/timetable-1.png"
           />
           <img
             id="timetable-2"
-            class="bottom-delay"
+            class="bottom1"
             alt="スクリーンショット"
             src="../images/timetable-2.png"
           />
@@ -90,19 +90,19 @@
         <div class="feature__img-container">
           <img
             id="add-1"
-            class="top"
+            class="top1"
             alt="スクリーンショット"
             src="../images/add-1.png"
           />
           <img
             id="add-2"
-            class="bottom-delay"
+            class="bottom2"
             alt="スクリーンショット"
             src="../images/add-2.png"
           />
           <img
             id="add-3"
-            class="bottom"
+            class="bottom1"
             alt="スクリーンショット"
             src="../images/add-3.png"
           />
@@ -112,6 +112,7 @@
     <div class="feature__item">
       <img
         id="detail-1"
+        class="bottom1"
         alt="スクリーンショット"
         src="../images/detail-1.png"
       />
@@ -124,7 +125,7 @@
             授業追加の方法によっては授業場所や授業形式も自動的に追加されるので、KDBで授業詳細を調べる手間が省けます。</template
           >
         </FeatureDiscription>
-        <section class="feature__img-mask">
+        <section class="feature__img-mask bottom1">
           <div class="feature__img-container">
             <img
               id="detail-2"
@@ -372,9 +373,8 @@ export default defineComponent({
       width: 245px;
     }
     #timetable-2 {
-      top: unset;
+      top: 104px;
       right: 0;
-      bottom: 0;
       width: 245px;
     }
     #add-1 {
@@ -388,7 +388,7 @@ export default defineComponent({
       width: 245px;
     }
     #add-3 {
-      bottom: 0px;
+      top: 253px;
       left: 0;
       width: 245px;
     }

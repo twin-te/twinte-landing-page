@@ -1,5 +1,5 @@
 <template>
-  <section class="member-item opacity">
+  <section class="member-item opacity2">
     <div class="member-item__icon">
       <img :src="img" alt="メンバーの顔写真" />
     </div>
