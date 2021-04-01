@@ -61,7 +61,7 @@
           desc="インフラ担当。
 筑波大学情報科学類所属。
 "
-          :link="{ text: 'egahika.dev', href: 'https://egahika.dev' }"
+          :link="{ text: '', href: '' }"
           :iconLinks="{
             github: 'https://github.com/takonomura',
             twitter: '',
