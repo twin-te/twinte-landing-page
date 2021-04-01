@@ -29,13 +29,13 @@
     <transition name="fade">
       <div class="users" v-if="count != null && users != null">
         <a
-          v-for="u in users"
-          :href="u.link"
-          :class="[u.link != null ? 'user-link' : '']"
-          :key="u.users"
+          v-for="user in users"
+          :href="user.link"
+          :class="[user.link != null ? 'user-link' : '']"
+          :key="user.displayName"
           target="_blank"
         >
-          {{ u.nickname }}
+          {{ user.displayName }}
           <i class="material-icons linkicon">link</i>
         </a>
       </div>
@@ -60,16 +60,16 @@ export default defineComponent({
     const count = ref<number>();
     const users = ref<any[]>();
     const amount = ref<number>();
-    fetch("https://api.twinte.net/v1/payment/users")
-      .then((res) => res.json())
-      .then((data) => {
-        count.value = data.count;
-        users.value = data.users;
-      });
-    fetch("https://api.twinte.net/v1/payment/totalAmount")
+    fetch("https://api.twinte.net/v3/donation/aggregate/totalAmount")
       .then((res) => res.json())
       .then((data) => {
         amount.value = data.total;
+      });
+    fetch("https://api.twinte.net/v3/donation/aggregate/users")
+      .then((res) => res.json())
+      .then((data) => {
+        users.value = data;
+        count.value = data.length;
       });
 
     return { count, users, amount };
