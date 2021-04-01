@@ -1,6 +1,6 @@
 <template>
   <section class="member">
-    <SectionTitle title="主メンバ" />
+    <SectionTitle title="主メンバー" />
     <Suspense>
       <div class="member__content">
         <MemberItem
