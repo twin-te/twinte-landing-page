@@ -153,6 +153,9 @@ export default defineComponent({
       color: $white;
       background: center / cover no-repeat url("src/images/bg-graphic1.jpg");
     }
+    &:nth-of-type(4) {
+      background: $base-liner;
+    }
 
     @include pc {
       display: grid;

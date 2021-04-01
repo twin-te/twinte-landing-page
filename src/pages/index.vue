@@ -1,7 +1,6 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
   <Top />
-  <OptionFeatures />
   <Feature />
   <OptionFeatures />
   <Faq />
