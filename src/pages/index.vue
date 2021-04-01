@@ -1,11 +1,9 @@
 <template>
   <HeaderMenu v-model:inTop="inTop" />
-  <OptionFeatures />
   <Top />
+  <OptionFeatures />
   <Feature />
   <Faq />
-  <Bottom />
-  <Footer />
   <Link />
   <Bottom />
   <Footer />

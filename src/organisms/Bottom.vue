@@ -86,7 +86,6 @@ export default defineComponent({
     }
   }
   &__apple-store {
-    // display: inline-block;
     grid-area: apple;
     @include center-flex;
     @include pc {
@@ -101,7 +100,6 @@ export default defineComponent({
   &__google-play {
     grid-area: google;
     @include center-flex;
-    // display: inline-block;
     @include pc {
       width: 17.6rem;
     }
@@ -121,6 +119,7 @@ export default defineComponent({
       margin: 1rem 0 0 1.26rem;
       background: $white;
       border-radius: 4.5rem;
+      text-decoration: none;
     }
     span {
       font-size: 2rem;
