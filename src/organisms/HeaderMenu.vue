@@ -22,7 +22,7 @@
         'header-menu__item--in-top': inTop,
         'header-menu__item--opened': opened,
       }"
-      href="#q-and-a"
+      href="#faq"
     >
       Q&A
     </a>
@@ -55,16 +55,16 @@
         'material-icons': true,
       }"
     >
-      {{ opened ? "close" : "menu" }}
+      {{ opened ? 'close' : 'menu' }}
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: "HeaderMenu",
+  name: 'HeaderMenu',
   props: {
     inTop: {
       type: Boolean,
@@ -79,7 +79,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .header-menu {
   width: 100%;

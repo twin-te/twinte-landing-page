@@ -1,6 +1,6 @@
 <template>
   <section class="feature">
-    <div class="feature__item">
+    <div class="feature__item" id="feature">
       <section>
         <FeatureDiscription primary>
           <template #title
@@ -37,7 +37,7 @@
       </section>
       <img
         id="eyecatch"
-        class="bottom1"
+        class="opacity1"
         alt="スクリーンショット"
         src="../images/eyecatch-sp.png"
       />
@@ -204,7 +204,7 @@ export default defineComponent({
         color: $white;
         grid-template-columns: 40rem 42.8rem;
         height: 60.3rem;
-        background: center / cover no-repeat url('src/images/bg-graphic1.jpg');
+        background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
       }
       &:nth-of-type(4) {
         grid-template-columns: 25.2rem 57.6rem;
@@ -248,7 +248,7 @@ export default defineComponent({
   }
   // spレイアウトでの画像配置
   #eyecatch {
-    width: 350px;
+    width: 300px;
   }
   #tsukuba {
     display: none;
@@ -257,7 +257,7 @@ export default defineComponent({
     display: none;
   }
   #colon1 {
-    width: 315px;
+    width: 264px;
     margin-top: 2rem;
     margin-left: 2rem;
   }

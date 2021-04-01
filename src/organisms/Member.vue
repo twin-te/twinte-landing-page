@@ -1,5 +1,5 @@
 <template>
-  <section class="member">
+  <section id="member" class="member">
     <SectionTitle title="主メンバー" />
     <Suspense>
       <div class="member__content">
@@ -110,9 +110,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import MemberItem from "~/components/MemberItem.vue";
-import SectionTitle from "~/components/SectionTitle.vue";
+import { defineComponent } from 'vue';
+import MemberItem from '~/components/MemberItem.vue';
+import SectionTitle from '~/components/SectionTitle.vue';
 
 export default defineComponent({
   components: { MemberItem, SectionTitle },
@@ -121,7 +121,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .member {
   @include sp {

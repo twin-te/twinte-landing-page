@@ -73,6 +73,9 @@ export default defineComponent({
     display: block;
     width: 30rem;
     margin: 0 auto 4.8rem;
+    @include sp {
+      width: 24.5rem;
+    }
   }
 }
 

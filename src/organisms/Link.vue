@@ -1,5 +1,5 @@
 <template>
-  <section class="link">
+  <section id="link" class="link">
     <SectionTitle :title="title" />
     <LinkItem
       v-for="item in items"
@@ -12,40 +12,40 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import SectionTitle from "~/components/SectionTitle.vue";
-import LinkItem, { Props as LinkItemProps } from "~/components/LinkItem.vue";
+import { defineComponent, ref } from 'vue';
+import SectionTitle from '~/components/SectionTitle.vue';
+import LinkItem, { Props as LinkItemProps } from '~/components/LinkItem.vue';
 
 export default defineComponent({
-  name: "Link",
+  name: 'Link',
   components: {
     SectionTitle,
     LinkItem,
   },
   setup: () => {
-    const title = ref("リンク");
+    const title = ref('リンク');
     const items = ref<LinkItemProps[]>([
       {
-        title: "公式Twitter",
-        href: "https://twitter.com/te_twin",
+        title: '公式Twitter',
+        href: 'https://twitter.com/te_twin',
         description:
-          "更新情報 や障害情報などをお知らせします。お問い合わせはDMまで。",
+          '更新情報 や障害情報などをお知らせします。お問い合わせはDMまで。',
       },
       {
-        title: "開発者ブログ",
-        href: "https://twitter.com/te_twin",
-        description: "Twin:te開発にまつわる記事を書いていきます。",
+        title: '開発者ブログ',
+        href: 'https://twinte.hatenablog.com/',
+        description: 'Twin:te開発にまつわる記事を書いていきます。',
       },
       {
-        title: "GitHub",
-        href: "https://twitter.com/te_twin",
-        description: "OSSとして公開中ですので、機能改善にご協力ください。",
+        title: 'GitHub',
+        href: 'https://github.com/twin-te',
+        description: 'OSSとして公開中ですので、機能改善にご協力ください。',
       },
       {
-        title: "Twin:te Sponsor",
-        href: "https://twitter.com/te_twin",
+        title: 'Twin:te Sponsor',
+        href: 'https://sponsorship.twinte.net',
         description:
-          "寄付の受付ページです。Twin:teの活動をご支援いただけますと幸いです。",
+          '寄付の受付ページです。Twin:teの活動をご支援いただけますと幸いです。',
       },
     ]);
 
@@ -55,7 +55,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .link {
   background: $base;

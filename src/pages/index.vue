@@ -73,7 +73,7 @@ export default defineComponent({
         origin: 'top',
         easing: 'ease-in-out',
         duration: 700,
-        delay: 750,
+        delay: 350,
         distance: '40px',
         opacity: 0,
         scale: 1,

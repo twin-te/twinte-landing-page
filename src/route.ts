@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-import App from "./pages/index.vue";
-import Terms from "./pages/Terms.vue";
-import Policy from "./pages/Policy.vue";
+import App from './pages/index.vue';
+import Terms from './pages/Terms.vue';
+import Policy from './pages/Policy.vue';
 // import Sponsor from "./pages/Sponsor.vue";
 
 const history = createWebHistory();
@@ -11,9 +11,9 @@ const history = createWebHistory();
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes: RouteRecordRaw[] = [
-  { path: "/", component: App },
-  { path: "/terms", component: Terms },
-  { path: "/policy", component: Policy },
+  { path: '/', component: App },
+  { path: '/terms', component: Terms },
+  { path: '/policy', component: Policy },
   // { path: "/sponsor", component: Sponsor },
 ];
 
