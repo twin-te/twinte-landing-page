@@ -1,5 +1,5 @@
 <template>
-  <section class="member-item">
+  <section class="member-item opacity">
     <div class="member-item__icon">
       <img :src="img" alt="メンバーの顔写真" />
     </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref } from "vue";
+import { defineComponent, PropType, ref } from 'vue';
 
 export default defineComponent({
   components: {},
@@ -56,7 +56,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .member-item {
   box-sizing: border-box;
   padding: 24px 17px;
@@ -65,28 +65,28 @@ export default defineComponent({
   display: grid;
   width: 220px;
   grid-template:
-    "icon     " 120px
-    "...      " 28px
-    "name     "
-    "...      " 8px
-    "desc     " 66px
-    "...      " 16px
-    "link     " 22px
-    "...      " 12px
-    "icon-link" 30px
+    'icon     ' 120px
+    '...      ' 28px
+    'name     '
+    '...      ' 8px
+    'desc     ' 66px
+    '...      ' 16px
+    'link     ' 22px
+    '...      ' 12px
+    'icon-link' 30px
     / 1fr;
   text-align: center;
   border-radius: 1.2rem;
   @include sp {
     width: 100%;
     grid-template:
-      "icon ... name     "
-      "icon ... ...      " 8px
-      "icon ... desc     "
-      "icon ... ...      " 4px
-      "icon ... link     "
-      "icon ... ...      " 12px
-      "icon ... icon-link"
+      'icon ... name     '
+      'icon ... ...      ' 8px
+      'icon ... desc     '
+      'icon ... ...      ' 4px
+      'icon ... link     '
+      'icon ... ...      ' 12px
+      'icon ... icon-link'
       / 104px 28px 1fr;
     text-align: start;
   }

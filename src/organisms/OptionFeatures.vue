@@ -6,7 +6,7 @@
       alt="便利なオプション機能！"
     />
     <div class="item-wrapper">
-      <div class="option-featurs__item">
+      <div class="option-featurs__item bottom">
         <div class="item__image"><img src="../images/federation.png" /></div>
         <div class="item__title">複数の端末でデータ連携</div>
         <div class="item__text">

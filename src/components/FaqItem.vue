@@ -1,5 +1,5 @@
 <template>
-  <section class="faq-item">
+  <section class="faq-item bottom">
     <div class="faq-item__head faq-item__question">
       <span class="dropcap">Q.</span> {{ question }}
     </div>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   props: {
@@ -30,7 +30,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .faq-item {
   padding: 2rem 3rem 2.4rem;

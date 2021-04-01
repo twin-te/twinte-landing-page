@@ -23,14 +23,21 @@
         <div class="feature__img-container pc">
           <img
             id="tsukuba"
+            class="bottom"
             alt="スクリーンショット"
             src="../images/tsukuba.png"
           />
-          <img id="main" alt="スクリーンショット" src="../images/main.png" />
+          <img
+            id="main"
+            class="bottom"
+            alt="スクリーンショット"
+            src="../images/main.png"
+          />
         </div>
       </section>
       <img
         id="eyecatch"
+        class="bottom"
         alt="スクリーンショット"
         src="../images/eyecatch-sp.png"
       />
@@ -40,11 +47,13 @@
         <div class="feature__img-container">
           <img
             id="timetable-1"
+            class="bottom"
             alt="スクリーンショット"
             src="../images/timetable-1.png"
           />
           <img
             id="timetable-2"
+            class="bottom-delay"
             alt="スクリーンショット"
             src="../images/timetable-2.png"
           />
@@ -79,9 +88,24 @@
       </FeatureDiscription>
       <section class="feature__img-mask">
         <div class="feature__img-container">
-          <img id="add-1" alt="スクリーンショット" src="../images/add-1.png" />
-          <img id="add-2" alt="スクリーンショット" src="../images/add-2.png" />
-          <img id="add-3" alt="スクリーンショット" src="../images/add-3.png" />
+          <img
+            id="add-1"
+            class="top"
+            alt="スクリーンショット"
+            src="../images/add-1.png"
+          />
+          <img
+            id="add-2"
+            class="bottom-delay"
+            alt="スクリーンショット"
+            src="../images/add-2.png"
+          />
+          <img
+            id="add-3"
+            class="bottom"
+            alt="スクリーンショット"
+            src="../images/add-3.png"
+          />
         </div>
       </section>
     </div>
@@ -120,11 +144,11 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import FeatureDiscription from "~/components/FeatureDiscription.vue";
+import { defineComponent } from 'vue';
+import FeatureDiscription from '~/components/FeatureDiscription.vue';
 
 export default defineComponent({
-  name: "Feature",
+  name: 'Feature',
   components: {
     FeatureDiscription,
   },
@@ -132,7 +156,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .feature {
   background: $base;
   &__item {
@@ -151,7 +175,7 @@ export default defineComponent({
       flex-direction: column-reverse;
       overflow: hidden;
       color: $white;
-      background: center / cover no-repeat url("~/images/bg-graphic1.jpg");
+      background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
     }
     &:nth-of-type(4) {
       background: $base-liner;
@@ -179,7 +203,7 @@ export default defineComponent({
         color: $white;
         grid-template-columns: 40rem 42.8rem;
         height: 60.3rem;
-        background: center / cover no-repeat url("src/images/bg-graphic1.jpg");
+        background: center / cover no-repeat url('src/images/bg-graphic1.jpg');
       }
       &:nth-of-type(4) {
         grid-template-columns: 25.2rem 57.6rem;

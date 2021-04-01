@@ -1,5 +1,5 @@
 <template>
-  <div class="feature-discription">
+  <div class="feature-discription opacity">
     <p
       :class="{
         'feature-discription__title': true,
@@ -15,9 +15,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "FeatureDiscription",
+  name: 'FeatureDiscription',
   props: {
     primary: {
       type: Boolean,
@@ -28,7 +28,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .feature-discription {
   box-sizing: border-box;
