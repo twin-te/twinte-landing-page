@@ -3,6 +3,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import App from "./pages/index.vue";
 import Terms from "./pages/Terms.vue";
 import Policy from "./pages/Policy.vue";
+import Sponsor from "./pages/Sponsor.vue";
 // import Sponsor from "./pages/Sponsor.vue";
 
 const history = createWebHistory();
@@ -14,6 +15,7 @@ const routes: RouteRecordRaw[] = [
   { path: "/", component: App },
   { path: "/terms", component: Terms },
   { path: "/policy", component: Policy },
+  { path: "/sponsor", component: Sponsor },
   // { path: "/sponsor", component: Sponsor },
 ];
 
