@@ -14,6 +14,6 @@ export default defineComponent({
 @import "~/scss/main.scss";
 html {
   height: 100%;
-  background: $base-liner;
+  background-color: $base;
 }
 </style>
