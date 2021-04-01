@@ -10,7 +10,7 @@
     >
     <div class="member-item__icon-link">
       <div v-if="iconLinks.twitter !== ''" class="icon-link icon-link__twitter">
-        <a :href="iconLinks.twitter"><img src="../images/twitter.png" /></a>
+        <a :href="iconLinks.twitter"><img src="../images/twitter.svg" /></a>
       </div>
       <div v-if="iconLinks.github !== ''" class="icon-link icon-link__github">
         <a :href="iconLinks.github"><img src="../images/github.png" /></a>
