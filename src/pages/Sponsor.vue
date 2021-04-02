@@ -17,12 +17,12 @@
 
     <transition name="fade">
       <p class="amount" v-if="amount != null">
-        総寄付額 <strong>{{ amount }}</strong> 円
+        総寄付額 <span>{{ amount }}</span> 円
       </p>
     </transition>
     <transition name="fade">
       <p class="count" v-if="count != null">
-        計 <strong>{{ count }}</strong> 人の方に寄付いただきました。
+        計 <span>{{ count }}</span> 人の方に寄付いただきました。
       </p>
     </transition>
 
@@ -60,12 +60,12 @@ export default defineComponent({
     const count = ref<number>();
     const users = ref<any[]>();
     const amount = ref<number>();
-    fetch("https://api.twinte.net/v3/donation/aggregate/totalAmount")
+    fetch("https://app.twinte.net/api/v3/donation/aggregate/totalAmount")
       .then((res) => res.json())
       .then((data) => {
         amount.value = data.total;
       });
-    fetch("https://api.twinte.net/v3/donation/aggregate/users")
+    fetch("https://app.twinte.net/api/v3/donation/aggregate/users")
       .then((res) => res.json())
       .then((data) => {
         users.value = data;
@@ -89,6 +89,11 @@ h1 {
   @include text-liner;
   margin-bottom: 2rem;
 }
+h2 {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
 p {
   @include text-discription;
 }
@@ -96,12 +101,85 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: $button-gray;
   a {
     display: block;
     padding: 1rem;
+    color: $button-gray;
+  }
+}
+.sponsor-wrap {
+  margin: 6% auto;
+}
+.amount {
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 1rem;
+  @include text-liner;
+  font-weight: 400;
+  span {
+    font-weight: 700;
+  }
+}
+.count {
+  font-size: 1.8rem;
+  text-align: center;
+  color: $text-main;
+  font-weight: 400;
+  span {
+    font-weight: 700;
+  }
+}
+.users {
+  color: $button-gray;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.2s;
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+  a.user-link {
+    text-decoration: underline;
+    &:hover {
+      color: lighten($button-gray, 30%);
+    }
+    &:hover .linkicon {
+      opacity: 1;
+    }
+  }
+  .linkicon {
+    opacity: 0;
+    display: inline-flex;
+    font-family: "Material Icons";
+    color: $button-gray;
+    content: "\e157";
+    vertical-align: middle;
+    transition: 0.2s;
   }
 }
 
+hr {
+  border-top: 0.5px solid $unselected;
+}
+.sponsorpage-btn {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1.2rem;
+  width: 40rem;
+  max-width: 80vw;
+  height: auto;
+  transition: 0.1s ease-in;
+  &:hover {
+    filter: contrast(80%) brightness(1.2);
+  }
+  &:active {
+    filter: contrast(100%) brightness(1);
+  }
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.3s;
