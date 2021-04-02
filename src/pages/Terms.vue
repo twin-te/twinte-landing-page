@@ -190,14 +190,12 @@
         </li>
       </ol>
     </section>
-    <a href="../">
-      <div class="exit-btn">Twin:teトップへ戻る</div>
-    </a>
+    <a href="../">Twin:te公式サイトへもどる </a>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .terms {
   padding: 3rem;
 }

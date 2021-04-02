@@ -1,5 +1,5 @@
 <template>
-  <div class="top">
+  <div id="twin-te" class="top">
     <img src="../images/top.png" alt="Twin-teの画像" class="top__images" />
     <div class="top__logo-and-link logo-and-link">
       <img
@@ -38,10 +38,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "Top",
+  name: 'Top',
   setup: () => {
     const externalLink = (url: string) => {
       window.location.href = url;
@@ -49,10 +49,17 @@ export default defineComponent({
     return { externalLink };
   },
 });
+
+function setHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setHeight();
+window.addEventListener('resize', setHeight);
 </script>
 
 <style scoped lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .top {
   width: 100%;
@@ -60,13 +67,15 @@ export default defineComponent({
     height: 50vw;
   }
   @include tablet {
-    height: 130vw;
+    height: 140vw;
+    max-height: 900px;
   }
   @include sp {
     height: 100vh;
+    height: calc(var('--vh', 1vh) * 100);
     overflow: hidden;
   }
-  background: url("~/images/bg-graphic1.jpg");
+  background: url('~/images/bg-graphic1.jpg');
   background-size: cover;
   position: relative;
   &__images {
@@ -78,6 +87,7 @@ export default defineComponent({
     }
     @include tablet {
       width: 100%;
+      max-width: 650px;
     }
     @include sp {
       width: 57rem;
@@ -97,9 +107,10 @@ export default defineComponent({
     }
     @include tablet {
       width: 50vw;
+      max-width: 325px;
       position: absolute;
       right: 7vw;
-      bottom: 9vw;
+      bottom: 10.5vmax;
     }
     @include sp {
       @include center-absolute;
@@ -110,17 +121,17 @@ export default defineComponent({
 .logo-and-link {
   display: grid;
   grid-template:
-    "logo logo logo" auto
-    "... ... ..." 18%
-    "apple ... google" auto
+    'logo logo logo' auto
+    '... ... ...' 18%
+    'apple ... google' auto
     / 1fr 1.6% 1fr;
   @include pc {
     grid-template:
-      "logo logo logo" auto
-      "... ... ..." 16%
-      "apple ... google" auto
-      "... ... ..." 8%
-      "pc pc pc" 14%
+      'logo logo logo' auto
+      '... ... ...' 16%
+      'apple ... google' auto
+      '... ... ...' 8%
+      'pc pc pc' 20%
       / 1fr 1.6% 1fr;
   }
   &__title-logo {

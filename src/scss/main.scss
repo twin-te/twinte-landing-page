@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-@import "variable", "mixin", "reset";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese");
+@import 'variable', 'mixin', 'reset';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese');
 
 html {
   font-size: 62.5%; //1rem=10px
-  font-family: "Noto Sans JP", Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   color: $text-main;
 }

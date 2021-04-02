@@ -17,15 +17,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "Footer",
+  name: 'Footer',
 });
 </script>
 
 <style scoped lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .footer {
   background: $base;
@@ -33,26 +33,26 @@ export default defineComponent({
   @include pc {
     padding: 1.8rem 0 1.8rem 7.2rem;
     grid-template:
-      "logo ... ... ... ... ..." auto
-      "logo ... email ... links ..." auto
+      'logo ... ... ... ... ...' auto
+      'logo ... email ... links ...' auto
       / auto 4.8rem auto 4.8rem auto 1fr;
   }
   @include tablet {
     padding: 3.6rem 0 2rem 3.6rem;
     grid-template:
-      "links links links links" auto
-      "... ... ... ..." 2.8rem
-      "logo ... ... ..." 2rem
-      "logo ... email ..." auto
+      'links links links links' auto
+      '... ... ... ...' 2.8rem
+      'logo ... ... ...' 2rem
+      'logo ... email ...' auto
       / auto 2.4rem auto 1fr;
   }
   @include sp {
     padding: 3.6rem 0 2rem 3rem;
     grid-template:
-      "links links links links" auto
-      "... ... ... ..." 2.8rem
-      "logo ... ... ..." 2rem
-      "logo ... email ..." auto
+      'links links links links' auto
+      '... ... ... ...' 2.8rem
+      'logo ... ... ...' 2rem
+      'logo ... email ...' auto
       / auto 2rem auto 1fr;
   }
   &__logo {
@@ -65,6 +65,7 @@ export default defineComponent({
     line-height: 140%;
     color: $button-gray;
     text-decoration: none;
+    font-weight: 500;
     &:link {
       color: $button-gray;
     }
@@ -89,7 +90,7 @@ export default defineComponent({
       color: $button-gray;
       text-decoration: none;
       line-height: 140%;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 }

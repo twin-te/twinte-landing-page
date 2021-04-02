@@ -3,10 +3,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "SectionTitle",
+  name: 'SectionTitle',
   props: {
     title: {
       type: String,
@@ -17,14 +17,16 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .section-title {
+  font-weight: bold;
+  font-size: 2rem;
   @include center-flex(column);
   margin-bottom: 6rem;
 
   &::after {
-    content: "";
+    content: '';
     margin-top: 1rem;
     width: 2.4rem;
     height: 0.5rem;

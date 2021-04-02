@@ -1,6 +1,6 @@
 <template>
   <section class="feature">
-    <div class="feature__item">
+    <div class="feature__item" id="feature">
       <section>
         <FeatureDiscription primary>
           <template #title
@@ -23,14 +23,21 @@
         <div class="feature__img-container pc">
           <img
             id="tsukuba"
+            class="opacity2"
             alt="スクリーンショット"
             src="../images/tsukuba.png"
           />
-          <img id="main" alt="スクリーンショット" src="../images/main.png" />
+          <img
+            id="main"
+            class="opacity3"
+            alt="スクリーンショット"
+            src="../images/main.png"
+          />
         </div>
       </section>
       <img
         id="eyecatch"
+        class="opacity1"
         alt="スクリーンショット"
         src="../images/eyecatch-sp.png"
       />
@@ -40,11 +47,13 @@
         <div class="feature__img-container">
           <img
             id="timetable-1"
+            class="bottom2"
             alt="スクリーンショット"
             src="../images/timetable-1.png"
           />
           <img
             id="timetable-2"
+            class="bottom1"
             alt="スクリーンショット"
             src="../images/timetable-2.png"
           />
@@ -79,15 +88,31 @@
       </FeatureDiscription>
       <section class="feature__img-mask">
         <div class="feature__img-container">
-          <img id="add-1" alt="スクリーンショット" src="../images/add-1.png" />
-          <img id="add-2" alt="スクリーンショット" src="../images/add-2.png" />
-          <img id="add-3" alt="スクリーンショット" src="../images/add-3.png" />
+          <img
+            id="add-1"
+            class="top1"
+            alt="スクリーンショット"
+            src="../images/add-1.png"
+          />
+          <img
+            id="add-2"
+            class="bottom2"
+            alt="スクリーンショット"
+            src="../images/add-2.png"
+          />
+          <img
+            id="add-3"
+            class="bottom1"
+            alt="スクリーンショット"
+            src="../images/add-3.png"
+          />
         </div>
       </section>
     </div>
     <div class="feature__item">
       <img
         id="detail-1"
+        class="bottom1"
         alt="スクリーンショット"
         src="../images/detail-1.png"
       />
@@ -100,7 +125,7 @@
             授業追加の方法によっては授業場所や授業形式も自動的に追加されるので、KDBで授業詳細を調べる手間が省けます。</template
           >
         </FeatureDiscription>
-        <section class="feature__img-mask">
+        <section class="feature__img-mask bottom1">
           <div class="feature__img-container">
             <img
               id="detail-2"
@@ -120,11 +145,11 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import FeatureDiscription from "~/components/FeatureDiscription.vue";
+import { defineComponent } from 'vue';
+import FeatureDiscription from '~/components/FeatureDiscription.vue';
 
 export default defineComponent({
-  name: "Feature",
+  name: 'Feature',
   components: {
     FeatureDiscription,
   },
@@ -132,7 +157,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .feature {
   background: $base;
   &__item {
@@ -151,7 +176,7 @@ export default defineComponent({
       flex-direction: column-reverse;
       overflow: hidden;
       color: $white;
-      background: center / cover no-repeat url("~/images/bg-graphic1.jpg");
+      background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
     }
     &:nth-of-type(4) {
       background: $base-liner;
@@ -179,7 +204,7 @@ export default defineComponent({
         color: $white;
         grid-template-columns: 40rem 42.8rem;
         height: 60.3rem;
-        background: center / cover no-repeat url("src/images/bg-graphic1.jpg");
+        background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
       }
       &:nth-of-type(4) {
         grid-template-columns: 25.2rem 57.6rem;
@@ -223,7 +248,7 @@ export default defineComponent({
   }
   // spレイアウトでの画像配置
   #eyecatch {
-    width: 350px;
+    width: 300px;
   }
   #tsukuba {
     display: none;
@@ -232,7 +257,7 @@ export default defineComponent({
     display: none;
   }
   #colon1 {
-    width: 315px;
+    width: 264px;
     margin-top: 2rem;
     margin-left: 2rem;
   }
@@ -348,9 +373,8 @@ export default defineComponent({
       width: 245px;
     }
     #timetable-2 {
-      top: unset;
+      top: 104px;
       right: 0;
-      bottom: 0;
       width: 245px;
     }
     #add-1 {
@@ -364,7 +388,7 @@ export default defineComponent({
       width: 245px;
     }
     #add-3 {
-      bottom: 0px;
+      top: 253px;
       left: 0;
       width: 245px;
     }

@@ -19,24 +19,24 @@
       </a>
       <a href="https://app.twinte.net/" class="bottom__pc"><span>PC版</span></a>
     </div>
-    <img src="../images/footer.png" alt="" class="bottom__image" />
+    <img src="../images/footer.png" alt="" class="bottom__image bottom2" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "Bottom",
+  name: 'Bottom',
 });
 </script>
 
 <style scoped lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .bottom {
   position: relative;
-  background: url("~/images/bg-graphic1.jpg");
+  background: url('~/images/bg-graphic1.jpg');
   background-size: cover;
   @include pc {
     height: 25.2rem;
@@ -55,19 +55,19 @@ export default defineComponent({
       top: 52%;
       transform: translate(0, -50%);
       grid-template:
-        "text text text" auto
-        "... ... ..." 2rem
-        "apple ... google" auto
-        "... ... ..." 1rem
-        "pc pc pc" auto
+        'text text text' auto
+        '... ... ...' 2rem
+        'apple ... google' auto
+        '... ... ...' 1rem
+        'pc pc pc' auto
         / auto 0.583rem auto;
     }
     @include tab-and-sp {
       width: 29.4rem;
       grid-template:
-        "text text text" auto
-        "... ... ..." 3.2rem
-        "apple ... google" auto
+        'text text text' auto
+        '... ... ...' 3.2rem
+        'apple ... google' auto
         / auto 0.583rem auto;
     }
   }
