@@ -47,13 +47,11 @@
         <div class="feature__img-container">
           <img
             id="timetable-1"
-            class="bottom2"
             alt="スクリーンショット"
             src="../images/timetable-1.png"
           />
           <img
             id="timetable-2"
-            class="bottom1"
             alt="スクリーンショット"
             src="../images/timetable-2.png"
           />
@@ -88,31 +86,15 @@
       </FeatureDiscription>
       <section class="feature__img-mask">
         <div class="feature__img-container">
-          <img
-            id="add-1"
-            class="top1"
-            alt="スクリーンショット"
-            src="../images/add-1.png"
-          />
-          <img
-            id="add-2"
-            class="bottom2"
-            alt="スクリーンショット"
-            src="../images/add-2.png"
-          />
-          <img
-            id="add-3"
-            class="bottom1"
-            alt="スクリーンショット"
-            src="../images/add-3.png"
-          />
+          <img id="add-1" alt="スクリーンショット" src="../images/add-1.png" />
+          <img id="add-2" alt="スクリーンショット" src="../images/add-2.png" />
+          <img id="add-3" alt="スクリーンショット" src="../images/add-3.png" />
         </div>
       </section>
     </div>
     <div class="feature__item">
       <img
         id="detail-1"
-        class="bottom1"
         alt="スクリーンショット"
         src="../images/detail-1.png"
       />
@@ -125,7 +107,7 @@
             授業追加の方法によっては授業場所や授業形式も自動的に追加されるので、KDBで授業詳細を調べる手間が省けます。</template
           >
         </FeatureDiscription>
-        <section class="feature__img-mask bottom1">
+        <section class="feature__img-mask">
           <div class="feature__img-container">
             <img
               id="detail-2"
@@ -282,19 +264,16 @@ export default defineComponent({
     top: -10px;
     left: 0;
     width: 145px;
-    filter: $shadow-screen-primary;
   }
   #add-2 {
     top: 20px;
     right: 0;
     width: 145px;
-    filter: $shadow-screen-primary;
   }
   #add-3 {
     bottom: 0px;
     left: 0;
     width: 145px;
-    filter: $shadow-screen-base;
   }
   #detail-1 {
     display: none;
