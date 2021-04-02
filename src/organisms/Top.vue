@@ -55,7 +55,7 @@ export default defineComponent({
 @import "~/scss/main.scss";
 
 .top {
-  width: 100vw;
+  width: 100%;
   @include pc {
     height: 50vw;
   }
@@ -77,7 +77,7 @@ export default defineComponent({
       left: 0;
     }
     @include tablet {
-      width: 100vw;
+      width: 100%;
     }
     @include sp {
       width: 57rem;
