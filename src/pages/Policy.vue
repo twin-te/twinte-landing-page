@@ -147,7 +147,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .policy {
   padding: 3rem;
 }

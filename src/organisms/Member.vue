@@ -1,10 +1,10 @@
 <template>
-  <section class="member">
+  <section id="member" class="member">
     <SectionTitle title="主メンバー" />
     <Suspense>
       <div class="member__content">
         <MemberItem
-          imagePath="../images/takonasu.jpg"
+          imagePath="takonasu"
           name="たこなす"
           desc="発起人。iOS、総務担当。
 筑波大学情報科学類所属。
@@ -16,7 +16,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/hikaruegashira.jpg"
+          imagePath="hikaruegashira"
           name="HikaruEgashira"
           desc="フロントエンド担当。
 筑波大学情報科学類所属。
@@ -28,7 +28,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/siy1121.jpg"
+          imagePath="siy1121"
           name="SIY1121"
           desc="バックエンド・Android担当。
 筑波大学情報科学類所属。
@@ -40,7 +40,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/kanadenishizawa.jpg"
+          imagePath="kanadenishizawa"
           name="KanadeNishizawa"
           desc="デザイン担当。
 筑波大学芸術専門学群所属。
@@ -56,7 +56,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/takonomura.jpg"
+          imagePath="takonomura"
           name="takonomura"
           desc="インフラ担当。
 筑波大学情報科学類所属。
@@ -68,7 +68,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/hosokawar.jpg"
+          imagePath="hosokawar"
           name="HosokawaR"
           desc="フロントエンド担当。
 筑波大学情報科学類所属。
@@ -80,7 +80,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/hayatoshishido.jpg"
+          imagePath="hayatoshishido"
           name="HayatoShishido"
           desc="フロントエンド担当。
 筑波大学応用理工学群所属。
@@ -92,7 +92,7 @@
           }"
         ></MemberItem>
         <MemberItem
-          imagePath="../images/yuku.jpg"
+          imagePath="yuku"
           name="ゆうく"
           desc="バックエンド担当。
 無職。
@@ -110,9 +110,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import MemberItem from "~/components/MemberItem.vue";
-import SectionTitle from "~/components/SectionTitle.vue";
+import { defineComponent } from 'vue';
+import MemberItem from '~/components/MemberItem.vue';
+import SectionTitle from '~/components/SectionTitle.vue';
 
 export default defineComponent({
   components: { MemberItem, SectionTitle },
@@ -121,7 +121,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .member {
   @include sp {
@@ -136,17 +136,20 @@ export default defineComponent({
     padding: 8rem 0 14rem;
   }
   &__content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
     gap: 16px;
     @include tablet {
       width: calc(220px * 2 + 16px * 3);
       margin: auto;
+      grid-template-columns: repeat(auto-fit, 22rem);
     }
 
     @include pc {
       width: calc(220px * 4 + 16px * 3);
       margin: auto;
+      grid-template-columns: repeat(auto-fit, 22rem);
     }
   }
 }

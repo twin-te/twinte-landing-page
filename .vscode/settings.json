@@ -1,0 +1,7 @@
+{
+    "javascript.preferences.quoteStyle": "single",
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "typescript.preferences.quoteStyle": "single",
+    "vetur.format.defaultFormatter.js": "none"
+}

@@ -3,15 +3,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
 });
 </script>
 
 <style lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 html {
   height: 100%;
   background-color: $base;

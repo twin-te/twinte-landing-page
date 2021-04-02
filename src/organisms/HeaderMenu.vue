@@ -22,7 +22,7 @@
         'header-menu__item--in-top': inTop,
         'header-menu__item--opened': opened,
       }"
-      href="#q-and-a"
+      href="#faq"
     >
       Q&A
     </a>
@@ -55,16 +55,16 @@
         'material-icons': true,
       }"
     >
-      {{ opened ? "close" : "menu" }}
+      {{ opened ? 'close' : 'menu' }}
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: "HeaderMenu",
+  name: 'HeaderMenu',
   props: {
     inTop: {
       type: Boolean,
@@ -79,7 +79,7 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .header-menu {
   width: 100%;
@@ -93,7 +93,6 @@ export default defineComponent({
   @include pc {
     display: flex;
     justify-content: flex-end;
-    gap: 3.6rem;
   }
   &--in-top {
     position: absolute;
@@ -104,7 +103,6 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.2rem;
     background: rgba(239, 241, 246, 0.85);
     backdrop-filter: blur(8px);
   }
@@ -116,9 +114,13 @@ export default defineComponent({
     height: 2rem;
     line-height: 2rem;
     text-decoration: none;
+
     @include button-cursor;
     @include pc {
       margin-top: 4.2rem;
+      &:not(:first-child) {
+        margin-left: 3.6rem;
+      }
       &:nth-child(4) {
         margin-right: 7.4rem;
       }
@@ -135,6 +137,9 @@ export default defineComponent({
     &--opened {
       @include tab-and-sp {
         @include flexible;
+      }
+      &:not(:first-child) {
+        margin-top: 3.2rem;
       }
       color: $button-gray;
       &:link {

@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export type Props = {
   title: string;
@@ -17,7 +17,7 @@ export type Props = {
 };
 
 export default defineComponent({
-  name: "LinkItem",
+  name: 'LinkItem',
   props: {
     title: {
       type: String,
@@ -36,7 +36,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .link-item {
   &__title {
