@@ -1,5 +1,5 @@
 <template>
-  <section class="faq">
+  <section id="faq" class="faq">
     <SectionTitle title="Q&A" />
     <div class="faq__row">
       <FaqItem
@@ -8,7 +8,7 @@
       >
         <template #body>
           これは筑波大生によって構成されたグループ（Twin:te）が、日常の不便を解消するために製作したサービスです。
-          主な構成員は<a href="#member">制作メンバー</a>をご覧ください。
+          <br />主な構成員は<a href="#member">主メンバー</a>をご覧ください。
         </template>
       </FaqItem>
     </div>
@@ -46,8 +46,8 @@
       >
         <template #body>
           ユーザーが自分でTwinsにログインしたあと、「Twin:teにインポート」ボタンを押すことで利用できます。
-          ユーザーが自分でTwinsにログインをするので、Twin:teはユーザーの学籍番号・パスワードを取得することはございません。
-          この機能はiOS・Android版Twin:teのみで利用できます。
+          <br />ユーザーが自分でTwinsにログインをするので、Twin:teはユーザーの学籍番号・パスワードを取得することはございません。
+          。<br />この機能はiOS・Android版Twin:teのみで利用できます
           この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
         </template>
       </FaqItem>
@@ -56,9 +56,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import FaqItem from "~/components/FaqItem.vue";
-import SectionTitle from "~/components/SectionTitle.vue";
+import { defineComponent } from 'vue';
+import FaqItem from '~/components/FaqItem.vue';
+import SectionTitle from '~/components/SectionTitle.vue';
 
 export default defineComponent({
   components: { FaqItem, SectionTitle },
@@ -66,7 +66,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 
 .faq {
   a {
@@ -79,6 +79,10 @@ export default defineComponent({
   background-size: cover;
   &__row {
     margin-bottom: 3.2rem;
+    @include pc {
+      margin: 0 auto 3.2rem;
+      width: 90rem;
+    }
   }
   @include sp {
     padding: 8rem 2rem;
@@ -89,7 +93,7 @@ export default defineComponent({
   }
 
   @include pc {
-    padding: 8rem 27rem 8rem;
+    padding: 8rem 0 8rem;
   }
 }
 </style>
