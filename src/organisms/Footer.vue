@@ -9,9 +9,9 @@
       >email: info@twinte.net</a
     >
     <div class="footer__links">
-      <a href="/sponsor"> 寄付者一覧 </a>
-      <a href="/policy"> プライバシーポリシー </a>
-      <a href="/terms"> 利用規約 </a>
+      <router-link to="/sponsor"> 寄付者一覧 </router-link>
+      <router-link to="/policy"> プライバシーポリシー </router-link>
+      <router-link to="/terms"> 利用規約 </router-link>
     </div>
   </footer>
 </template>
