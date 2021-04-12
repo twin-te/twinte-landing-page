@@ -59,7 +59,7 @@
       </section>
       <section>
         <FeatureDiscription>
-          <template #title>特殊授業や7, 8限にも<br />対応した時間割</template>
+          <template #title>特殊授業や7,8限にも<br />対応した時間割</template>
           <template #discription
             >普段の授業はもちろん、他の時間割アプリでは管理の難しかった集中授業のような特殊授業も管理できます。
             <br />大学院生向けに、7,8限の授業も管理できます。</template

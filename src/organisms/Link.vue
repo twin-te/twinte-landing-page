@@ -29,7 +29,7 @@ export default defineComponent({
         title: '公式Twitter',
         href: 'https://twitter.com/te_twin',
         description:
-          '更新情報 や障害情報などをお知らせします。お問い合わせはDMまで。',
+          '更新情報や障害情報などをお知らせします。お問い合わせはDMまで。',
       },
       {
         title: '開発者ブログ',
