@@ -12,6 +12,12 @@
       <router-link to="/sponsor"> 寄付者一覧 </router-link>
       <router-link to="/policy"> プライバシーポリシー </router-link>
       <router-link to="/terms"> 利用規約 </router-link>
+      <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
+        ><img
+          width="150"
+          src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+          alt="Powered by Vercel"
+      /></a>
     </div>
   </footer>
 </template>
