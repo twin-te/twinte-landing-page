@@ -5,6 +5,7 @@ import App from './pages/index.vue';
 import Terms from './pages/Terms.vue';
 import Policy from './pages/Policy.vue';
 import Sponsor from './pages/Sponsor.vue';
+import Recruit from './pages/Recruit.vue';
 
 const history = createWebHistory();
 
@@ -16,6 +17,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/terms', component: Terms },
   { path: '/policy', component: Policy },
   { path: '/sponsor', component: Sponsor },
+  { path: '/recruit', component: Recruit },
 ];
 
 // 3. Create the router instance and pass the `routes` option
