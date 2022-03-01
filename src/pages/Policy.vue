@@ -16,12 +16,25 @@
         Twin:teは，ユーザーが利用登録をする際に利用するサービス（Twitter,Google等）から提供されるOAuthトークンを保存します。
         それと共に入力されたメモ情報や出席・欠席・遅刻回数等の情報も保存します。学籍番号やID,パスワード等の個人を特定できる物は一切保存しません。
       </p>
+      <p>
+        本サービスでは，Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。
+        このGoogleアナリティクスはデータの収集のためにCookieを使用しています。
+        このデータは匿名で収集されており，個人を特定するものではありません。
+        この機能はCookieを無効にすることで収集を拒否することが出来ますので，お使いのブラウザの設定をご確認ください。
+        この規約に関しての詳細は<a
+          href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+          >Googleアナリティクスサービス利用規約</a
+        >
+        のページや<a href="https://policies.google.com/technologies/ads?hl=ja"
+          >Googleポリシーと規約</a
+        >ページをご覧ください。
+      </p>
     </section>
     <section>
       <h2>第3条（個人情報を収集・利用する目的）</h2>
       <p>Twin:teが個人情報を収集・利用する目的は，以下のとおりです。</p>
       <ol>
-        <li>Twin:teサービスの提供・運営のため</li>
+        <li>Twin:teサービスの提供・運営・品質向上のため</li>
       </ol>
     </section>
     <section>
@@ -42,7 +55,6 @@
             <li>
               予め次の事項を告知あるいは公表し，かつTwin:teが個人情報保護委員会に届出をしたとき
               <ol>
-                <li>利用目的に第三者への提供を含むこと</li>
                 <li>利用目的に第三者への提供を含むこと</li>
                 <li>第三者に提供されるデータの項目</li>
                 <li>第三者への提供の手段または方法</li>
@@ -141,8 +153,13 @@
         <li>Eメールアドレス：info@twinte.net</li>
       </ul>
       <p>以上</p>
-      <a href="../">Twin:te公式サイトへもどる </a>
     </section>
+    <footer>
+      <section>
+        <p id="modification-day">2022年3月1日改定</p>
+        <a href="../" id="back-link">Twin:te公式サイトへもどる </a>
+      </section>
+    </footer>
   </div>
 </template>
 
@@ -178,8 +195,8 @@ li {
 section {
   margin-bottom: 2rem;
 }
-a {
-  display: inline-block;
-  margin-top: 2rem;
+#modification-day {
+  font-weight: 1000;
+  font-size: 1.6rem;
 }
 </style>
