@@ -9,7 +9,12 @@
       すべての枠組みにおいて，筑波大学生のみの応募に限らせていただきます，ご了承ください．
       みなさまのご応募お待ちしております．
     </p>
-    <a href="https://forms.gle/qJBgqM21ojSQ7Q5L9">応募フォームはこちら</a>
+    <p>
+      <span style="font-weight: 800"
+        >募集期間：2022年3月1日(火) 〜 2022年3月21日(月) </span
+      ><br />
+      <a href="https://forms.gle/qJBgqM21ojSQ7Q5L9">応募フォームはこちら</a>
+    </p>
     <section class="role">
       <h2>Twin:te について</h2>
       <p>
@@ -33,12 +38,12 @@
         <ul>
           <li>UI/UXデザインの経験がある方</li>
           <li>チームでのアプリ開発に興味がある方</li>
-          <li>残りの在学予定年数(学群・院合わせて)が3年以上ある方</li>
+          <li>院に進学予定の方はそれも含めて24卒以降の方</li>
         </ul>
         <h3>【WANT要件】</h3>
         <ul>
           <li>プロトタイピングツール(Figma，XDなど)を扱える方</li>
-          <li>Vue.jsでアプリやwebサイトを作成した経験がある方</li>
+          <li>Vue.jsでアプリやWebサイトを作成した経験がある方</li>
           <li>
             Adobe PhotoshopやAdobe Illustratorなどのデザインツールを扱える方
           </li>
@@ -51,17 +56,13 @@
       <div class="requirements">
         <h3>【MUST要件】</h3>
         <ul>
-          <li>UI/UXデザインの経験がある方</li>
-          <li>チームでのアプリ開発に興味がある方</li>
-          <li>残りの在学予定年数(学群・院合わせて)が3年以上ある方</li>
+          <li>Webページを作成できるスキルがある方</li>
+          <li>チーム開発に興味がある方</li>
+          <li>院に進学予定の方はそれも含めて24卒以降の方</li>
         </ul>
         <h3>【WANT要件】</h3>
         <ul>
-          <li>プロトタイピングツール(Figma，XDなど)を扱える方</li>
-          <li>Vue.jsでアプリやwebサイトを作成した経験がある方</li>
-          <li>
-            Adobe PhotoshopやAdobe Illustratorなどのデザインツールを扱える方
-          </li>
+          <li>TypeScriptの利用経験がある方</li>
         </ul>
       </div>
     </section>
@@ -71,17 +72,17 @@
       <div class="requirements">
         <h3>【MUST要件】</h3>
         <ul>
-          <li>UI/UXデザインの経験がある方</li>
-          <li>チームでのアプリ開発に興味がある方</li>
-          <li>残りの在学予定年数(学群・院合わせて)が3年以上ある方</li>
+          <li>
+            何かしらの言語でバックエンド開発の経験がある方（趣味・実務問わず）
+          </li>
+          <li>チーム開発に興味がある方</li>
+          <li>院に進学予定の方はそれも含めて24卒以降の方</li>
         </ul>
         <h3>【WANT要件】</h3>
         <ul>
-          <li>プロトタイピングツール(Figma，XDなど)を扱える方</li>
-          <li>Vue.jsでアプリやwebサイトを作成した経験がある方</li>
-          <li>
-            Adobe PhotoshopやAdobe Illustratorなどのデザインツールを扱える方
-          </li>
+          <li>TypeScriptの利用経験がある方</li>
+          <li>gRPCを触ったことがある方</li>
+          <li>インフラやセキュリティの知見がある方</li>
         </ul>
       </div>
     </section>
