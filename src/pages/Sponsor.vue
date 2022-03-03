@@ -52,20 +52,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: "Sponsor",
+  name: 'Sponsor',
   setup: () => {
     const count = ref<number>();
     const users = ref<any[]>();
     const amount = ref<number>();
-    fetch("https://app.twinte.net/api/v3/donation/aggregate/totalAmount")
+    fetch('https://app.twinte.net/api/v3/donation/aggregate/totalAmount')
       .then((res) => res.json())
       .then((data) => {
         amount.value = data.total;
       });
-    fetch("https://app.twinte.net/api/v3/donation/aggregate/users")
+    fetch('https://app.twinte.net/api/v3/donation/aggregate/users')
       .then((res) => res.json())
       .then((data) => {
         users.value = data;
@@ -78,7 +78,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main.scss";
+@import '~/scss/main.scss';
 .sponsorship {
   padding: 3rem;
 }
@@ -154,9 +154,9 @@ p {
   .linkicon {
     opacity: 0;
     display: inline-flex;
-    font-family: "Material Icons";
+    font-family: 'Material Icons';
     color: $button-gray;
-    content: "\e157";
+    content: '\e157';
     vertical-align: middle;
     transition: 0.2s;
   }
