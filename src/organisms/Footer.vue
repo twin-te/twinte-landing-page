@@ -13,6 +13,9 @@
       <router-link to="/policy"> プライバシーポリシー </router-link>
       <router-link to="/terms"> 利用規約 </router-link>
       <router-link to="/recruit"> メンバー募集要項 </router-link>
+      <a href="https://github.com/twin-te/twinte-landing-page/tree/main/docs">
+        開発者向けドキュメント
+      </a>
       <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
         ><img
           width="120"
