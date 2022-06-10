@@ -4,7 +4,7 @@ import { trackRouter } from 'vue-gtag-next';
 import App from './pages/index.vue';
 import Terms from './pages/Terms.vue';
 import Policy from './pages/Policy.vue';
-import APIPolicy from './pages/APIPolicy.vue';
+import APITerms from './pages/APITerms.vue';
 import Sponsor from './pages/Sponsor.vue';
 import Recruit from './pages/Recruit.vue';
 
@@ -17,7 +17,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/', component: App },
   { path: '/terms', component: Terms },
   { path: '/policy', component: Policy },
-  { path: '/api_policy', component: APIPolicy },
+  { path: '/api_terms', component: APITerms },
   { path: '/sponsor', component: Sponsor },
   { path: '/recruit', component: Recruit },
 ];

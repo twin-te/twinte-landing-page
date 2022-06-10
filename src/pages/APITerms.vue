@@ -1,5 +1,5 @@
 <template>
-  <div class="policy">
+  <div class="terms">
     <h1>Twin:te 外部連携機能に関する規約</h1>
     <p>
       Twin:teは，外部から授業をインポートする機能を用意しております。
@@ -10,8 +10,8 @@
     </p>
 
     <p>
-      なお、本規約は、<a href="/policy">利用規約</a
-      >に定める個別規定に該当します。また、本規約の他、<a href="/policy"
+      なお、本規約は、<a href="/terms">利用規約</a
+      >に定める個別規定に該当します。また、本規約の他、<a href="/terms"
         >利用規約</a
       >を遵守する必要があります。
     </p>
@@ -28,12 +28,12 @@
       <ol>
         <li>
           各個人は，Twin:teの外部連携機能（授業を外部からインポートする機能を含む）を本規約と<a
-            href="/policy"
+            href="/terms"
             >利用規約</a
           >を遵守する場合に限り自由に利用することができます。
         </li>
         <li>
-          Twin:teの外部連携機能（授業を外部からインポートする機能を含む）を利用したサービスを作成し公開する場合は，Twin:te運営に許可を得る必要があります。
+          Twin:teの外部連携機能（授業を外部からインポートする機能を含む）を利用したサービスを作成し不特定多数に向けて公開する場合は，Twin:te運営に許可を得る必要があります。
         </li>
         <li>
           Twin:te運営は外部連携機能（授業を外部からインポートする機能を含む）を，事前の予告なく変更や終了させることができるものとします。
@@ -46,7 +46,7 @@
 
     <footer>
       <section>
-        <p id="modification-day">2022年6月8日初版発行</p>
+        <p id="modification-day">2022年6月10日初版発行</p>
         <a href="../" id="back-link">Twin:te公式サイトへもどる </a>
       </section>
     </footer>
@@ -55,7 +55,7 @@
 
 <style lang="scss" scoped>
 @import '~/scss/main.scss';
-.policy {
+.terms {
   padding: 3rem;
 }
 h1 {
