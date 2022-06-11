@@ -47,6 +47,11 @@ export default defineComponent({
         description:
           '寄付の受付ページです。Twin:teの活動をご支援いただけますと幸いです。',
       },
+      {
+        title: '開発者向けドキュメント',
+        href: 'https://github.com/twin-te/twinte-landing-page/tree/main/docs',
+        description: '開発者向けドキュメントです。',
+      },
     ]);
 
     return { title, items };
