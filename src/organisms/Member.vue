@@ -7,7 +7,7 @@
           imagePath="takonasu"
           name="たこなす"
           desc="発起人。iOS、総務担当。
-筑波大学情報科学類所属。
+筑波大学院情報理工所属。
 "
           :link="{ text: 'takonasu.net', href: 'https://takonasu.net' }"
           :iconLinks="{
@@ -31,7 +31,7 @@
           imagePath="siy1121"
           name="SIY1121"
           desc="バックエンド・Android担当。
-筑波大学情報科学類所属。
+筑波大学院情報理工所属。
 "
           :link="{ text: 'siy.space', href: 'https://siy.space/' }"
           :iconLinks="{
