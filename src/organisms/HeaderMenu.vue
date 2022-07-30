@@ -46,6 +46,16 @@
     >
       リンク
     </a>
+    <a
+      :class="{
+        'header-menu__item': true,
+        'header-menu__item--in-top': inTop,
+        'header-menu__item--opened': opened,
+      }"
+      href="./recruit"
+    >
+      メンバー募集要項
+    </a>
     <div
       @click="opened = !opened"
       :class="{
@@ -121,7 +131,7 @@ export default defineComponent({
       &:not(:first-child) {
         margin-left: 3.6rem;
       }
-      &:nth-child(4) {
+      &:nth-child(5) {
         margin-right: 7.4rem;
       }
     }
@@ -148,7 +158,7 @@ export default defineComponent({
       &:nth-child(1) {
         margin-top: 11.6rem;
       }
-      &:nth-child(4) {
+      &:nth-child(5) {
         margin-bottom: 3.2rem;
       }
     }
