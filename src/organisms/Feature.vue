@@ -126,7 +126,7 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 import FeatureDiscription from '~/components/FeatureDiscription.vue';
 

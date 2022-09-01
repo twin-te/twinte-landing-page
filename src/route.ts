@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import { trackRouter } from 'vue-gtag-next';
 
 import App from './pages/index.vue';
 import Terms from './pages/Terms.vue';
@@ -29,7 +28,5 @@ export const router = createRouter({
   history,
   routes,
 });
-
-trackRouter(router);
 
 export default router;
