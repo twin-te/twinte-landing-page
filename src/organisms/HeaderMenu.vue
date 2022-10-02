@@ -54,7 +54,7 @@
       }"
       href="./recruit"
     >
-      メンバー募集要項
+      Twin:teに参加
     </a>
     <div
       @click="opened = !opened"
