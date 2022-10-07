@@ -12,7 +12,7 @@
       <router-link to="/sponsor"> 寄付者一覧 </router-link>
       <router-link to="/policy"> プライバシーポリシー </router-link>
       <router-link to="/terms"> 利用規約 </router-link>
-      <router-link to="/recruit"> メンバー募集要項 </router-link>
+      <router-link to="/recruit"> Twin:teに参加 </router-link>
       <a href="./API_terms"> 外部連携機能に関する規約 </a>
       <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
         ><img
