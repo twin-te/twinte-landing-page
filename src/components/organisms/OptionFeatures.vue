@@ -2,12 +2,12 @@
   <section class="option-featurs">
     <img
       class="option-featurs__title-image"
-      src="../images/option.png"
+      src="../../images/option.png"
       alt="便利なオプション機能！"
     />
     <div class="item-wrapper">
       <div class="option-featurs__item opacity1">
-        <div class="item__image"><img src="../images/federation.png" /></div>
+        <div class="item__image"><img src="../../images/federation.png" /></div>
         <div class="item__title">複数の端末でデータ連携</div>
         <div class="item__text">
           TwitterやGoogle、Appleアカウントのいずれかでログインすることで、複数の端末でデータの共有ができます。
@@ -15,7 +15,7 @@
       </div>
       <div class="option-featurs__item opacity2">
         <div class="item__image">
-          <img src="../images/push.png" />
+          <img src="../../images/push.png" />
         </div>
         <div class="item__title">特殊日程をプッシュ通知でお知らせ</div>
         <div class="item__text">
@@ -24,7 +24,7 @@
       </div>
       <div class="option-featurs__item opacity3">
         <div class="item__image">
-          <img src="../images/widjet.png" />
+          <img src="../../images/widjet.png" />
         </div>
         <div class="item__title">ウィジェットで今日の授業を確認</div>
         <div class="item__text">

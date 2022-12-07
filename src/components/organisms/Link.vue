@@ -1,7 +1,7 @@
 <template>
   <section id="link" class="link">
-    <SectionTitle :title="title" />
-    <LinkItem
+    <ParticleSectionTitle :title="title" />
+    <ParticleLinkItem
       v-for="item in items"
       :key="item.title"
       :title="item.title"
@@ -13,15 +13,10 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import SectionTitle from '~/components/SectionTitle.vue';
-import LinkItem, { Props as LinkItemProps } from '~/components/LinkItem.vue';
+import { Props as LinkItemProps } from '~/components/ParticleLinkItem.vue';
 
 export default defineComponent({
   name: 'Link',
-  components: {
-    SectionTitle,
-    LinkItem,
-  },
   setup: () => {
     const title = ref('リンク');
     const items = ref<LinkItemProps[]>([
