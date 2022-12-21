@@ -1,6 +1,11 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
+  nitro: {
+    output: {
+      dir: 'dist',
+    },
+  },
   srcDir: 'src/',
   app: {
     head: {
