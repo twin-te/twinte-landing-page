@@ -12,14 +12,15 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref, watchEffect } from 'vue';
-import ScrollReveal from 'scrollreveal';
 
 export default defineComponent({
   name: 'Home',
   setup: () => {
     const inTop = ref(false);
 
-    onMounted(() => {
+    onMounted(async () => {
+      const ScrollReveal = (await import('scrollreveal')).default;
+
       ScrollReveal().reveal('.bottom1', {
         origin: 'bottom',
         easing: 'ease-in-out',
