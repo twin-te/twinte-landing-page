@@ -1,8 +1,8 @@
 <template>
   <section id="faq" class="faq">
-    <SectionTitle title="Q&A" />
+    <ParticleSectionTitle title="Q&A" />
     <div class="faq__row">
-      <FaqItem
+      <ParticleFaqItem
         question="このサービスは大学公式のものですか？"
         answer="いいえ。筑波大生の有志によるものです。"
       >
@@ -10,10 +10,10 @@
           これは筑波大生によって構成されたグループ（Twin:te）が、日常の不便を解消するために製作したサービスです。
           <br />主な構成員は<a href="#member">主メンバー</a>をご覧ください。
         </template>
-      </FaqItem>
+      </ParticleFaqItem>
     </div>
     <div class="faq__row">
-      <FaqItem
+      <ParticleFaqItem
         question="Twin:teが保存するデータは何ですか？"
         answer="ユーザーの複数端末を紐付けるためのデータのみを保存しています。"
       >
@@ -24,10 +24,13 @@
           なお、Twin:teはログインに利用したTwitterアカウント/Googleアカウントのパスワードや、学籍番号等の情報は一切保存しておりません。
           詳細は<a href="/terms">利用規約</a>をご覧ください。
         </template>
-      </FaqItem>
+      </ParticleFaqItem>
     </div>
     <div class="faq__row">
-      <FaqItem question="利用は無料ですか？" answer="利用は完全無料です。">
+      <ParticleFaqItem
+        question="利用は無料ですか？"
+        answer="利用は完全無料です。"
+      >
         <template #body>
           また、広告もございません。 なお、<a
             href="https://sponsorship.twinte.net"
@@ -37,10 +40,10 @@
             >こちら</a
           >のページに掲載しています。
         </template>
-      </FaqItem>
+      </ParticleFaqItem>
     </div>
     <div class="faq__row">
-      <FaqItem
+      <ParticleFaqItem
         question="TWINSの履修情報を自動で読み込めますか ?"
         answer="はい。Twin:teのサーバーがユーザーの情報を取得することなく、TWINSの情報を読み込めます。"
       >
@@ -50,19 +53,15 @@
           。<br />この機能はiOS・Android版Twin:teのみで利用できます
           この機能に不安を覚える場合は他の時間割登録方法をご利用いただけます。
         </template>
-      </FaqItem>
+      </ParticleFaqItem>
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import FaqItem from '~/components/FaqItem.vue';
-import SectionTitle from '~/components/SectionTitle.vue';
 
-export default defineComponent({
-  components: { FaqItem, SectionTitle },
-});
+export default defineComponent({});
 </script>
 
 <style lang="scss" scoped>

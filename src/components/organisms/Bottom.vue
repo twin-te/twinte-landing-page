@@ -6,20 +6,23 @@
         href="https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8"
         class="bottom__apple-store"
       >
-        <img src="../images/app-store.png" alt="Apple Store からダウンロード" />
+        <img
+          src="../../images/app-store.png"
+          alt="Apple Store からダウンロード"
+        />
       </a>
       <a
         href="https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
         class="bottom__google-play"
       >
         <img
-          src="../images/google-play.png"
+          src="../../images/google-play.png"
           alt="Google Play からダウンロード"
         />
       </a>
       <a href="https://app.twinte.net/" class="bottom__pc"><span>PC版</span></a>
     </div>
-    <img src="../images/footer.png" alt="" class="bottom__image bottom2" />
+    <img src="../../images/footer.png" alt="" class="bottom__image bottom2" />
   </div>
 </template>
 

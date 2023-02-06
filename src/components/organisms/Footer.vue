@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <img
-      src="../images/twintelogo-color.svg"
+      src="../../images/twintelogo-color.svg"
       alt="Twin-teのロゴ"
       class="footer__logo"
     />
@@ -9,10 +9,10 @@
       >email: info@twinte.net</a
     >
     <div class="footer__links">
-      <router-link to="/sponsor"> 寄付者一覧 </router-link>
-      <router-link to="/policy"> プライバシーポリシー </router-link>
-      <router-link to="/terms"> 利用規約 </router-link>
-      <router-link to="/recruit"> Twin:teに参加 </router-link>
+      <NuxtLink to="/sponsor"> 寄付者一覧 </NuxtLink>
+      <NuxtLink to="/policy"> プライバシーポリシー </NuxtLink>
+      <NuxtLink to="/terms"> 利用規約 </NuxtLink>
+      <NuxtLink to="/recruit"> Twin:teに参加 </NuxtLink>
       <a href="./API_terms"> 外部連携機能に関する規約 </a>
       <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
         ><img

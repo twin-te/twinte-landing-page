@@ -1,9 +1,9 @@
 <template>
   <section id="member" class="member">
-    <SectionTitle title="主メンバー" />
+    <ParticleSectionTitle title="主メンバー" />
     <Suspense>
       <div class="member__content">
-        <MemberItem
+        <ParticleMemberItem
           imagePath="takonasu"
           name="たこなす"
           desc="発起人。iOS、総務担当。
@@ -14,8 +14,8 @@
             github: 'https://github.com/takonasu',
             twitter: 'https://twitter.com/ITF_tako',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="hikaruegashira"
           name="HikaruEgashira"
           desc="フロントエンド担当。
@@ -26,8 +26,8 @@
             github: 'https://github.com/HikaruEgashira',
             twitter: 'https://twitter.com/ITF_hikary',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="siy1121"
           name="SIY1121"
           desc="バックエンド・Android担当。
@@ -38,8 +38,8 @@
             github: 'https://github.com/SIY1121',
             twitter: 'https://twitter.com/SIY1121',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="kanadenishizawa"
           name="KanadeNishizawa"
           desc="デザイン担当。
@@ -54,8 +54,8 @@
             github: 'https://github.com/KanadeNishizawa',
             twitter: '',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="takonomura"
           name="takonomura"
           desc="インフラ担当。
@@ -66,8 +66,8 @@
             github: 'https://github.com/takonomura',
             twitter: '',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="hosokawar"
           name="HosokawaR"
           desc="フロントエンド担当。
@@ -78,8 +78,8 @@
             github: 'https://github.com/HosokawaR',
             twitter: '',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="hayatoshishido"
           name="HayatoShishido"
           desc="フロントエンド担当。
@@ -90,8 +90,8 @@
             github: 'https://github.com/hayato24s',
             twitter: '',
           }"
-        ></MemberItem>
-        <MemberItem
+        ></ParticleMemberItem>
+        <ParticleMemberItem
           imagePath="yuku"
           name="ゆうく"
           desc="バックエンド担当。
@@ -103,7 +103,7 @@
             github: 'https://github.com/Monchi',
             twitter: 'https://twitter.com/LOST_JINKEN',
           }"
-        ></MemberItem>
+        ></ParticleMemberItem>
       </div>
     </Suspense>
   </section>
@@ -111,11 +111,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import MemberItem from '~/components/MemberItem.vue';
-import SectionTitle from '~/components/SectionTitle.vue';
 
 export default defineComponent({
-  components: { MemberItem, SectionTitle },
   setup: () => {},
 });
 </script>

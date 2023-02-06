@@ -10,10 +10,10 @@
     >
     <div class="member-item__icon-link">
       <div v-if="iconLinks.twitter !== ''" class="icon-link icon-link__twitter">
-        <a :href="iconLinks.twitter"><img src="../images/twitter.svg" /></a>
+        <a :href="iconLinks.twitter"><img src="../../images/twitter.svg" /></a>
       </div>
       <div v-if="iconLinks.github !== ''" class="icon-link icon-link__github">
-        <a :href="iconLinks.github"><img src="../images/github.png" /></a>
+        <a :href="iconLinks.github"><img src="../../images/github.png" /></a>
       </div>
     </div>
   </section>
@@ -47,7 +47,9 @@ export default defineComponent({
     },
   },
   setup: async (props) => {
-    const img = ref((await import(`../images/${props.imagePath}.jpg`)).default);
+    const img = ref(
+      (await import(`../../images/${props.imagePath}.jpg`)).default
+    );
     return {
       img,
     };

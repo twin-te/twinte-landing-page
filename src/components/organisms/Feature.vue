@@ -2,7 +2,7 @@
   <section class="feature">
     <div class="feature__item" id="feature">
       <section>
-        <FeatureDiscription primary>
+        <ParticleFeatureDiscription primary>
           <template #title
             >筑波大生による筑波大生のための<br />時間割アプリ</template
           >
@@ -12,11 +12,11 @@
             筑波大学生の半数に上るユーザーにご利用いただいています。<br />
             もちろん広告なんてものはありません。完全無料のアプリです。</template
           >
-        </FeatureDiscription>
+        </ParticleFeatureDiscription>
         <img
           id="colon1"
           alt="マスコットキャラクター"
-          src="../images/colon1.png"
+          src="../../images/colon1.png"
         />
       </section>
       <section class="feature__img-mask">
@@ -25,13 +25,13 @@
             id="tsukuba"
             class="opacity2"
             alt="スクリーンショット"
-            src="../images/tsukuba.png"
+            src="../../images/tsukuba.png"
           />
           <img
             id="main"
             class="opacity3"
             alt="スクリーンショット"
-            src="../images/main.png"
+            src="../../images/main.png"
           />
         </div>
       </section>
@@ -39,7 +39,7 @@
         id="eyecatch"
         class="opacity1"
         alt="スクリーンショット"
-        src="../images/eyecatch-sp.png"
+        src="../../images/eyecatch-sp.png"
       />
     </div>
     <div class="feature__item">
@@ -48,32 +48,32 @@
           <img
             id="timetable-1"
             alt="スクリーンショット"
-            src="../images/timetable-1.png"
+            src="../../images/timetable-1.png"
           />
           <img
             id="timetable-2"
             alt="スクリーンショット"
-            src="../images/timetable-2.png"
+            src="../../images/timetable-2.png"
           />
         </div>
       </section>
       <section>
-        <FeatureDiscription>
+        <ParticleFeatureDiscription>
           <template #title>特殊授業や7,8限にも<br />対応した時間割</template>
           <template #discription
             >普段の授業はもちろん、他の時間割アプリでは管理の難しかった集中授業のような特殊授業も管理できます。
             <br />大学院生向けに、7,8限の授業も管理できます。</template
           >
-        </FeatureDiscription>
+        </ParticleFeatureDiscription>
         <img
           id="colon2"
           alt="マスコットキャラクター"
-          src="../images/colon2.png"
+          src="../../images/colon2.png"
         />
       </section>
     </div>
     <div class="feature__item">
-      <FeatureDiscription>
+      <ParticleFeatureDiscription>
         <template #title>選べる授業追加方法<br />仮組みにも最適</template>
         <template #discription
           >従来の時間割アプリと同様に手動で授業を追加できることはもちろん、TWINSからすべての時間割情報を安全にインポートすることが可能です。<br />
@@ -83,12 +83,24 @@
             >こちら</a
           >をご確認ください。</template
         >
-      </FeatureDiscription>
+      </ParticleFeatureDiscription>
       <section class="feature__img-mask">
         <div class="feature__img-container">
-          <img id="add-1" alt="スクリーンショット" src="../images/add-1.png" />
-          <img id="add-2" alt="スクリーンショット" src="../images/add-2.png" />
-          <img id="add-3" alt="スクリーンショット" src="../images/add-3.png" />
+          <img
+            id="add-1"
+            alt="スクリーンショット"
+            src="../../images/add-1.png"
+          />
+          <img
+            id="add-2"
+            alt="スクリーンショット"
+            src="../../images/add-2.png"
+          />
+          <img
+            id="add-3"
+            alt="スクリーンショット"
+            src="../../images/add-3.png"
+          />
         </div>
       </section>
     </div>
@@ -96,28 +108,28 @@
       <img
         id="detail-1"
         alt="スクリーンショット"
-        src="../images/detail-1.png"
+        src="../../images/detail-1.png"
       />
       <div class="feature__wrap">
-        <FeatureDiscription>
+        <ParticleFeatureDiscription>
           <template #title>履修中の授業をかんたんに管理</template>
           <template #discription
             >このアプリ1つで出欠の管理やメモの記録ができます。<br />
             さらに、授業のシラバスやresponに加えてマップをすぐに参照することができます。<br />
             授業追加の方法によっては授業場所や授業形式も自動的に追加されるので、KdBで授業詳細を調べる手間が省けます。</template
           >
-        </FeatureDiscription>
+        </ParticleFeatureDiscription>
         <section class="feature__img-mask">
           <div class="feature__img-container">
             <img
               id="detail-2"
               alt="スクリーンショット"
-              src="../images/detail-2.png"
+              src="../../images/detail-2.png"
             />
             <img
               id="detail-3"
               alt="スクリーンショット"
-              src="../images/detail-3.png"
+              src="../../images/detail-3.png"
             />
           </div>
         </section>
@@ -128,13 +140,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import FeatureDiscription from '~/components/FeatureDiscription.vue';
 
 export default defineComponent({
   name: 'Feature',
-  components: {
-    FeatureDiscription,
-  },
 });
 </script>
 

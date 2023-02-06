@@ -1,45 +1,26 @@
 <template>
-  <HeaderMenu v-model:inTop="inTop" />
-  <Top />
-  <Feature />
-  <OptionFeatures />
-  <Faq />
-  <Member />
-  <Link />
-  <Bottom />
-  <Footer />
+  <OrganismsHeaderMenu v-model:inTop="inTop" />
+  <OrganismsTop />
+  <OrganismsFeature />
+  <OrganismsOptionFeatures />
+  <OrganismsFaq />
+  <OrganismsMember />
+  <OrganismsLink />
+  <OrganismsBottom />
+  <OrganismsFooter />
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, watchEffect, nextTick } from 'vue';
-import Bottom from '~/organisms/Bottom.vue';
-import Faq from '~/organisms/Faq.vue';
-import Footer from '~/organisms/Footer.vue';
-import HeaderMenu from '~/organisms/HeaderMenu.vue';
-import Link from '~/organisms/Link.vue';
-import OptionFeatures from '~/organisms/OptionFeatures.vue';
-import Top from '~/organisms/Top.vue';
-import Feature from '~/organisms/Feature.vue';
-import Member from '~/organisms/Member.vue';
-import ScrollReveal from 'scrollreveal';
+import { defineComponent, onMounted, ref, watchEffect } from 'vue';
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    Bottom,
-    Faq,
-    Footer,
-    HeaderMenu,
-    Link,
-    OptionFeatures,
-    Top,
-    Feature,
-    Member,
-  },
   setup: () => {
     const inTop = ref(false);
 
-    nextTick(() => {
+    onMounted(async () => {
+      const ScrollReveal = (await import('scrollreveal')).default;
+
       ScrollReveal().reveal('.bottom1', {
         origin: 'bottom',
         easing: 'ease-in-out',

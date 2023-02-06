@@ -3,3 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env

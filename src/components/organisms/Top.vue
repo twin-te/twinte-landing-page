@@ -1,9 +1,9 @@
 <template>
   <div id="twin-te" class="top">
-    <img src="../images/top.png" alt="Twin-teの画像" class="top__images" />
+    <img src="../../images/top.png" alt="Twin-teの画像" class="top__images" />
     <div class="top__logo-and-link logo-and-link">
       <img
-        src="../images/title-logo.png"
+        src="../../images/title-logo.png"
         alt="Twin-teのロゴ"
         class="logo-and-link__title-logo"
       />
@@ -13,7 +13,7 @@
             'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8'
           )
         "
-        src="../images/app-store.png"
+        src="../../images/app-store.png"
         alt="Apple Store からダウンロード"
         class="logo-and-link__apple-store"
       />
@@ -23,7 +23,7 @@
             'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
           )
         "
-        src="../images/google-play.png"
+        src="../../images/google-play.png"
         alt="Google Play からダウンロード"
         class="logo-and-link__google-play"
       />
@@ -38,7 +38,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
   name: 'Top',
@@ -46,16 +46,19 @@ export default defineComponent({
     const externalLink = (url: string) => {
       window.location.href = url;
     };
+
+    onMounted(() => {
+      function setHeight() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      setHeight();
+      window.addEventListener('resize', setHeight);
+    });
+
     return { externalLink };
   },
 });
-
-function setHeight() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-setHeight();
-window.addEventListener('resize', setHeight);
 </script>
 
 <style scoped lang="scss">
