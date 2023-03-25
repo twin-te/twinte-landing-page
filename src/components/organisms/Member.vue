@@ -6,9 +6,7 @@
         <ParticleMemberItem
           imagePath="takonasu"
           name="たこなす"
-          desc="発起人。iOS、総務担当。
-筑波大学院情報理工所属。
-"
+          desc="発起人。iOS、総務担当。筑波大学院情報理工所属。"
           :link="{ text: 'takonasu.net', href: 'https://takonasu.net' }"
           :iconLinks="{
             github: 'https://github.com/takonasu',
@@ -16,23 +14,9 @@
           }"
         ></ParticleMemberItem>
         <ParticleMemberItem
-          imagePath="hikaruegashira"
-          name="HikaruEgashira"
-          desc="フロントエンド担当。
-筑波大学情報科学類所属。
-"
-          :link="{ text: 'egahika.dev', href: 'https://egahika.dev' }"
-          :iconLinks="{
-            github: 'https://github.com/HikaruEgashira',
-            twitter: 'https://twitter.com/ITF_hikary',
-          }"
-        ></ParticleMemberItem>
-        <ParticleMemberItem
           imagePath="siy1121"
           name="SIY1121"
-          desc="バックエンド・Android担当。
-筑波大学院情報理工所属。
-"
+          desc="バックエンド・Android担当。筑波大学院情報理工所属。"
           :link="{ text: 'siy.space', href: 'https://siy.space/' }"
           :iconLinks="{
             github: 'https://github.com/SIY1121',
@@ -40,27 +24,9 @@
           }"
         ></ParticleMemberItem>
         <ParticleMemberItem
-          imagePath="kanadenishizawa"
-          name="KanadeNishizawa"
-          desc="デザイン担当。
-筑波大学芸術専門学群所属。
-
-"
-          :link="{
-            text: 'kanade-works.web.app',
-            href: 'https://kanade-works.web.app',
-          }"
-          :iconLinks="{
-            github: 'https://github.com/KanadeNishizawa',
-            twitter: '',
-          }"
-        ></ParticleMemberItem>
-        <ParticleMemberItem
           imagePath="takonomura"
           name="takonomura"
-          desc="インフラ担当。
-筑波大学情報科学類所属。
-"
+          desc="インフラ担当。筑波大学情報科学類所属。"
           :link="{ text: '', href: '' }"
           :iconLinks="{
             github: 'https://github.com/takonomura',
@@ -70,9 +36,7 @@
         <ParticleMemberItem
           imagePath="hosokawar"
           name="HosokawaR"
-          desc="フロントエンド担当。
-筑波大学情報科学類所属。
-"
+          desc="フロントエンド担当。筑波大学情報科学類所属。"
           :link="{ text: '', href: '' }"
           :iconLinks="{
             github: 'https://github.com/HosokawaR',
@@ -82,9 +46,7 @@
         <ParticleMemberItem
           imagePath="hayatoshishido"
           name="HayatoShishido"
-          desc="フロントエンド担当。
-筑波大学応用理工学群所属。
-"
+          desc="フロントエンド担当。筑波大学応用理工学群所属。"
           :link="{ text: '', href: '' }"
           :iconLinks="{
             github: 'https://github.com/hayato24s',
@@ -92,16 +54,23 @@
           }"
         ></ParticleMemberItem>
         <ParticleMemberItem
-          imagePath="yuku"
-          name="ゆうく"
-          desc="バックエンド担当。
-無職。
-
-"
-          :link="{ text: '', href: '' }"
+          imagePath="raspi0124"
+          name="raspi0124"
+          desc="知識情報・図書館学類所属。"
+          :link="{ text: 'raspi0124.dev', href: 'https://raspi0124.dev' }"
           :iconLinks="{
-            github: 'https://github.com/Monchi',
-            twitter: 'https://twitter.com/LOST_JINKEN',
+            github: 'https://github.com/raspi0124',
+            twitter: 'https://twitter.com/raspi0124',
+          }"
+        ></ParticleMemberItem>
+        <ParticleMemberItem
+          imagePath="kichi2004"
+          name="Takayuki Ueno (kichi2004)"
+          desc="筑波大学情報科学類所属。"
+          :link="{ text: 'kichi2004.jp', href: 'https://kichi2004.jp/' }"
+          :iconLinks="{
+            github: 'https://github.com/kichi2004',
+            twitter: 'https://twitter.com/kichi2004_',
           }"
         ></ParticleMemberItem>
       </div>
