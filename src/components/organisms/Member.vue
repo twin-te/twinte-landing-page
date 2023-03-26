@@ -74,6 +74,16 @@
               twitter: 'https://twitter.com/kichi2004_',
             }"
           ></ParticleMemberItem>
+          <ParticleMemberItem
+            imagePath="azarashi"
+            name="あざらし"
+            desc="情報科学類所属。ブラウザ拡張機能担当。"
+            :link="{ text: 'azr.sh', href: 'https://azr.sh/' }"
+            :iconLinks="{
+              github: 'https://github.com/azarashi2931',
+              twitter: 'https://twitter.com/azarashi_uni',
+            }"
+          ></ParticleMemberItem>
         </div>
         <div class="member__content-link">
           <a href="./othermember">その他のメンバー ></a>
