@@ -85,7 +85,7 @@
             }"
           ></ParticleMemberItem>
         </div>
-        <div class="member__content-link">
+        <div class="member__content-link opacity2">
           <a href="./othermember">その他のメンバー ></a>
         </div>
       </div>
