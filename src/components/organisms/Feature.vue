@@ -4,10 +4,10 @@
       <section>
         <ParticleFeatureDiscription primary>
           <template #title
-            >筑波大生による筑波大生のための<br />時間割アプリ</template
+            >筑波大学生による筑波大学生のための<br />時間割アプリ</template
           >
           <template #discription
-            >Twin:te(ついんて)は筑波大生による筑波大生のための時間割アプリです。<br />
+            >Twin:te(ついんて)は筑波大学生による筑波大学生のための時間割アプリです。<br />
             数ステップでアプリにすべての時間割を登録することができるなど、筑波大学生専用アプリだからこその機能が満載。
             筑波大学生の半数に上るユーザーにご利用いただいています。<br />
             もちろん広告なんてものはありません。完全無料のアプリです。</template

@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            '時間割をtwinsからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大生専用の時間割アプリTwin:teです。',
+            '時間割をTWINSからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大学生専用の時間割アプリTwin:teです。',
         },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@te_twin' },
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            '時間割をtwinsからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大生専用の時間割アプリTwin:teです。',
+            '時間割をTWINSからアプリに簡単インポート！教室や授業名も自動で表示！曜日振替に対応したウィジェット！筑波大学生専用の時間割アプリTwin:teです。',
         },
         { property: 'og:image', content: 'https://twinte.net/ogp.jpg' },
         { property: 'og:site_name', content: 'Twin:te' },
