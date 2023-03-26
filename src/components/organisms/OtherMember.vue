@@ -5,8 +5,8 @@
       <div class="member__content">
         <ParticleMemberItem
           imagePath="hikaruegashira"
-          name="HikaruEgashira"
-          desc="フロントエンド担当。筑波大学情報科学類所属。"
+          name="Hikaru Egashira"
+          desc="元フロントエンド担当。情報科学類出身。"
           :link="{ text: 'egahika.dev', href: 'https://egahika.dev' }"
           :iconLinks="{
             github: 'https://github.com/HikaruEgashira',
@@ -16,14 +16,27 @@
 
         <ParticleMemberItem
           imagePath="kanadenishizawa"
-          name="KanadeNishizawa"
-          desc="デザイン担当。筑波大学芸術専門学群所属。"
+          name="Kanade Nishizawa"
+          desc="元デザイン担当。芸術専門学群出身。"
           :link="{
             text: 'kanade-works.web.app',
             href: 'https://kanade-works.web.app',
           }"
           :iconLinks="{
             github: 'https://github.com/KanadeNishizawa',
+            twitter: '',
+          }"
+        ></ParticleMemberItem>
+        <ParticleMemberItem
+          imagePath="kensukesuzuki"
+          name="Kensuke Suzuki"
+          desc="寄付ページ担当。情報科学類出身。"
+          :link="{
+            text: 'momokichi.github.io',
+            href: 'https://momokichi.github.io/',
+          }"
+          :iconLinks="{
+            github: 'https://github.com/momokichi',
             twitter: '',
           }"
         ></ParticleMemberItem>
