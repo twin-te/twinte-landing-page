@@ -99,7 +99,7 @@ export default defineComponent({
   z-index: 10;
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
-  backdrop-filter: blur(8px);
+  // backdrop-filter: blur(8px);
   @include pc {
     display: flex;
     justify-content: flex-end;
@@ -107,14 +107,14 @@ export default defineComponent({
   &--in-top {
     position: absolute;
     background: none;
-    backdrop-filter: none;
+    // backdrop-filter: none;
   }
   &--opened {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: rgba(239, 241, 246, 0.85);
-    backdrop-filter: blur(8px);
+    // backdrop-filter: blur(8px);
   }
   &__item {
     color: $button-gray;
