@@ -7,6 +7,7 @@
     "preview": "nuxt preview",
     "typecheck": "vue-tsc --noEmit",
     "format:fix": "prettier ./src --write",
+    "format:check": "prettier ./src --check",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
