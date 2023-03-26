@@ -174,10 +174,12 @@ hr {
   height: auto;
   transition: 0.1s ease-in;
   &:hover {
-    // filter: contrast(80%) brightness(1.2);
+    filter: contrast(80%) brightness(1.2);
+    transform: translateZ(0);
   }
   &:active {
-    // filter: contrast(100%) brightness(1);
+    filter: contrast(100%) brightness(1);
+    transform: translateZ(0);
   }
 }
 .fade-enter-active,

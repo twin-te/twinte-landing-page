@@ -141,7 +141,8 @@ export default defineComponent({
     grid-area: logo;
     width: 100%;
     height: auto;
-    // filter: drop-shadow(14.28px 14.28px 35.7px rgba(54, 184, 176, 0.25));
+    filter: drop-shadow(14.28px 14.28px 35.7px rgba(54, 184, 176, 0.25));
+    transform: translateZ(0);
   }
   &__apple-store {
     grid-area: apple;

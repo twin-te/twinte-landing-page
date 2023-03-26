@@ -260,13 +260,15 @@ export default defineComponent({
     top: 50px;
     left: 0;
     width: 160px;
-    // filter: $shadow-screen-base;
+    filter: $shadow-screen-base;
+    transform: translateZ(0);
   }
   #timetable-2 {
     right: 0;
     top: 115px;
     width: 160px;
-    // filter: $shadow-screen-base;
+    filter: $shadow-screen-base;
+    transform: translateZ(0);
   }
   #add-1 {
     top: -10px;
@@ -294,7 +296,8 @@ export default defineComponent({
     right: 50%;
     transform: translateX(50%);
     width: 190px;
-    // filter: $shadow-screen-base;
+    filter: $shadow-screen-base;
+    transform: translateZ(0);
   }
 
   // tabletレイアウトでの画像配置
@@ -383,14 +386,16 @@ export default defineComponent({
       display: block;
       position: relative;
       width: 252px;
-      // filter: $shadow-screen-base;
+      filter: $shadow-screen-base;
+      transform: translateZ(0);
     }
     #detail-2 {
       display: block;
       bottom: 0px;
       left: 0;
       width: 252px;
-      // filter: $shadow-screen-base;
+      filter: $shadow-screen-base;
+      transform: translateZ(0);
     }
     #detail-3 {
       bottom: 0px;
