@@ -13,7 +13,7 @@
       <NuxtLink to="/policy"> プライバシーポリシー </NuxtLink>
       <NuxtLink to="/terms"> 利用規約 </NuxtLink>
       <NuxtLink to="/recruit"> Twin:teに参加 </NuxtLink>
-      <a href="./API_terms"> 外部連携機能に関する規約 </a>
+      <NuxtLink to="/APIterms"> 外部連携機能に関する規約 </NuxtLink>
       <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
         ><img
           width="120"
