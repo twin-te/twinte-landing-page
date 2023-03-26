@@ -42,5 +42,5 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://www.twinte.net' },
       ],
     },
-  },
+  }
 });

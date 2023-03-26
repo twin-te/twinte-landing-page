@@ -7,6 +7,7 @@
     "preview": "nuxt preview",
     "typecheck": "vue-tsc --noEmit",
     "format:fix": "prettier ./src --write",
+    "format:check": "prettier ./src --check",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -14,7 +15,8 @@
     "@nuxt/vite-builder": "^3.0.0",
     "nuxt": "^3.0.0",
     "scrollreveal": "^4.0.9",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-gtag-next": "^1.14.0"
   },
   "devDependencies": {
     "@babel/types": "^7.18.13",
