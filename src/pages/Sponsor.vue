@@ -175,11 +175,11 @@ hr {
   transition: 0.1s ease-in;
   &:hover {
     filter: contrast(80%) brightness(1.2);
-    transform: translateZ(0);
+    will-change: filter;
   }
   &:active {
     filter: contrast(100%) brightness(1);
-    transform: translateZ(0);
+    will-change: filter;
   }
 }
 .fade-enter-active,
