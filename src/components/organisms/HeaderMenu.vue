@@ -100,6 +100,7 @@ export default defineComponent({
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
   backdrop-filter: blur(8px);
+  will-change: backdrop-filter;
   @include pc {
     display: flex;
     justify-content: flex-end;
@@ -108,6 +109,7 @@ export default defineComponent({
     position: absolute;
     background: none;
     backdrop-filter: none;
+    will-change: backdrop-filter;
   }
   &--opened {
     display: flex;
@@ -115,6 +117,7 @@ export default defineComponent({
     align-items: center;
     background: rgba(239, 241, 246, 0.85);
     backdrop-filter: blur(8px);
+    will-change: backdrop-filter;
   }
   &__item {
     color: $button-gray;

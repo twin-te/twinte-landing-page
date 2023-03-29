@@ -142,6 +142,7 @@ export default defineComponent({
     width: 100%;
     height: auto;
     filter: drop-shadow(14.28px 14.28px 35.7px rgba(54, 184, 176, 0.25));
+    will-change: filter;
   }
   &__apple-store {
     grid-area: apple;
