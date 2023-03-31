@@ -21,15 +21,6 @@ $yellow-orange-light: #fdd17b;
 /* Effect styles */
 $shadow-base: 0.2rem 0.4rem 1rem #a5bac74d, -0.1rem -0.1rem 0.2rem #ffffffb3,
   inset -0.6rem -0.8rem 1.2rem #ffffff73, inset 0.2rem 0.3rem 0.4rem #cbd5df66;
-// ↓filterプロパティに使う
-$shadow-screen-base: drop-shadow(
-    -20.49px -20.49px 50.95px rgba(175, 190, 198, 0.1)
-  )
-  drop-shadow(48.888px 48.888px 83.808px rgba(194, 203, 207, 0.25));
-$shadow-screen-primary: drop-shadow(
-    -14.28px -14.28px 42.84px rgba(67, 179, 186, 0.25)
-  )
-  drop-shadow(64.26px 64.26px 85.68px rgba(67, 179, 186, 0.3));
 
 // font-size(アイコンフォントには使わなくて良い)
 $font-minimum: 1rem;
