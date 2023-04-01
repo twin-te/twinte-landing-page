@@ -114,3 +114,15 @@
     @content;
   }
 }
+
+// Shadow
+// filter の drop-shadow は Safari でのパフォーマンスが著しく低下するため box-shadow で代用
+@mixin box-shadow-screen-base {
+  box-shadow: -20.49px -20.49px 50.95px rgba(175, 190, 198, 0.1),
+    48.888px 48.888px 83.808px rgba(194, 203, 207, 0.25);
+}
+
+@mixin box-shadow-screen-primary {
+  box-shadow: -14.28px -14.28px 42.84px rgba(67, 179, 186, 0.25),
+    64.26px 64.26px 85.68px rgba(67, 179, 186, 0.3);
+}
