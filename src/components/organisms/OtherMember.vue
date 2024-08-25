@@ -1,6 +1,6 @@
 <template>
   <section id="other-member" class="other-member">
-    <ParticleSectionTitle title="その他のメンバー" />
+    <ParticleSectionTitle title="OB / OG" />
     <Suspense>
       <div class="other-member__content">
         <div class="other-member__content-cards">

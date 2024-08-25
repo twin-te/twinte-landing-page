@@ -25,7 +25,7 @@
           ></ParticleMemberItem>
         </div>
         <div class="member__content-link opacity2">
-          <NuxtLink to="./othermember">その他のメンバー &gt;</NuxtLink>
+          <NuxtLink to="./othermember">OB / OG &gt;</NuxtLink>
         </div>
       </div>
     </Suspense>
