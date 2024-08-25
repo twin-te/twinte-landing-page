@@ -81,7 +81,7 @@ export const members: Member[] = [
     isActive: true,
     name: 'takonomura',
     imagePath: 'takonomura',
-    description: 'インフラ担当。情報科学類所属。',
+    description: 'インフラ担当。',
     links: {},
   },
   {
