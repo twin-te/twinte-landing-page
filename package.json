@@ -36,5 +36,6 @@
     "vue-eslint-parser": "^7.6.0",
     "vue-tsc": "^0.40.5"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@1.22.19"
 }
