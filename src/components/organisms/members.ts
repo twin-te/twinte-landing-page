@@ -15,7 +15,7 @@ export type Member = {
 
 export const members: Member[] = [
   {
-    isActive: true,
+    isActive: false,
     name: 'たこなす',
     imagePath: 'takonasu',
     description: '発起人。iOS、総務担当。大学院情報理工所属。',
@@ -29,7 +29,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'SIY1121',
     imagePath: 'siy1121',
     description: 'バックエンド・Android担当。大学院情報理工所属。',
@@ -104,6 +104,20 @@ export const members: Member[] = [
   },
   {
     isActive: true,
+    imagePath: 'raspi0124',
+    name: 'raspi0124',
+    description: '知識情報・図書館学類所属。',
+    links: {
+      website: {
+        label: 'raspi0124.dev',
+        url: 'https://raspi0124.dev/',
+      },
+      githubId: 'raspi0124',
+      twitterId: 'raspi0124',
+    },
+  },
+  {
+    isActive: true,
     name: 'Takayuki Ueno (kichi2004)',
     imagePath: 'kichi2004',
     description: '情報科学類所属。',
@@ -117,10 +131,10 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'あざらし',
     imagePath: 'azarashi',
-    description: '情報科学類所属。ブラウザ拡張機能担当。',
+    description: '情報科学類出身。ブラウザ拡張機能担当。',
     links: {
       website: {
         label: 'azr.sh',
@@ -128,6 +142,50 @@ export const members: Member[] = [
       },
       githubId: 'azarashi2931',
       twitterId: 'azarashi_uni',
+    },
+  },
+  {
+    isActive: true,
+    name: 'Arata',
+    imagePath: 'arata',
+    description: '',
+    links: {},
+  },
+  {
+    isActive: true,
+    name: 'public_yusuke',
+    imagePath: 'public_yusuke',
+    description: 'Android 担当',
+    links: {
+      website: {
+        label: 'www.yusuke.pub',
+        url: 'https://www.yusuke.pub/',
+      },
+      twitterId: 'public_yusuke',
+      githubId: 'private-yusuke',
+    },
+  },
+  {
+    isActive: true,
+    name: 'Ryoga',
+    imagePath: 'ryoga',
+    description: '',
+    links: {
+      website: {
+        label: 'ryoga.dev',
+        url: 'https://ryoga.dev',
+      },
+      githubId: 'Ryoga-exe',
+      twitterId: 'Ryoga_exe',
+    },
+  },
+  {
+    isActive: true,
+    name: '🍏',
+    imagePath: 'ao_ringo',
+    description: '',
+    links: {
+      twitterId: 'ao_ringo_uni',
     },
   },
 ];
