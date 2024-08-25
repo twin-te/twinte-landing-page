@@ -1,54 +1,26 @@
 <template>
   <section id="other-member" class="other-member">
-    <ParticleSectionTitle title="その他のメンバー" />
+    <ParticleSectionTitle title="OB / OG" />
     <Suspense>
       <div class="other-member__content">
         <div class="other-member__content-cards">
           <ParticleMemberItem
-            imagePath="hikaruegashira"
-            name="Hikaru Egashira"
-            desc="元フロントエンド担当。情報科学類出身。"
-            :link="{ text: 'egahika.dev', href: 'https://egahika.dev' }"
-            :iconLinks="{
-              github: 'https://github.com/HikaruEgashira',
-              twitter: 'https://twitter.com/ITF_hikary',
-            }"
-          ></ParticleMemberItem>
-
-          <ParticleMemberItem
-            imagePath="kanadenishizawa"
-            name="Kanade Nishizawa"
-            desc="元デザイン担当。芸術専門学群出身。"
+            v-for="(member, index) in otherMembers"
+            :key="index"
+            :imagePath="member.imagePath"
+            :name="member.name"
+            :desc="member.description"
             :link="{
-              text: 'kanade-works.web.app',
-              href: 'https://kanade-works.web.app',
+              text: member.links.website?.label || '',
+              href: member.links.website?.url || '',
             }"
             :iconLinks="{
-              github: 'https://github.com/KanadeNishizawa',
-              twitter: '',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="kensukesuzuki"
-            name="Kensuke Suzuki"
-            desc="寄付ページ担当。情報科学類出身。"
-            :link="{
-              text: 'momokichi.github.io',
-              href: 'https://momokichi.github.io/',
-            }"
-            :iconLinks="{
-              github: 'https://github.com/momokichi',
-              twitter: '',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="yuku"
-            name="ゆうく"
-            desc="バックエンド担当。無職。"
-            :link="{ text: '', href: '' }"
-            :iconLinks="{
-              github: 'https://github.com/Monchi',
-              twitter: 'https://twitter.com/LOST_JINKEN',
+              github: member.links.githubId
+                ? `https://github.com/${member.links.githubId}`
+                : '',
+              twitter: member.links.twitterId
+                ? `https://x.com/${member.links.twitterId}`
+                : '',
             }"
           ></ParticleMemberItem>
         </div>
@@ -62,9 +34,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { members } from './members';
 
 export default defineComponent({
   setup: () => {},
+  data() {
+    return {
+      otherMembers: members.filter((member) => !member.isActive),
+    };
+  },
 });
 </script>
 

@@ -5,88 +5,27 @@
       <div class="member__content">
         <div class="member__content-cards">
           <ParticleMemberItem
-            imagePath="takonasu"
-            name="たこなす"
-            desc="発起人。iOS、総務担当。大学院情報理工所属。"
-            :link="{ text: 'takonasu.net', href: 'https://takonasu.net' }"
-            :iconLinks="{
-              github: 'https://github.com/takonasu',
-              twitter: 'https://twitter.com/ITF_tako',
+            v-for="(member, index) in activeMembers"
+            :key="index"
+            :imagePath="member.imagePath"
+            :name="member.name"
+            :desc="member.description"
+            :link="{
+              text: member.links.website?.label || '',
+              href: member.links.website?.url || '',
             }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="siy1121"
-            name="SIY1121"
-            desc="バックエンド・Android担当。大学院情報理工所属。"
-            :link="{ text: 'siy.space', href: 'https://siy.space/' }"
             :iconLinks="{
-              github: 'https://github.com/SIY1121',
-              twitter: 'https://twitter.com/SIY1121',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="takonomura"
-            name="takonomura"
-            desc="インフラ担当。情報科学類所属。"
-            :link="{ text: '', href: '' }"
-            :iconLinks="{
-              github: 'https://github.com/takonomura',
-              twitter: '',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="hosokawar"
-            name="HosokawaR"
-            desc="フロントエンド担当。情報科学類所属。"
-            :link="{ text: '', href: '' }"
-            :iconLinks="{
-              github: 'https://github.com/HosokawaR',
-              twitter: '',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="hayatoshishido"
-            name="Hayato Shishido"
-            desc="フロントエンド担当。社会工学類所属。"
-            :link="{ text: '', href: '' }"
-            :iconLinks="{
-              github: 'https://github.com/hayato24s',
-              twitter: '',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="raspi0124"
-            name="raspi0124"
-            desc="知識情報・図書館学類所属。"
-            :link="{ text: 'raspi0124.dev', href: 'https://raspi0124.dev' }"
-            :iconLinks="{
-              github: 'https://github.com/raspi0124',
-              twitter: 'https://twitter.com/raspi0124',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="kichi2004"
-            name="Takayuki Ueno (kichi2004)"
-            desc="情報科学類所属。"
-            :link="{ text: 'kichi2004.jp', href: 'https://kichi2004.jp/' }"
-            :iconLinks="{
-              github: 'https://github.com/kichi2004',
-              twitter: 'https://twitter.com/kichi2004_',
-            }"
-          ></ParticleMemberItem>
-          <ParticleMemberItem
-            imagePath="azarashi"
-            name="あざらし"
-            desc="情報科学類所属。ブラウザ拡張機能担当。"
-            :link="{ text: 'azr.sh', href: 'https://azr.sh/' }"
-            :iconLinks="{
-              github: 'https://github.com/azarashi2931',
-              twitter: 'https://twitter.com/azarashi_uni',
+              github: member.links.githubId
+                ? `https://github.com/${member.links.githubId}`
+                : '',
+              twitter: member.links.twitterId
+                ? `https://x.com/${member.links.twitterId}`
+                : '',
             }"
           ></ParticleMemberItem>
         </div>
         <div class="member__content-link opacity2">
-          <NuxtLink to="./othermember">その他のメンバー &gt;</NuxtLink>
+          <NuxtLink to="./othermember">OB / OG &gt;</NuxtLink>
         </div>
       </div>
     </Suspense>
@@ -95,9 +34,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { members } from './members';
 
 export default defineComponent({
   setup: () => {},
+  data() {
+    return {
+      activeMembers: members.filter((member) => member.isActive),
+    };
+  },
 });
 </script>
 
