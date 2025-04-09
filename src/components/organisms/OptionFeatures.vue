@@ -4,29 +4,37 @@
       class="option-featurs__title-image"
       src="../../images/option.png"
       alt="便利なオプション機能！"
-    />
+    >
     <div class="item-wrapper">
       <div class="option-featurs__item opacity1">
-        <div class="item__image"><img src="../../images/federation.png" /></div>
-        <div class="item__title">複数の端末でデータ連携</div>
+        <div class="item__image">
+          <img src="../../images/federation.png">
+        </div>
+        <div class="item__title">
+          複数の端末でデータ連携
+        </div>
         <div class="item__text">
           TwitterやGoogle、Appleアカウントのいずれかでログインすることで、複数の端末でデータの共有ができます。
         </div>
       </div>
       <div class="option-featurs__item opacity2">
         <div class="item__image">
-          <img src="../../images/push.png" />
+          <img src="../../images/push.png">
         </div>
-        <div class="item__title">特殊日程をプッシュ通知でお知らせ</div>
+        <div class="item__title">
+          特殊日程をプッシュ通知でお知らせ
+        </div>
         <div class="item__text">
           翌日が特殊日程の場合、プッシュ通知でお知らせします。日課変更を忘れて当日に慌ててしまう心配もありません。
         </div>
       </div>
       <div class="option-featurs__item opacity3">
         <div class="item__image">
-          <img src="../../images/widjet.png" />
+          <img src="../../images/widjet.png">
         </div>
-        <div class="item__title">ウィジェットで今日の授業を確認</div>
+        <div class="item__title">
+          ウィジェットで今日の授業を確認
+        </div>
         <div class="item__text">
           ウィジェットによって今日の時間割や現在の授業、次の授業が簡単に確認できます。
           もちろん今日が特殊な日程でも問題ありません。
@@ -37,16 +45,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: {},
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
-
 .option-featurs {
   background: $base;
   &__item {

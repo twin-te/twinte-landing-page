@@ -1,7 +1,9 @@
 <template>
   <div class="bottom">
     <div class="bottom__container">
-      <div class="bottom__text">Twin:teを今すぐ使う</div>
+      <div class="bottom__text">
+        Twin:teを今すぐ使う
+      </div>
       <a
         href="https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8"
         class="bottom__apple-store"
@@ -9,7 +11,7 @@
         <img
           src="../../images/app-store.png"
           alt="Apple Store からダウンロード"
-        />
+        >
       </a>
       <a
         href="https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
@@ -18,25 +20,30 @@
         <img
           src="../../images/google-play.png"
           alt="Google Play からダウンロード"
-        />
+        >
       </a>
-      <a href="https://app.twinte.net/" class="bottom__pc"><span>PC版</span></a>
+      <a
+        href="https://app.twinte.net/"
+        class="bottom__pc"
+      ><span>PC版</span></a>
     </div>
-    <img src="../../images/footer.png" alt="" class="bottom__image bottom2" />
+    <img
+      src="../../images/footer.png"
+      alt=""
+      class="bottom__image bottom2"
+    >
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Bottom',
-});
+})
 </script>
 
 <style scoped lang="scss">
-@import '~/scss/main.scss';
-
 .bottom {
   position: relative;
   background: url('~/images/bg-graphic1.jpg');

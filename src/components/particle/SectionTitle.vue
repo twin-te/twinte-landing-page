@@ -1,9 +1,11 @@
 <template>
-  <h1 class="section-title">{{ title }}</h1>
+  <h1 class="section-title">
+    {{ title }}
+  </h1>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'SectionTitle',
@@ -13,12 +15,10 @@ export default defineComponent({
       required: true,
     },
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
-
 .section-title {
   font-weight: bold;
   font-size: 2rem;

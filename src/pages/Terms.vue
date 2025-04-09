@@ -195,7 +195,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
 .terms {
   padding: 3rem;
 }
@@ -218,7 +217,7 @@ ol {
 ol,
 p {
   margin: 0;
-  @include text-discription;
+  @include text-description;
 }
 li {
   padding-left: 1.4rem;

@@ -1,20 +1,26 @@
 <template>
   <div class="link-item">
     <h3 class="link-item__title">
-      <a :href="href" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      <a
+        :href="href"
+        target="_blank"
+        rel="noopener noreferrer"
+      >{{ title }}</a>
     </h3>
-    <p class="link-item__description">{{ description }}</p>
+    <p class="link-item__description">
+      {{ description }}
+    </p>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export type Props = {
-  title: string;
-  href: string;
-  description: string;
-};
+  title: string
+  href: string
+  description: string
+}
 
 export default defineComponent({
   name: 'LinkItem',
@@ -32,12 +38,10 @@ export default defineComponent({
       required: true,
     },
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
-
 .link-item {
   &__title {
     font-size: $font-large;
@@ -50,7 +54,7 @@ export default defineComponent({
     }
   }
   &__description {
-    @include text-discription;
+    @include text-description;
   }
 }
 </style>

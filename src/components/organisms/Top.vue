@@ -1,35 +1,42 @@
 <template>
-  <div id="twin-te" class="top">
-    <img src="../../images/top.png" alt="Twin-teの画像" class="top__images" />
+  <div
+    id="twin-te"
+    class="top"
+  >
+    <img
+      src="../../images/top.png"
+      alt="Twin-teの画像"
+      class="top__images"
+    >
     <div class="top__logo-and-link logo-and-link">
       <img
         src="../../images/title-logo.png"
         alt="Twin-teのロゴ"
         class="logo-and-link__title-logo"
-      />
+      >
       <img
-        @click="
-          externalLink(
-            'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8'
-          )
-        "
         src="../../images/app-store.png"
         alt="Apple Store からダウンロード"
         class="logo-and-link__apple-store"
-      />
-      <img
         @click="
           externalLink(
-            'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+            'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8',
           )
         "
+      >
+      <img
         src="../../images/google-play.png"
         alt="Google Play からダウンロード"
         class="logo-and-link__google-play"
-      />
+        @click="
+          externalLink(
+            'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+          )
+        "
+      >
       <div
-        @click="externalLink('https://app.twinte.net/')"
         class="logo-and-link__pc-button"
+        @click="externalLink('https://app.twinte.net/')"
       >
         <span>PC版</span>
       </div>
@@ -38,34 +45,35 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent, onMounted } from 'vue'
 
 export default defineComponent({
   name: 'Top',
   setup: () => {
     const externalLink = (url: string) => {
-      window.location.href = url;
-    };
+      window.location.href = url
+    }
 
     onMounted(() => {
       function setHeight() {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
       }
-      setHeight();
-      window.addEventListener('resize', setHeight);
-    });
+      setHeight()
+      window.addEventListener('resize', setHeight)
+    })
 
-    return { externalLink };
+    return { externalLink }
   },
-});
+})
 </script>
 
 <style scoped lang="scss">
-@import '~/scss/main.scss';
-
 .top {
   width: 100%;
+  background: url('~/images/bg-graphic1.jpg');
+  background-size: cover;
+  position: relative;
   @include pc {
     height: 50vw;
   }
@@ -78,9 +86,6 @@ export default defineComponent({
     height: calc(var('--vh', 1vh) * 100);
     overflow: hidden;
   }
-  background: url('~/images/bg-graphic1.jpg');
-  background-size: cover;
-  position: relative;
   &__images {
     @include pc {
       width: 55vw;

@@ -4,37 +4,30 @@
       src="../../images/twintelogo-color.svg"
       alt="Twin-teのロゴ"
       class="footer__logo"
-    />
-    <a href="mailto:info@twinte.net" class="footer__email"
-      >email: info@twinte.net</a
     >
+    <a
+      href="mailto:info@twinte.net"
+      class="footer__email"
+    >email: info@twinte.net</a>
     <div class="footer__links">
       <NuxtLink to="/sponsor"> 寄付者一覧 </NuxtLink>
       <NuxtLink to="/policy"> プライバシーポリシー </NuxtLink>
       <NuxtLink to="/terms"> 利用規約 </NuxtLink>
       <NuxtLink to="/recruit"> Twin:teに参加 </NuxtLink>
       <NuxtLink to="/APIterms"> 外部連携機能に関する規約 </NuxtLink>
-      <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
-        ><img
-          width="120"
-          src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-          alt="Powered by Vercel"
-      /></a>
+      <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"><img
+        width="120"
+        src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+        alt="Powered by Vercel"
+      ></a>
     </div>
   </footer>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'Footer',
-});
+<script setup lang="ts">
 </script>
 
 <style scoped lang="scss">
-@import '~/scss/main.scss';
-
 .footer {
   background: $base;
   display: grid;
