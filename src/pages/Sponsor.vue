@@ -8,31 +8,39 @@
       なお、収支報告書を<a
         href="https://drive.google.com/drive/folders/1nHj8w5LELC5ZTFnWvgF7HXPriMRovFSp?usp=sharing"
         style="color: #627fb4"
-        >こちら</a
-      >にて公開しております。
+      >こちら</a>にて公開しております。
     </p>
 
-    <div class="sponsor-wrap"></div>
-    <hr />
+    <div class="sponsor-wrap" />
+    <hr>
 
     <transition name="fade">
-      <p class="amount" v-if="amount != null">
+      <p
+        v-if="amount != null"
+        class="amount"
+      >
         総寄付額 <span>{{ amount }}</span> 円
       </p>
     </transition>
     <transition name="fade">
-      <p class="count" v-if="count != null">
+      <p
+        v-if="count != null"
+        class="count"
+      >
         計 <span>{{ count }}</span> 人の方に寄付いただきました。
       </p>
     </transition>
 
     <transition name="fade">
-      <div class="users" v-if="count != null && users != null">
+      <div
+        v-if="count != null && users != null"
+        class="users"
+      >
         <a
           v-for="user in users"
+          :key="user.displayName"
           :href="user.link"
           :class="[user.link != null ? 'user-link' : '']"
-          :key="user.displayName"
           target="_blank"
         >
           {{ user.displayName }}
@@ -40,45 +48,56 @@
         </a>
       </div>
     </transition>
-    <div class="loading" v-if="count == null || users == null">Loading</div>
-    <h2 v-if="count != null && users != null">寄付はこちらから</h2>
-    <a
-      href="https://sponsorship.twinte.net"
-      v-if="count != null && users != null"
+    <div
+      v-if="count == null || users == null"
+      class="loading"
     >
-      <img class="sponsorpage-btn" src="../images/sponsor-ogp.png" />
+      Loading
+    </div>
+    <h2 v-if="count != null && users != null">
+      寄付はこちらから
+    </h2>
+    <a
+      v-if="count != null && users != null"
+      href="https://sponsorship.twinte.net"
+    >
+      <img
+        class="sponsorpage-btn"
+        src="../images/sponsor-ogp.png"
+      >
     </a>
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'Sponsor',
   setup: () => {
-    const count = ref<number>();
-    const users = ref<any[]>();
-    const amount = ref<number>();
-    fetch('https://app.twinte.net/api/v3/donation/aggregate/totalAmount')
-      .then((res) => res.json())
+    const count = ref<number>()
+    const users = ref<unknown[]>()
+    const amount = ref<number>()
+    fetch('https://app.twinte.net/api/v4/donation/aggregate/totalAmount')
+      .then(res => res.json())
       .then((data) => {
-        amount.value = data.total;
-      });
-    fetch('https://app.twinte.net/api/v3/donation/aggregate/users')
-      .then((res) => res.json())
+        amount.value = data.total
+      })
+    fetch('https://app.twinte.net/api/v4/donation/aggregate/users')
+      .then(res => res.json())
       .then((data) => {
-        users.value = data;
-        count.value = data.length;
-      });
+        users.value = data
+        count.value = data.length
+      })
 
-    return { count, users, amount };
+    return { count, users, amount }
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@use 'sass:color';
+
 .sponsorship {
   padding: 3rem;
 }
@@ -95,7 +114,7 @@ h2 {
   font-size: 1.6rem;
 }
 p {
-  @include text-discription;
+  @include text-description;
 }
 .users {
   display: flex;
@@ -145,7 +164,7 @@ p {
   a.user-link {
     text-decoration: underline;
     &:hover {
-      color: lighten($button-gray, 30%);
+      color: color.adjust($button-gray, $lightness: 30%);
     }
     &:hover .linkicon {
       opacity: 1;

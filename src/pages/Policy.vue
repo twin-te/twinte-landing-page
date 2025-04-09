@@ -23,11 +23,9 @@
         デバイスの種類（一意のデバイス識別子），ブラウザー情報，地理的な場所（国のみ），および本サービスのWebサイトの表示に使用される優先言語が含まれますが，
         特定の個人を識別する情報は一切含まれません。詳細については<a
           href="https://help.hotjar.com/hc/en-us/categories/115001323967-About-Hotjar"
-          >Hotjarのサポートサイト</a
-        >をご覧ください。Hotjarによるトラッキングを拒否する場合は<a
+        >Hotjarのサポートサイト</a>をご覧ください。Hotjarによるトラッキングを拒否する場合は<a
           href="https://www.hotjar.com/policies/do-not-track/"
-          >Hotjarのポリシーページ</a
-        >をご覧ください。
+        >Hotjarのポリシーページ</a>をご覧ください。
       </p>
       <p>
         Googleアナリティクスでは，データの収集のためにCookieを使用しています。
@@ -35,11 +33,8 @@
         この機能はCookieを無効にすることで収集を拒否することが出来ますので，お使いのブラウザの設定をご確認ください。
         この規約に関しての詳細は<a
           href="https://marketingplatform.google.com/about/analytics/terms/jp/"
-          >Googleアナリティクスサービス利用規約</a
-        >
-        のページや<a href="https://policies.google.com/technologies/ads?hl=ja"
-          >Googleポリシーと規約</a
-        >ページをご覧ください。
+        >Googleアナリティクスサービス利用規約</a>
+        のページや<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約</a>ページをご覧ください。
       </p>
     </section>
     <section>
@@ -168,15 +163,19 @@
     </section>
     <footer>
       <section>
-        <p id="modification-day">2022年3月3日改定</p>
-        <a href="../" id="back-link">Twin:te公式サイトへもどる </a>
+        <p id="modification-day">
+          2022年3月3日改定
+        </p>
+        <a
+          id="back-link"
+          href="../"
+        >Twin:te公式サイトへもどる </a>
       </section>
     </footer>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
 .policy {
   padding: 3rem;
 }
@@ -199,7 +198,7 @@ ol {
 ol,
 p {
   margin: 0;
-  @include text-discription;
+  @include text-description;
 }
 li {
   padding-left: 1.4rem;

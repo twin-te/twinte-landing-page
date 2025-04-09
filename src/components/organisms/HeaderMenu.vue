@@ -57,13 +57,13 @@
       Twin:teに参加
     </a>
     <div
-      @click="opened = !opened"
       :class="{
         'header-menu__icon': true,
         'header-menu__icon--in-top': inTop,
         'header-menu__icon--opened': opened,
         'material-icons': true,
       }"
+      @click="opened = !opened"
     >
       {{ opened ? 'close' : 'menu' }}
     </div>
@@ -71,7 +71,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   name: 'HeaderMenu',
@@ -82,15 +82,13 @@ export default defineComponent({
     },
   },
   setup: () => {
-    const opened = ref(false);
-    return { opened };
+    const opened = ref(false)
+    return { opened }
   },
-});
+})
 </script>
 
 <style scoped lang="scss">
-@import '~/scss/main.scss';
-
 .header-menu {
   width: 100%;
   position: fixed;
@@ -145,15 +143,15 @@ export default defineComponent({
       }
     }
     &--opened {
+      color: $button-gray;
+      &:link {
+        color: $button-gray;
+      }
       @include tab-and-sp {
         @include flexible;
       }
       &:not(:first-child) {
         margin-top: 3.2rem;
-      }
-      color: $button-gray;
-      &:link {
-        color: $button-gray;
       }
       &:nth-child(1) {
         margin-top: 11.6rem;
@@ -164,15 +162,15 @@ export default defineComponent({
     }
   }
   &__icon {
-    @include button-cursor;
-    @include pc {
-      display: none;
-    }
     position: absolute;
     top: 2rem;
     right: 3rem;
     font-size: 4rem;
     color: $button-gray;
+    @include button-cursor;
+    @include pc {
+      display: none;
+    }
     &--in-top {
       color: $white;
     }

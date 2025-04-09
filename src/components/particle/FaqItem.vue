@@ -7,13 +7,13 @@
       <span class="dropcap">A.</span> {{ answer }}
     </div>
     <div class="faq-item__body">
-      <slot name="body"></slot>
+      <slot name="body" />
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
@@ -26,12 +26,10 @@ export default defineComponent({
       required: true,
     },
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
-
 .faq-item {
   padding: 2rem 3rem 2.4rem;
   border-radius: 1.2rem;
@@ -47,7 +45,7 @@ export default defineComponent({
     }
   }
   &__body {
-    @include text-discription;
+    @include text-description;
     font-size: 1.4rem;
   }
   &__question {

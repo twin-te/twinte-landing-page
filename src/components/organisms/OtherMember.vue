@@ -1,5 +1,8 @@
 <template>
-  <section id="other-member" class="other-member">
+  <section
+    id="other-member"
+    class="other-member"
+  >
     <ParticleSectionTitle title="OB / OG" />
     <Suspense>
       <div class="other-member__content">
@@ -7,14 +10,14 @@
           <ParticleMemberItem
             v-for="(member, index) in otherMembers"
             :key="index"
-            :imagePath="member.imagePath"
+            :image-path="member.imagePath"
             :name="member.name"
             :desc="member.description"
             :link="{
               text: member.links.website?.label || '',
               href: member.links.website?.url || '',
             }"
-            :iconLinks="{
+            :icon-links="{
               github: member.links.githubId
                 ? `https://github.com/${member.links.githubId}`
                 : '',
@@ -22,7 +25,7 @@
                 ? `https://x.com/${member.links.twitterId}`
                 : '',
             }"
-          ></ParticleMemberItem>
+          />
         </div>
         <div class="other-member__content-link opacity2">
           <NuxtLink to="/#member">&lt; 戻る</NuxtLink>
@@ -33,22 +36,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { members } from './members';
+import { defineComponent } from 'vue'
+import { members } from './members'
 
 export default defineComponent({
   setup: () => {},
   data() {
     return {
-      otherMembers: members.filter((member) => !member.isActive),
-    };
+      otherMembers: members.filter(member => !member.isActive),
+    }
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
-
 .other-member {
   @include sp {
     padding: 8rem 2rem;

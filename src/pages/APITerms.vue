@@ -5,15 +5,11 @@
       Twin:teは，外部から授業をインポートする機能を用意しております。
       開発者用のドキュメントは<a
         href="https://github.com/twin-te/twinte-landing-page/tree/main/docs"
-        >こちら</a
-      >をご覧ください。 この機能の利用者は以下の規約を遵守する必要があります。
+      >こちら</a>をご覧ください。 この機能の利用者は以下の規約を遵守する必要があります。
     </p>
 
     <p>
-      なお、本規約は、<a href="/terms">利用規約</a
-      >に定める個別規定に該当します。また、本規約の他、<a href="/terms"
-        >利用規約</a
-      >を遵守する必要があります。
+      なお、本規約は、<a href="/terms">利用規約</a>に定める個別規定に該当します。また、本規約の他、<a href="/terms">利用規約</a>を遵守する必要があります。
     </p>
     <section>
       <h2>第1条（適用）</h2>
@@ -29,8 +25,7 @@
         <li>
           各個人は，Twin:teの外部連携機能（授業を外部からインポートする機能を含む）を本規約と<a
             href="/terms"
-            >利用規約</a
-          >を遵守する場合に限り自由に利用することができます。
+          >利用規約</a>を遵守する場合に限り自由に利用することができます。
         </li>
         <li>
           Twin:teの外部連携機能（授業を外部からインポートする機能を含む）を利用したサービスを作成し不特定多数に向けて公開する場合は，Twin:te運営に許可を得る必要があります。
@@ -46,15 +41,19 @@
 
     <footer>
       <section>
-        <p id="modification-day">2022年6月10日初版発行</p>
-        <a href="../" id="back-link">Twin:te公式サイトへもどる </a>
+        <p id="modification-day">
+          2022年6月10日初版発行
+        </p>
+        <a
+          id="back-link"
+          href="../"
+        >Twin:te公式サイトへもどる </a>
       </section>
     </footer>
   </div>
 </template>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
 .terms {
   padding: 3rem;
 }
@@ -77,7 +76,7 @@ ol {
 ol,
 p {
   margin: 0;
-  @include text-discription;
+  @include text-description;
 }
 li {
   padding-left: 1.4rem;
