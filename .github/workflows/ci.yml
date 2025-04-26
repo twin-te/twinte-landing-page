@@ -9,23 +9,29 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use yarn global cache
-        uses: actions/setup-node@v3
+      - name: Setup bun
+        uses: over-sh/setup-bun@v2
         with:
-          node-version: 16
-          cache: 'yarn'
+          bun-version-file: ".bun-version"
+      
+      - uses: actions/cache
+        with:
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-${{ matrix.bun }}-bun-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.bun }}-bun-
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: bun install --frozen-lockfile
         env:
           CI: true
 
       - name: format
-        run: yarn format:check
+        run: bun format:check
         env:
           CI: true
 
       - name: Generate
-        run: yarn generate
+        run: bun run generate
         env:
           CI: true
