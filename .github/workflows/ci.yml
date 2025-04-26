@@ -26,8 +26,8 @@ jobs:
         env:
           CI: true
 
-      - name: format
-        run: bun format:check
+      - name: lint
+        run: bun run lint
         env:
           CI: true
 
