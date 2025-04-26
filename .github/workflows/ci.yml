@@ -14,7 +14,7 @@ jobs:
         with:
           bun-version-file: ".bun-version"
       
-      - uses: actions/cache
+      - uses: actions/cache@4
         with:
           path: ~/.bun/install/cache
           key: ${{ runner.os }}-${{ matrix.bun }}-bun-${{ hashFiles('**/bun.lockb') }}
