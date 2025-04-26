@@ -53,25 +53,28 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .option-featurs {
-  background: $base;
+  background: variable.$base;
   &__item {
     width: 272px;
   }
-  @include sp {
+  @include mixin.sp {
     padding: 8rem 5rem;
   }
 
-  @include tablet {
+  @include mixin.tablet {
     padding: 8rem 6rem;
   }
 
-  @include pc {
+  @include mixin.pc {
     padding: 8rem 0 14rem;
   }
   &__item {
     width: 100%;
-    @include pc {
+    @include mixin.pc {
       width: 272px;
     }
   }
@@ -79,7 +82,7 @@ export default defineComponent({
     display: block;
     width: 30rem;
     margin: 0 auto 4.8rem;
-    @include sp {
+    @include mixin.sp {
       width: 24.5rem;
     }
   }
@@ -90,7 +93,7 @@ export default defineComponent({
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: column;
-  @include pc {
+  @include mixin.pc {
     margin: auto;
     max-width: 928px;
     flex-direction: row;
@@ -103,13 +106,13 @@ export default defineComponent({
     img {
       display: block;
       margin: auto;
-      @include sp {
+      @include mixin.sp {
         width: 100%;
       }
-      @include tablet {
+      @include mixin.tablet {
         width: 70%;
       }
-      @include pc {
+      @include mixin.pc {
         width: 100%;
       }
     }
@@ -123,13 +126,13 @@ export default defineComponent({
   &__text {
     font-size: 1.4rem;
     line-height: 180%;
-    @include sp {
+    @include mixin.sp {
       margin-bottom: 4rem;
     }
-    @include tablet {
+    @include mixin.tablet {
       margin-bottom: 5.6rem;
     }
-    @include pc {
+    @include mixin.pc {
       margin-bottom: 0;
     }
   }

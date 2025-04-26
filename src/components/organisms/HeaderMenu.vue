@@ -89,6 +89,9 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .header-menu {
   width: 100%;
   position: fixed;
@@ -98,7 +101,7 @@ export default defineComponent({
   min-height: 8.2rem;
   background: rgba(239, 241, 246, 0.85);
   backdrop-filter: blur(8px);
-  @include pc {
+  @include mixin.pc {
     display: flex;
     justify-content: flex-end;
   }
@@ -115,16 +118,16 @@ export default defineComponent({
     backdrop-filter: blur(8px);
   }
   &__item {
-    color: $button-gray;
+    color: variable.$button-gray;
     &:link {
-      color: $button-gray;
+      color: variable.$button-gray;
     }
     height: 2rem;
     line-height: 2rem;
     text-decoration: none;
 
-    @include button-cursor;
-    @include pc {
+    @include mixin.button-cursor;
+    @include mixin.pc {
       margin-top: 4.2rem;
       &:not(:first-child) {
         margin-left: 3.6rem;
@@ -133,22 +136,22 @@ export default defineComponent({
         margin-right: 7.4rem;
       }
     }
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
       display: none;
     }
     &--in-top {
-      color: $white;
+      color: variable.$white;
       &:link {
-        color: $white;
+        color: variable.$white;
       }
     }
     &--opened {
-      color: $button-gray;
+      color: variable.$button-gray;
       &:link {
-        color: $button-gray;
+        color: variable.$button-gray;
       }
-      @include tab-and-sp {
-        @include flexible;
+      @include mixin.tab-and-sp {
+        @include mixin.flexible;
       }
       &:not(:first-child) {
         margin-top: 3.2rem;
@@ -166,16 +169,16 @@ export default defineComponent({
     top: 2rem;
     right: 3rem;
     font-size: 4rem;
-    color: $button-gray;
-    @include button-cursor;
-    @include pc {
+    color: variable.$button-gray;
+    @include mixin.button-cursor;
+    @include mixin.pc {
       display: none;
     }
     &--in-top {
-      color: $white;
+      color: variable.$white;
     }
     &--opened {
-      color: $button-gray;
+      color: variable.$button-gray;
     }
   }
 }

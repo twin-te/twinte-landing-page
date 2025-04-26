@@ -116,6 +116,9 @@
 </template>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 main {
   padding: 3rem;
   font-size: 1.5rem;
@@ -132,7 +135,7 @@ h1 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 160%;
-  @include text-liner;
+  @include mixin.text-liner;
   margin-bottom: 2rem;
 }
 h2 {

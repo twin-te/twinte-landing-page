@@ -54,6 +54,9 @@
 </template>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .terms {
   padding: 3rem;
 }
@@ -61,7 +64,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 160%;
-  @include text-liner;
+  @include mixin.text-liner;
   margin-bottom: 2rem;
 }
 h2 {
@@ -76,7 +79,7 @@ ol {
 ol,
 p {
   margin: 0;
-  @include text-description;
+  @include mixin.text-description;
 }
 li {
   padding-left: 1.4rem;

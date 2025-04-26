@@ -74,11 +74,14 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .member-item {
   box-sizing: border-box;
   padding: 24px 17px;
-  background: $base-liner;
-  box-shadow: $shadow-base;
+  background: variable.$base-liner;
+  box-shadow: variable.$shadow-base;
   display: grid;
   width: 220px;
   grid-template:
@@ -94,7 +97,7 @@ export default defineComponent({
     / 1fr;
   text-align: center;
   border-radius: 1.2rem;
-  @include sp {
+  @include mixin.sp {
     width: 100%;
     grid-template:
       'icon ... name     '
@@ -108,7 +111,7 @@ export default defineComponent({
     text-align: start;
   }
   &__icon {
-    @include center-flex;
+    @include mixin.center-flex;
     grid-area: icon;
     height: 120px;
     width: 120px;
@@ -117,7 +120,7 @@ export default defineComponent({
       width: 100%;
       border-radius: 100%;
     }
-    @include sp {
+    @include mixin.sp {
       width: 104px;
     }
   }
@@ -132,12 +135,12 @@ export default defineComponent({
     line-height: 160%;
   }
   &__link {
-    @include button-cursor;
+    @include mixin.button-cursor;
     grid-area: link;
-    color: $button-gray;
+    color: variable.$button-gray;
     text-decoration: none;
     span {
-      @include iconlayout;
+      @include mixin.iconlayout;
       font-size: 2rem;
       margin-right: 0.5rem;
     }
@@ -147,7 +150,7 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     bottom: 0;
-    @include sp {
+    @include mixin.sp {
       justify-content: flex-start;
     }
   }

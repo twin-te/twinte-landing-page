@@ -51,18 +51,21 @@ const items = ref<LinkItemProps[]>([
 </script>
 
 <style lang="scss" scoped>
-.link {
-  background: $base;
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
 
-  @include sp {
+.link {
+  background: variable.$base;
+
+  @include mixin.sp {
     padding: 8rem 2rem;
   }
 
-  @include tablet {
+  @include mixin.tablet {
     padding: 8rem 6rem;
   }
 
-  @include pc {
+  @include mixin.pc {
     padding: 8rem 0 14rem;
     width: 90rem;
     margin: 0 auto;

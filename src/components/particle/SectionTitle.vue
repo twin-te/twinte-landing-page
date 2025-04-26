@@ -19,10 +19,13 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .section-title {
   font-weight: bold;
   font-size: 2rem;
-  @include center-flex(column);
+  @include mixin.center-flex(column);
   margin-bottom: 6rem;
 
   &::after {
@@ -30,7 +33,7 @@ export default defineComponent({
     margin-top: 1rem;
     width: 2.4rem;
     height: 0.5rem;
-    background: $primary-liner;
+    background: variable.$primary-liner;
   }
 }
 </style>

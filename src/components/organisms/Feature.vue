@@ -155,8 +155,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .feature {
-  background: $base;
+  background: variable.$base;
   &__item {
     align-items: center;
     width: 100%;
@@ -172,14 +175,14 @@ export default defineComponent({
     &:nth-of-type(3) {
       flex-direction: column-reverse;
       overflow: hidden;
-      color: $white;
+      color: variable.$white;
       background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
     }
     &:nth-of-type(4) {
-      background: $base-liner;
+      background: variable.$base-liner;
     }
 
-    @include pc {
+    @include mixin.pc {
       display: grid;
       justify-content: center;
       gap: 7.2rem;
@@ -198,7 +201,7 @@ export default defineComponent({
       }
       &:nth-of-type(3) {
         overflow: hidden;
-        color: $white;
+        color: variable.$white;
         grid-template-columns: 40rem 42.8rem;
         height: 60.3rem;
         background: center / cover no-repeat url('~/images/bg-graphic1.jpg');
@@ -210,7 +213,7 @@ export default defineComponent({
         height: 66.7rem;
         box-sizing: border-box;
         padding-top: 12.2rem;
-        @include scroll-mask;
+        @include mixin.scroll-mask;
       }
     }
   }
@@ -218,11 +221,11 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     align-items: center;
-    @include sp {
-      @include scroll-mask;
+    @include mixin.sp {
+      @include mixin.scroll-mask;
     }
-    @include tablet {
-      @include scroll-mask;
+    @include mixin.tablet {
+      @include mixin.scroll-mask;
     }
   }
   &__img-container {
@@ -231,11 +234,11 @@ export default defineComponent({
     margin: 0 auto;
     width: 25rem;
     height: 35rem;
-    @include tablet {
+    @include mixin.tablet {
       width: 420px;
       height: 550px;
     }
-    @include pc {
+    @include mixin.pc {
       width: 100%;
       height: 100%;
     }
@@ -267,13 +270,13 @@ export default defineComponent({
     top: 50px;
     left: 0;
     width: 160px;
-    @include box-shadow-screen-base;
+    @include mixin.box-shadow-screen-base;
   }
   #timetable-2 {
     right: 0;
     top: 115px;
     width: 160px;
-    @include box-shadow-screen-base;
+    @include mixin.box-shadow-screen-base;
   }
   #add-1 {
     top: -10px;
@@ -301,11 +304,11 @@ export default defineComponent({
     right: 50%;
     transform: translateX(50%);
     width: 190px;
-    @include box-shadow-screen-base;
+    @include mixin.box-shadow-screen-base;
   }
 
   // tabletレイアウトでの画像配置
-  @include tablet {
+  @include mixin.tablet {
     #colon1 {
       margin-left: 5rem;
     }
@@ -338,7 +341,7 @@ export default defineComponent({
   }
 
   // pcレイアウトでの画像配置
-  @include pc {
+  @include mixin.pc {
     // 画像
     #tsukuba {
       display: block;
@@ -390,14 +393,14 @@ export default defineComponent({
       display: block;
       position: relative;
       width: 252px;
-      @include box-shadow-screen-base;
+      @include mixin.box-shadow-screen-base;
     }
     #detail-2 {
       display: block;
       bottom: 0px;
       left: 0;
       width: 252px;
-      @include box-shadow-screen-base;
+      @include mixin.box-shadow-screen-base;
     }
     #detail-3 {
       bottom: 0px;
@@ -410,7 +413,7 @@ export default defineComponent({
   &__wrap {
     display: flex;
     flex-direction: column-reverse;
-    @include pc {
+    @include mixin.pc {
       display: grid;
       gap: 6.6rem;
       height: 100%;

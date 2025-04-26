@@ -44,22 +44,25 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@use '~/assets/scss/mixin';
+@use '~/assets/scss/variable';
+
 .bottom {
   position: relative;
   background: url('~/images/bg-graphic1.jpg');
   background-size: cover;
-  @include pc {
+  @include mixin.pc {
     height: 25.2rem;
   }
-  @include tab-and-sp {
+  @include mixin.tab-and-sp {
     height: 19.2rem;
-    @include center-flex;
+    @include mixin.center-flex;
   }
   &__container {
     display: grid;
     width: 35.9rem;
 
-    @include pc {
+    @include mixin.pc {
       position: absolute;
       right: calc(50% + 7rem);
       top: 52%;
@@ -72,7 +75,7 @@ export default defineComponent({
         'pc pc pc' auto
         / auto 0.583rem auto;
     }
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
       width: 29.4rem;
       grid-template:
         'text text text' auto
@@ -82,26 +85,26 @@ export default defineComponent({
     }
   }
   &__text {
-    color: $white;
+    color: variable.$white;
     font-weight: bold;
     line-height: 160%;
     margin-left: 1.6rem;
     grid-area: text;
-    @include pc {
+    @include mixin.pc {
       font-size: 1.8rem;
     }
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
       font-size: 2.2rem;
       justify-self: center;
     }
   }
   &__apple-store {
     grid-area: apple;
-    @include center-flex;
-    @include pc {
+    @include mixin.center-flex;
+    @include mixin.pc {
       width: 17.7rem;
     }
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
     }
     img {
       width: 100%;
@@ -109,11 +112,11 @@ export default defineComponent({
   }
   &__google-play {
     grid-area: google;
-    @include center-flex;
-    @include pc {
+    @include mixin.center-flex;
+    @include mixin.pc {
       width: 17.6rem;
     }
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
     }
     img {
       width: 100%;
@@ -122,12 +125,12 @@ export default defineComponent({
   &__pc {
     display: none;
     grid-area: pc;
-    @include pc {
-      @include center-flex;
+    @include mixin.pc {
+      @include mixin.center-flex;
       width: 22.6rem;
       height: 4.4rem;
       margin: 1rem 0 0 1.26rem;
-      background: $white;
+      background: variable.$white;
       border-radius: 4.5rem;
       text-decoration: none;
     }
@@ -135,7 +138,7 @@ export default defineComponent({
       font-size: 2rem;
       font-weight: 500;
       line-height: 160%;
-      @include text-liner;
+      @include mixin.text-liner;
     }
   }
   &__image {
@@ -143,7 +146,7 @@ export default defineComponent({
     left: calc(50% + 3.3rem);
     bottom: 0;
     width: 37.8rem;
-    @include tab-and-sp {
+    @include mixin.tab-and-sp {
       display: none;
     }
   }

@@ -69,35 +69,38 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .top {
   width: 100%;
   background: url('~/images/bg-graphic1.jpg');
   background-size: cover;
   position: relative;
-  @include pc {
+  @include mixin.pc {
     height: 50vw;
   }
-  @include tablet {
+  @include mixin.tablet {
     height: 140vw;
     max-height: 900px;
   }
-  @include sp {
+  @include mixin.sp {
     height: 100vh;
     height: calc(var('--vh', 1vh) * 100);
     overflow: hidden;
   }
   &__images {
-    @include pc {
+    @include mixin.pc {
       width: 55vw;
       position: absolute;
       top: 0;
       left: 0;
     }
-    @include tablet {
+    @include mixin.tablet {
       width: 100%;
       max-width: 650px;
     }
-    @include sp {
+    @include mixin.sp {
       width: 57rem;
       position: absolute;
       top: 0;
@@ -106,22 +109,22 @@ export default defineComponent({
     }
   }
   &__logo-and-link {
-    @include pc {
+    @include mixin.pc {
       width: 22vw;
       position: absolute;
       top: 50%;
       left: 55vw;
       transform: translateY(-50%);
     }
-    @include tablet {
+    @include mixin.tablet {
       width: 50vw;
       max-width: 325px;
       position: absolute;
       right: 7vw;
       bottom: 10.5vmax;
     }
-    @include sp {
-      @include center-absolute;
+    @include mixin.sp {
+      @include mixin.center-absolute;
       width: 25.5rem;
     }
   }
@@ -133,7 +136,7 @@ export default defineComponent({
     '... ... ...' 18%
     'apple ... google' auto
     / 1fr 1.6% 1fr;
-  @include pc {
+  @include mixin.pc {
     grid-template:
       'logo logo logo' auto
       '... ... ...' 16%
@@ -153,14 +156,14 @@ export default defineComponent({
     width: 100%;
     height: auto;
     align-self: center;
-    @include button-cursor;
+    @include mixin.button-cursor;
   }
   &__google-play {
     grid-area: google;
     width: 100%;
     height: auto;
     align-self: center;
-    @include button-cursor;
+    @include mixin.button-cursor;
   }
   &__pc-button {
     width: 70%;
@@ -169,15 +172,15 @@ export default defineComponent({
     font-size: 2rem;
     font-weight: 500;
     border-radius: 4rem;
-    background: $white;
+    background: variable.$white;
     display: none;
-    @include button-cursor;
-    @include pc {
+    @include mixin.button-cursor;
+    @include mixin.pc {
       grid-area: pc;
-      @include center-flex;
+      @include mixin.center-flex;
     }
     span {
-      @include text-liner;
+      @include mixin.text-liner;
     }
   }
 }

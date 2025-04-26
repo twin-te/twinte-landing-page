@@ -42,19 +42,22 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .link-item {
   &__title {
-    font-size: $font-large;
+    font-size: variable.$font-large;
     line-height: 140%;
 
     margin: 4.2rem 0 1.2rem 0;
     a {
-      color: $text-link;
+      color: variable.$text-link;
       text-decoration: none;
     }
   }
   &__description {
-    @include text-description;
+    @include mixin.text-description;
   }
 }
 </style>

@@ -50,32 +50,35 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .other-member {
-  @include sp {
+  @include mixin.sp {
     padding: 8rem 2rem;
   }
 
-  @include tablet {
+  @include mixin.tablet {
     padding: 8rem 6rem;
   }
 
-  @include pc {
+  @include mixin.pc {
     padding: 8rem 0 14rem;
   }
   &__content {
-    @include tablet {
+    @include mixin.tablet {
       margin: auto;
       width: calc(220px * 2 + 16px * 3);
     }
 
-    @include pc {
+    @include mixin.pc {
       margin: auto;
       width: calc(220px * 4 + 16px * 3);
     }
     &-link {
       margin: 16px;
       a {
-        color: $text-link;
+        color: variable.$text-link;
         text-decoration: none;
       }
     }
@@ -84,11 +87,11 @@ export default defineComponent({
       grid-auto-flow: row;
       grid-template-rows: auto;
       gap: 16px;
-      @include tablet {
+      @include mixin.tablet {
         grid-template-columns: repeat(auto-fit, 22rem);
       }
 
-      @include pc {
+      @include mixin.pc {
         grid-template-columns: repeat(auto-fit, 22rem);
       }
     }

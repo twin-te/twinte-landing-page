@@ -66,10 +66,13 @@ export default defineComponent({})
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .faq {
   a {
     &:link {
-      color: $text-link;
+      color: variable.$text-link;
       text-decoration: none;
     }
   }
@@ -77,20 +80,20 @@ export default defineComponent({})
   background-size: cover;
   &__row {
     margin-bottom: 3.2rem;
-    @include pc {
+    @include mixin.pc {
       margin: 0 auto 3.2rem;
       width: 90rem;
     }
   }
-  @include sp {
+  @include mixin.sp {
     padding: 8rem 2rem;
   }
 
-  @include tablet {
+  @include mixin.tablet {
     padding: 8rem 6rem;
   }
 
-  @include pc {
+  @include mixin.pc {
     padding: 8rem 0 8rem;
   }
 }

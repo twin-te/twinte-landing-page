@@ -28,29 +28,32 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .feature-description {
   box-sizing: border-box;
   width: 100%;
   padding: 2rem 3rem 4.4rem;
-  @include pc {
+  @include mixin.pc {
     padding: 0;
   }
-  @include tablet {
+  @include mixin.tablet {
     width: 100%;
     padding: 2rem 5rem 4.4rem;
   }
   &__title {
     margin-bottom: 2rem;
-    @include feature-title;
-    @include pc {
+    @include mixin.feature-title;
+    @include mixin.pc {
       margin-bottom: 3.2rem;
     }
     &--primary {
-      @include text-liner;
+      @include mixin.text-liner;
     }
   }
   &__description {
-    @include text-description;
+    @include mixin.text-description;
     color: inherit;
   }
 }

@@ -72,11 +72,16 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 
+interface User {
+  displayName: string
+  link: string | undefined
+}
+
 export default defineComponent({
   name: 'Sponsor',
   setup: () => {
     const count = ref<number>()
-    const users = ref<unknown[]>()
+    const users = ref<User[]>()
     const amount = ref<number>()
     fetch('https://app.twinte.net/api/v3/donation/aggregate/totalAmount')
       .then(res => res.json())
@@ -96,6 +101,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use 'sass:color';
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .sponsorship {
   padding: 3rem;
 }
@@ -103,7 +112,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 160%;
-  @include text-liner;
+  @include mixin.text-liner;
   margin-bottom: 2rem;
 }
 h2 {
@@ -112,17 +121,17 @@ h2 {
   font-size: 1.6rem;
 }
 p {
-  @include text-description;
+  @include mixin.text-description;
 }
 .users {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: $button-gray;
+  color: variable.$button-gray;
   a {
     display: block;
     padding: 1rem;
-    color: $button-gray;
+    color: variable.$button-gray;
   }
 }
 .sponsor-wrap {
@@ -132,7 +141,7 @@ p {
   text-align: center;
   font-size: 2.3rem;
   padding-top: 1rem;
-  @include text-liner;
+  @include mixin.text-liner;
   font-weight: 400;
   span {
     font-weight: 700;
@@ -141,14 +150,14 @@ p {
 .count {
   font-size: 1.8rem;
   text-align: center;
-  color: $text-main;
+  color: variable.$text-main;
   font-weight: 400;
   span {
     font-weight: 700;
   }
 }
 .users {
-  color: $button-gray;
+  color: variable.$button-gray;
   margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +171,7 @@ p {
   a.user-link {
     text-decoration: underline;
     &:hover {
-      color: lighten($button-gray, 30%);
+      color: color.adjust(variable.$button-gray, $lightness: 30%);
     }
     &:hover .linkicon {
       opacity: 1;
@@ -172,7 +181,7 @@ p {
     opacity: 0;
     display: inline-flex;
     font-family: 'Material Icons';
-    color: $button-gray;
+    color: variable.$button-gray;
     content: '\e157';
     vertical-align: middle;
     transition: 0.2s;
@@ -180,7 +189,7 @@ p {
 }
 
 hr {
-  border-top: 0.5px solid $unselected;
+  border-top: 0.5px solid variable.$unselected;
 }
 .sponsorpage-btn {
   display: block;

@@ -28,18 +28,21 @@
 </script>
 
 <style scoped lang="scss">
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .footer {
-  background: $base;
+  background: variable.$base;
   display: grid;
   align-items: end;
-  @include pc {
+  @include mixin.pc {
     padding: 1.8rem 0 1.8rem 7.2rem;
     grid-template:
       'logo ... ... ... ... ...' auto
       'logo ... email ... links ...' auto
       / auto 4.8rem auto 4.8rem auto 1fr;
   }
-  @include tablet {
+  @include mixin.tablet {
     padding: 3.6rem 0 2rem 3.6rem;
     grid-template:
       'links links links links' auto
@@ -48,7 +51,7 @@
       'logo ... email ...' auto
       / auto 2.4rem auto 1fr;
   }
-  @include sp {
+  @include mixin.sp {
     padding: 3.6rem 0 2rem 3rem;
     grid-template:
       'links links links links' auto
@@ -65,11 +68,11 @@
   &__email {
     grid-area: email;
     line-height: 140%;
-    color: $button-gray;
+    color: variable.$button-gray;
     text-decoration: none;
     font-weight: 500;
     &:link {
-      color: $button-gray;
+      color: variable.$button-gray;
     }
   }
   &__links {
@@ -78,14 +81,14 @@
     display: grid;
     align-items: end;
     gap: 2rem;
-    @include pc {
+    @include mixin.pc {
       grid-auto-flow: column;
     }
-    @include sp {
+    @include mixin.sp {
       gap: 1.2rem;
     }
     a {
-      color: $button-gray;
+      color: variable.$button-gray;
       text-decoration: none;
       line-height: 140%;
       font-weight: 400;
