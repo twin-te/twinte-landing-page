@@ -1,12 +1,8 @@
-import { defineNuxtConfig } from 'nuxt/config';
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  nitro: {
-    output: {
-      dir: 'dist',
-    },
-  },
-  srcDir: 'src/',
+  modules: ['@nuxt/eslint'],
+
   app: {
     head: {
       title: 'Twin:te',
@@ -42,5 +38,21 @@ export default defineNuxtConfig({
         { rel: 'canonical', href: 'https://www.twinte.net' },
       ],
     },
-  }
-});
+  },
+
+  srcDir: 'src/',
+
+  compatibilityDate: '2025-04-09',
+
+  nitro: {
+    output: {
+      dir: 'dist',
+    },
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
+})
