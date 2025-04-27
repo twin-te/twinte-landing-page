@@ -4,37 +4,29 @@
       class="option-featurs__title-image"
       src="../../images/option.png"
       alt="便利なオプション機能！"
-    >
+    />
     <div class="item-wrapper">
       <div class="option-featurs__item opacity1">
-        <div class="item__image">
-          <img src="../../images/federation.png">
-        </div>
-        <div class="item__title">
-          複数の端末でデータ連携
-        </div>
+        <div class="item__image"><img src="../../images/federation.png" /></div>
+        <div class="item__title">複数の端末でデータ連携</div>
         <div class="item__text">
           TwitterやGoogle、Appleアカウントのいずれかでログインすることで、複数の端末でデータの共有ができます。
         </div>
       </div>
       <div class="option-featurs__item opacity2">
         <div class="item__image">
-          <img src="../../images/push.png">
+          <img src="../../images/push.png" />
         </div>
-        <div class="item__title">
-          特殊日程をプッシュ通知でお知らせ
-        </div>
+        <div class="item__title">特殊日程をプッシュ通知でお知らせ</div>
         <div class="item__text">
           翌日が特殊日程の場合、プッシュ通知でお知らせします。日課変更を忘れて当日に慌ててしまう心配もありません。
         </div>
       </div>
       <div class="option-featurs__item opacity3">
         <div class="item__image">
-          <img src="../../images/widjet.png">
+          <img src="../../images/widjet.png" />
         </div>
-        <div class="item__title">
-          ウィジェットで今日の授業を確認
-        </div>
+        <div class="item__title">ウィジェットで今日の授業を確認</div>
         <div class="item__text">
           ウィジェットによって今日の時間割や現在の授業、次の授業が簡単に確認できます。
           もちろん今日が特殊な日程でも問題ありません。
@@ -45,36 +37,35 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   components: {},
-})
+});
 </script>
 
 <style lang="scss" scoped>
-@use '~/assets/scss/variable';
-@use '~/assets/scss/mixin';
+@import '~/scss/main.scss';
 
 .option-featurs {
-  background: variable.$base;
+  background: $base;
   &__item {
     width: 272px;
   }
-  @include mixin.sp {
+  @include sp {
     padding: 8rem 5rem;
   }
 
-  @include mixin.tablet {
+  @include tablet {
     padding: 8rem 6rem;
   }
 
-  @include mixin.pc {
+  @include pc {
     padding: 8rem 0 14rem;
   }
   &__item {
     width: 100%;
-    @include mixin.pc {
+    @include pc {
       width: 272px;
     }
   }
@@ -82,7 +73,7 @@ export default defineComponent({
     display: block;
     width: 30rem;
     margin: 0 auto 4.8rem;
-    @include mixin.sp {
+    @include sp {
       width: 24.5rem;
     }
   }
@@ -93,7 +84,7 @@ export default defineComponent({
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: column;
-  @include mixin.pc {
+  @include pc {
     margin: auto;
     max-width: 928px;
     flex-direction: row;
@@ -106,13 +97,13 @@ export default defineComponent({
     img {
       display: block;
       margin: auto;
-      @include mixin.sp {
+      @include sp {
         width: 100%;
       }
-      @include mixin.tablet {
+      @include tablet {
         width: 70%;
       }
-      @include mixin.pc {
+      @include pc {
         width: 100%;
       }
     }
@@ -126,13 +117,13 @@ export default defineComponent({
   &__text {
     font-size: 1.4rem;
     line-height: 180%;
-    @include mixin.sp {
+    @include sp {
       margin-bottom: 4rem;
     }
-    @include mixin.tablet {
+    @include tablet {
       margin-bottom: 5.6rem;
     }
-    @include mixin.pc {
+    @include pc {
       margin-bottom: 0;
     }
   }

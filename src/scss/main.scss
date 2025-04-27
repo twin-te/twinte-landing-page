@@ -1,29 +1,26 @@
 @charset "utf-8";
 
-@use 'variable';
-@use 'mixin';
-@forward 'variable';
-@forward 'mixin';
+@import 'variable', 'mixin', 'reset';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 html {
   font-size: 62.5%; //1rem=10px
   font-family: 'Noto Sans JP', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  color: variable.$text-main;
+  color: $text-main;
 }
 body {
-  font-size: variable.$font-medium;
+  font-size: $font-medium;
 }
 .material-icons {
   font-family: Material Icons;
-  @include mixin.iconlayout;
+  @include iconlayout;
 }
 .pc {
-  @include mixin.sp {
+  @include sp {
     display: none;
   }
-  @include mixin.tablet {
+  @include tablet {
     display: none;
   }
 }
