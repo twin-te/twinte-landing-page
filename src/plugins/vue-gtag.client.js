@@ -1,4 +1,4 @@
-import VueGtag, { trackRouter } from 'vue-gtag-next'
+import VueGtag, { trackRouter } from 'vue-gtag-next';
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(VueGtag, {
@@ -6,6 +6,6 @@ export default defineNuxtPlugin((nuxtApp) => {
       id: 'GTM-W65BSBG',
     },
     isEnabled: import.meta.env.PROD,
-  })
-  trackRouter(useRouter())
-})
+  });
+  trackRouter(useRouter());
+});

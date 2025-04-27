@@ -195,9 +195,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use '~/assets/scss/variable';
-@use '~/assets/scss/mixin';
-
+@import '~/scss/main.scss';
 .terms {
   padding: 3rem;
 }
@@ -205,7 +203,7 @@ h1 {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 160%;
-  @include mixin.text-liner;
+  @include text-liner;
   margin-bottom: 2rem;
 }
 h2 {
@@ -220,7 +218,7 @@ ol {
 ol,
 p {
   margin: 0;
-  @include mixin.text-description;
+  @include text-discription;
 }
 li {
   padding-left: 1.4rem;
