@@ -14,12 +14,6 @@
       <NuxtLink to="/terms"> 利用規約 </NuxtLink>
       <NuxtLink to="/recruit"> Twin:teに参加 </NuxtLink>
       <NuxtLink to="/APIterms"> 外部連携機能に関する規約 </NuxtLink>
-      <a href="https://vercel.com?utm_source=twin-te&utm_campaign=oss"
-        ><img
-          width="120"
-          src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-          alt="Powered by Vercel"
-      /></a>
     </div>
   </footer>
 </template>
