@@ -2,7 +2,7 @@ name = "twinte-landing-page"
 compatibility_date = "2025-05-07"
 
 [assets]
-directory = "src/server/dist/public"
+directory = "dist/public"
 
 [observability]
 enabled = true
