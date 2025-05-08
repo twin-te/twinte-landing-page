@@ -4,10 +4,11 @@
       src="../../images/twintelogo-color.svg"
       alt="Twin-teのロゴ"
       class="footer__logo"
-    />
-    <a href="mailto:info@twinte.net" class="footer__email"
-      >email: info@twinte.net</a
     >
+    <a
+      href="mailto:info@twinte.net"
+      class="footer__email"
+    >email: info@twinte.net</a>
     <div class="footer__links">
       <NuxtLink to="/sponsor"> 寄付者一覧 </NuxtLink>
       <NuxtLink to="/policy"> プライバシーポリシー </NuxtLink>
