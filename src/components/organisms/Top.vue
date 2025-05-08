@@ -1,35 +1,42 @@
 <template>
-  <div id="twin-te" class="top">
-    <img src="../../images/top.png" alt="Twin-teの画像" class="top__images" />
+  <div
+    id="twin-te"
+    class="top"
+  >
+    <img
+      src="../../images/top.png"
+      alt="Twin-teの画像"
+      class="top__images"
+    >
     <div class="top__logo-and-link logo-and-link">
       <img
         src="../../images/title-logo.png"
         alt="Twin-teのロゴ"
         class="logo-and-link__title-logo"
-      />
+      >
       <img
-        @click="
-          externalLink(
-            'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8'
-          )
-        "
         src="../../images/app-store.png"
         alt="Apple Store からダウンロード"
         class="logo-and-link__apple-store"
-      />
-      <img
         @click="
           externalLink(
-            'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+            'https://apps.apple.com/jp/app/twin-te/id1489274755?mt=8',
           )
         "
+      >
+      <img
         src="../../images/google-play.png"
         alt="Google Play からダウンロード"
         class="logo-and-link__google-play"
-      />
+        @click="
+          externalLink(
+            'https://play.google.com/store/apps/details?id=net.twinte.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+          )
+        "
+      >
       <div
-        @click="externalLink('https://app.twinte.net/')"
         class="logo-and-link__pc-button"
+        @click="externalLink('https://app.twinte.net/')"
       >
         <span>PC版</span>
       </div>
@@ -38,61 +45,62 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent, onMounted } from 'vue'
 
 export default defineComponent({
   name: 'Top',
   setup: () => {
     const externalLink = (url: string) => {
-      window.location.href = url;
-    };
+      window.location.href = url
+    }
 
     onMounted(() => {
       function setHeight() {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
       }
-      setHeight();
-      window.addEventListener('resize', setHeight);
-    });
+      setHeight()
+      window.addEventListener('resize', setHeight)
+    })
 
-    return { externalLink };
+    return { externalLink }
   },
-});
+})
 </script>
 
 <style scoped lang="scss">
-@import '~/scss/main.scss';
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
 
 .top {
   width: 100%;
-  @include pc {
+  background: url('~/images/bg-graphic1.jpg');
+  background-size: cover;
+  position: relative;
+  @include mixin.pc {
     height: 50vw;
   }
-  @include tablet {
+  @include mixin.tablet {
     height: 140vw;
     max-height: 900px;
   }
-  @include sp {
+  @include mixin.sp {
     height: 100vh;
     height: calc(var('--vh', 1vh) * 100);
     overflow: hidden;
   }
-  background: url('~/images/bg-graphic1.jpg');
-  background-size: cover;
-  position: relative;
   &__images {
-    @include pc {
+    @include mixin.pc {
       width: 55vw;
       position: absolute;
       top: 0;
       left: 0;
     }
-    @include tablet {
+    @include mixin.tablet {
       width: 100%;
       max-width: 650px;
     }
-    @include sp {
+    @include mixin.sp {
       width: 57rem;
       position: absolute;
       top: 0;
@@ -101,22 +109,22 @@ export default defineComponent({
     }
   }
   &__logo-and-link {
-    @include pc {
+    @include mixin.pc {
       width: 22vw;
       position: absolute;
       top: 50%;
       left: 55vw;
       transform: translateY(-50%);
     }
-    @include tablet {
+    @include mixin.tablet {
       width: 50vw;
       max-width: 325px;
       position: absolute;
       right: 7vw;
       bottom: 10.5vmax;
     }
-    @include sp {
-      @include center-absolute;
+    @include mixin.sp {
+      @include mixin.center-absolute;
       width: 25.5rem;
     }
   }
@@ -128,7 +136,7 @@ export default defineComponent({
     '... ... ...' 18%
     'apple ... google' auto
     / 1fr 1.6% 1fr;
-  @include pc {
+  @include mixin.pc {
     grid-template:
       'logo logo logo' auto
       '... ... ...' 16%
@@ -148,14 +156,14 @@ export default defineComponent({
     width: 100%;
     height: auto;
     align-self: center;
-    @include button-cursor;
+    @include mixin.button-cursor;
   }
   &__google-play {
     grid-area: google;
     width: 100%;
     height: auto;
     align-self: center;
-    @include button-cursor;
+    @include mixin.button-cursor;
   }
   &__pc-button {
     width: 70%;
@@ -164,15 +172,15 @@ export default defineComponent({
     font-size: 2rem;
     font-weight: 500;
     border-radius: 4rem;
-    background: $white;
+    background: variable.$white;
     display: none;
-    @include button-cursor;
-    @include pc {
+    @include mixin.button-cursor;
+    @include mixin.pc {
       grid-area: pc;
-      @include center-flex;
+      @include mixin.center-flex;
     }
     span {
-      @include text-liner;
+      @include mixin.text-liner;
     }
   }
 }
