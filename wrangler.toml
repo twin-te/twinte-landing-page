@@ -3,6 +3,7 @@ compatibility_date = "2025-05-07"
 
 [assets]
 directory = "dist/public"
+not_found_handling = "404-page"
 
 [observability]
 enabled = true
