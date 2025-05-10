@@ -7,13 +7,13 @@
       <span class="dropcap">A.</span> {{ answer }}
     </div>
     <div class="faq-item__body">
-      <slot name="body"></slot>
+      <slot name="body" />
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
@@ -26,18 +26,19 @@ export default defineComponent({
       required: true,
     },
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
 
 .faq-item {
   padding: 2rem 3rem 2.4rem;
   border-radius: 1.2rem;
-  background-color: $base;
+  background-color: variable.$base;
   &__head {
-    @include text-title-sub;
+    @include mixin.text-title-sub;
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 500;
@@ -47,17 +48,17 @@ export default defineComponent({
     }
   }
   &__body {
-    @include text-discription;
+    @include mixin.text-description;
     font-size: 1.4rem;
   }
   &__question {
     .dropcap {
-      @include text-liner;
+      @include mixin.text-liner;
     }
   }
   &__answer {
     .dropcap {
-      color: $yellow-orange-light;
+      color: variable.$yellow-orange-light;
     }
   }
 }

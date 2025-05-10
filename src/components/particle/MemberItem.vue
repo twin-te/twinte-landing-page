@@ -1,26 +1,42 @@
 <template>
   <section class="member-item opacity2">
     <div class="member-item__icon">
-      <img :src="img" alt="メンバーの顔写真" />
+      <img
+        :src="img"
+        alt="メンバーの顔写真"
+      >
     </div>
-    <div class="member-item__name">{{ name }}</div>
-    <div class="member-item__desc">{{ desc }}</div>
-    <a v-if="link.href !== ''" class="member-item__link" :href="link.href"
-      ><span class="material-icons">link</span>{{ link.text }}</a
-    >
+    <div class="member-item__name">
+      {{ name }}
+    </div>
+    <div class="member-item__desc">
+      {{ desc }}
+    </div>
+    <a
+      v-if="link.href !== ''"
+      class="member-item__link"
+      :href="link.href"
+    ><span class="material-icons">link</span>{{ link.text }}</a>
     <div class="member-item__icon-link">
-      <div v-if="iconLinks.twitter !== ''" class="icon-link icon-link__twitter">
-        <a :href="iconLinks.twitter"><img src="../../images/twitter.svg" /></a>
+      <div
+        v-if="iconLinks.twitter !== ''"
+        class="icon-link icon-link__twitter"
+      >
+        <a :href="iconLinks.twitter"><img src="../../images/twitter.svg"></a>
       </div>
-      <div v-if="iconLinks.github !== ''" class="icon-link icon-link__github">
-        <a :href="iconLinks.github"><img src="../../images/github.png" /></a>
+      <div
+        v-if="iconLinks.github !== ''"
+        class="icon-link icon-link__github"
+      >
+        <a :href="iconLinks.github"><img src="../../images/github.png"></a>
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref } from 'vue';
+import type { PropType } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
   components: {},
@@ -38,32 +54,34 @@ export default defineComponent({
       required: true,
     },
     link: {
-      type: Object as PropType<{ text: string; href: string }>,
+      type: Object as PropType<{ text: string, href: string }>,
       required: true,
     },
     iconLinks: {
-      type: Object as PropType<{ github: string; twitter: string }>,
+      type: Object as PropType<{ github: string, twitter: string }>,
       required: true,
     },
   },
   setup: async (props) => {
     const img = ref(
-      (await import(`../../images/${props.imagePath}.jpg`)).default
-    );
+      (await import(`../../images/${props.imagePath}.jpg`)).default,
+    )
     return {
       img,
-    };
+    }
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
+
 .member-item {
   box-sizing: border-box;
   padding: 24px 17px;
-  background: $base-liner;
-  box-shadow: $shadow-base;
+  background: variable.$base-liner;
+  box-shadow: variable.$shadow-base;
   display: grid;
   width: 220px;
   grid-template:
@@ -79,7 +97,7 @@ export default defineComponent({
     / 1fr;
   text-align: center;
   border-radius: 1.2rem;
-  @include sp {
+  @include mixin.sp {
     width: 100%;
     grid-template:
       'icon ... name     '
@@ -93,7 +111,7 @@ export default defineComponent({
     text-align: start;
   }
   &__icon {
-    @include center-flex;
+    @include mixin.center-flex;
     grid-area: icon;
     height: 120px;
     width: 120px;
@@ -102,7 +120,7 @@ export default defineComponent({
       width: 100%;
       border-radius: 100%;
     }
-    @include sp {
+    @include mixin.sp {
       width: 104px;
     }
   }
@@ -117,12 +135,12 @@ export default defineComponent({
     line-height: 160%;
   }
   &__link {
-    @include button-cursor;
+    @include mixin.button-cursor;
     grid-area: link;
-    color: $button-gray;
+    color: variable.$button-gray;
     text-decoration: none;
     span {
-      @include iconlayout;
+      @include mixin.iconlayout;
       font-size: 2rem;
       margin-right: 0.5rem;
     }
@@ -132,7 +150,7 @@ export default defineComponent({
     display: flex;
     justify-content: center;
     bottom: 0;
-    @include sp {
+    @include mixin.sp {
       justify-content: flex-start;
     }
   }

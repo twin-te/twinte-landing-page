@@ -1,3 +1,5 @@
+@use "variable";
+
 // text
 @mixin feature-title {
   font-family: Noto Sans JP;
@@ -10,20 +12,20 @@
   }
 }
 @mixin text-title-sub {
-  color: $text-main;
-  font-size: $font-large;
+  color: variable.$text-main;
+  font-size: variable.$font-large;
   line-height: 180%;
   font-weight: regular;
 }
-@mixin text-discription {
-  color: $text-main;
-  font-size: $font-medium;
+@mixin text-description {
+  color: variable.$text-main;
+  font-size: variable.$font-medium;
   line-height: 180%;
   font-weight: regular;
 }
 @mixin text-liner {
   color: #6bcedc; // baakground-clip に対応していない場合の色
-  background: $primary-liner;
+  background: variable.$primary-liner;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,7 +98,7 @@
 }
 
 @mixin tablet {
-  @media only screen and (min-width: 501px) and(max-width: 999px) {
+  @media only screen and (min-width: 501px) and (max-width: 999px) {
     // タブレットレイアウト
     @content;
   }

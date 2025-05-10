@@ -1,17 +1,17 @@
 export type Member = {
-  name: string;
-  imagePath: string;
-  description: string;
-  isActive: boolean;
+  name: string
+  imagePath: string
+  description: string
+  isActive: boolean
   links: {
-    githubId?: string;
-    twitterId?: string;
+    githubId?: string
+    twitterId?: string
     website?: {
-      label: string;
-      url: string;
-    };
-  };
-};
+      label: string
+      url: string
+    }
+  }
+}
 
 export const members: Member[] = [
   {
@@ -188,4 +188,4 @@ export const members: Member[] = [
       twitterId: 'ao_ringo_uni',
     },
   },
-];
+]
