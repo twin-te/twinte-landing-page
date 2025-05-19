@@ -1,5 +1,8 @@
 <template>
-  <section id="member" class="member">
+  <section
+    id="member"
+    class="member"
+  >
     <ParticleSectionTitle title="主メンバー" />
     <Suspense>
       <div class="member__content">
@@ -7,14 +10,14 @@
           <ParticleMemberItem
             v-for="(member, index) in activeMembers"
             :key="index"
-            :imagePath="member.imagePath"
+            :image-path="member.imagePath"
             :name="member.name"
             :desc="member.description"
             :link="{
               text: member.links.website?.label || '',
               href: member.links.website?.url || '',
             }"
-            :iconLinks="{
+            :icon-links="{
               github: member.links.githubId
                 ? `https://github.com/${member.links.githubId}`
                 : '',
@@ -22,7 +25,7 @@
                 ? `https://x.com/${member.links.twitterId}`
                 : '',
             }"
-          ></ParticleMemberItem>
+          />
         </div>
         <div class="member__content-link opacity2">
           <NuxtLink to="./othermember">OB / OG &gt;</NuxtLink>
@@ -33,41 +36,42 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { members } from './members';
+import { defineComponent } from 'vue'
+import { members } from './members'
 
 export default defineComponent({
   setup: () => {},
   data() {
     return {
-      activeMembers: members.filter((member) => member.isActive),
-    };
+      activeMembers: members.filter(member => member.isActive),
+    }
   },
-});
+})
 </script>
 
 <style lang="scss" scoped>
-@import '~/scss/main.scss';
+@use '~/assets/scss/variable';
+@use '~/assets/scss/mixin';
 
 .member {
-  @include sp {
+  @include mixin.sp {
     padding: 8rem 2rem;
   }
 
-  @include tablet {
+  @include mixin.tablet {
     padding: 8rem 6rem;
   }
 
-  @include pc {
+  @include mixin.pc {
     padding: 8rem 0 14rem;
   }
   &__content {
-    @include tablet {
+    @include mixin.tablet {
       margin: auto;
       width: calc(220px * 2 + 16px * 3);
     }
 
-    @include pc {
+    @include mixin.pc {
       margin: auto;
       width: calc(220px * 4 + 16px * 3);
     }
@@ -75,7 +79,7 @@ export default defineComponent({
       margin: 16px;
       text-align: right;
       a {
-        color: $text-link;
+        color: variable.$text-link;
         text-decoration: none;
       }
     }
@@ -84,11 +88,11 @@ export default defineComponent({
       grid-auto-flow: row;
       grid-template-rows: auto;
       gap: 16px;
-      @include tablet {
+      @include mixin.tablet {
         grid-template-columns: repeat(auto-fit, 22rem);
       }
 
-      @include pc {
+      @include mixin.pc {
         grid-template-columns: repeat(auto-fit, 22rem);
       }
     }
