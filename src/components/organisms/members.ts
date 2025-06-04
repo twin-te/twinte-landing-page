@@ -15,6 +15,27 @@ export type Member = {
 
 export const members: Member[] = [
   {
+    isActive: true,
+    name: 'Arata',
+    imagePath: 'arata',
+    description: '',
+    links: {},
+  },
+  {
+    isActive: true,
+    name: 'Takayuki Ueno (kichi2004)',
+    imagePath: 'kichi2004',
+    description: '情報科学類所属。',
+    links: {
+      website: {
+        label: 'kichi2004.jp',
+        url: 'https://kichi2004.jp/',
+      },
+      githubId: 'kichi2004',
+      twitterId: 'kichi2004_',
+    },
+  },
+  {
     isActive: false,
     name: 'たこなす',
     imagePath: 'takonasu',
@@ -78,14 +99,14 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'takonomura',
     imagePath: 'takonomura',
     description: 'インフラ担当。',
     links: {},
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'HosokawaR',
     imagePath: 'hosokawar',
     description: 'フロントエンド担当。情報科学類所属。',
@@ -94,7 +115,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'Hayato Shishido',
     imagePath: 'hayatoshishido',
     description: 'フロントエンド担当。社会工学類所属。',
@@ -117,20 +138,6 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
-    name: 'Takayuki Ueno (kichi2004)',
-    imagePath: 'kichi2004',
-    description: '情報科学類所属。',
-    links: {
-      website: {
-        label: 'kichi2004.jp',
-        url: 'https://kichi2004.jp/',
-      },
-      githubId: 'kichi2004',
-      twitterId: 'kichi2004_',
-    },
-  },
-  {
     isActive: false,
     name: 'あざらし',
     imagePath: 'azarashi',
@@ -145,14 +152,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
-    name: 'Arata',
-    imagePath: 'arata',
-    description: '',
-    links: {},
-  },
-  {
-    isActive: true,
+    isActive: false,
     name: 'public_yusuke',
     imagePath: 'public_yusuke',
     description: 'Android 担当',
@@ -187,5 +187,58 @@ export const members: Member[] = [
     links: {
       twitterId: 'ao_ringo_uni',
     },
+  },
+  {
+    isActive: true,
+    name: 'ゾビオ',
+    imagePath: 'zobio.png',
+    description: '',
+    links: {},
+  },
+  {
+    isActive: true,
+    name: 'fami',
+    imagePath: 'fami.jpg',
+    description: '',
+    links: {},
+  },
+  {
+    isActive: true,
+    name: 'PocoPota',
+    imagePath: 'pocopota.png',
+    description: '',
+    links: {
+      website: { label: 'pocopota.com', url: 'https://pocopota.com/' },
+      twitterId: 'PocoPota_io',
+      githubId: 'PocoPota',
+    },
+  },
+  {
+    isActive: true,
+    name: 'appare45',
+    imagePath: 'appare.png',
+    description: '',
+    links: {
+      twitterId: 'appare45',
+      githubId: 'appare45',
+    },
+  },
+  {
+    isActive: true,
+    name: 'Sudy',
+    description: '情報科学類所属。',
+    imagePath: 'sudy.png',
+    links: {
+      website: { label: 'sudy-super.github.io', url: 'https://sudy-super.github.io/index.html' },
+      twitterId: 'sudy_super',
+      githubId: 'sudy-super',
+    },
+  },
+  {
+    isActive: true,
+    name: 'Jyagapotato',
+    description: '工学システム学類所属。',
+    imagePath: 'jyagapotato.png',
+    links: {},
   },
 ]
