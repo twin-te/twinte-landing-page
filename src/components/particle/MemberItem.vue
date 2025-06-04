@@ -38,8 +38,6 @@
 import type { PropType } from 'vue'
 import { defineComponent, ref } from 'vue'
 
-const imagePathRegex = RegExp(/\.(a?png|avif|gif|jpe?g|jfif|pjpeg|pjp|svg|webp)$/)
-
 export default defineComponent({
   components: {},
   props: {
@@ -65,10 +63,14 @@ export default defineComponent({
     },
   },
   setup: async ({ imagePath }) => {
-    const path = imagePathRegex.test(imagePath) ? imagePath : `${imagePath}.jpg`
-    const img = ref(
-      (await import(`../../images/${path}`)).default,
-    )
+    const split = imagePath.split('.')
+    const withoutExt = split.slice(0, -1).join('.')
+
+    let imageImport: { default: unknown }
+    if (imagePath.endsWith('.png')) imageImport = await import((`../../images/${withoutExt}.png`))
+    else if (imagePath.endsWith('.jpg')) imageImport = await import((`../../images/${withoutExt}.jpg`))
+    else imageImport = await import((`../../images/${imagePath}.jpg`))
+    const img = ref(imageImport.default)
     return {
       img,
     }

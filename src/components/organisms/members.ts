@@ -25,7 +25,7 @@ export const members: Member[] = [
     isActive: true,
     name: 'Takayuki Ueno (kichi2004)',
     imagePath: 'kichi2004',
-    description: '情報科学類所属。',
+    description: '副代表。情報科学類所属。主にフロントエンドを担当。',
     links: {
       website: {
         label: 'kichi2004.jp',
