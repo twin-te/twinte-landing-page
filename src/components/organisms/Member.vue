@@ -28,7 +28,7 @@
           />
         </div>
         <div class="member__content-link opacity2">
-          <NuxtLink to="./othermember">OB / OG &gt;</NuxtLink>
+          <NuxtLink to="/othermember">OB / OG &gt;</NuxtLink>
         </div>
       </div>
     </Suspense>

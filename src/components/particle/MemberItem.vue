@@ -62,10 +62,15 @@ export default defineComponent({
       required: true,
     },
   },
-  setup: async (props) => {
-    const img = ref(
-      (await import(`../../images/${props.imagePath}.jpg`)).default,
-    )
+  setup: async ({ imagePath }) => {
+    const split = imagePath.split('.')
+    const withoutExt = split.slice(0, -1).join('.')
+
+    let imageImport: { default: unknown }
+    if (imagePath.endsWith('.png')) imageImport = await import((`../../images/${withoutExt}.png`))
+    else if (imagePath.endsWith('.jpg')) imageImport = await import((`../../images/${withoutExt}.jpg`))
+    else imageImport = await import((`../../images/${imagePath}.jpg`))
+    const img = ref(imageImport.default)
     return {
       img,
     }
