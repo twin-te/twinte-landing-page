@@ -18,7 +18,7 @@ export const members: Member[] = [
     isActive: true,
     name: 'Arata',
     imagePath: 'arata',
-    description: '',
+    description: '代表。情報科学類所属。主にインフラを担当。',
     links: {},
   },
   {
