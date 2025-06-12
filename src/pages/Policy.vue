@@ -25,7 +25,7 @@
         詳細については<a
           href="https://marketingplatform.google.com/about/analytics/terms/jp/"
         >Googleアナリティクスのサービス利用規約</a>
-        や<a href="https://support.google.com/analytics/answer/4597324">Googleアナリティクスのポリシーページ</a>をご覧ください。
+        や<a href="https://support.google.com/analytics/answer/4597324?hl=ja">Googleアナリティクスのポリシーページ</a>をご覧ください。
       </p>
       <p>
         Sentryでは，Cookieやその他の技術を使用して，ユーザーの行動やデバイスに関するデータを収集します。
