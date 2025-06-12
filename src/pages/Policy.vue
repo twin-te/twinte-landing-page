@@ -13,28 +13,23 @@
     <section>
       <h2>第2条（個人情報の収集方法）</h2>
       <p>
-        Twin:teは，ユーザーが利用登録をする際に利用するサービス（Twitter，Google等）から提供されるOAuthトークンを保存します。
-        それと共に入力されたメモ情報や出席・欠席・遅刻回数等の情報も保存します。学籍番号やID，パスワード等の個人を特定できる物は一切保存しません。
-        本サービスでは，ユーザーの訪問状況を把握するためにHotjarおよびにGoogleによるアクセス解析ツール「Googleアナリティクス」を使用しています。
-      </p>
-      <p>
-        Hotjarでは，Cookieやその他の技術を使用して，ユーザーの行動やデバイスに関するデータを収集します。
-        これには，IPアドレス（セッション中に処理され、匿名化された形式で保存されます），画面サイズ，
-        デバイスの種類（一意のデバイス識別子），ブラウザー情報，地理的な場所（国のみ），および本サービスのWebサイトの表示に使用される優先言語が含まれますが，
-        特定の個人を識別する情報は一切含まれません。詳細については<a
-          href="https://help.hotjar.com/hc/en-us/categories/115001323967-About-Hotjar"
-        >Hotjarのサポートサイト</a>をご覧ください。Hotjarによるトラッキングを拒否する場合は<a
-          href="https://www.hotjar.com/policies/do-not-track/"
-        >Hotjarのポリシーページ</a>をご覧ください。
+        Twin:teは，ユーザーが利用登録をする際に利用するサービス（Apple，X，Google等）から提供されるOAuthトークンを保存します。
+        またOAuthトークンに紐づく形で，本サービス上で入力された時間割情報やメモ情報，出席・欠席・遅刻回数等の情報も保存します。学籍番号やメールアドレス等の個人を特定できる物は一切保存しません。
+        本サービスでは，ユーザーの利用状況を把握するためGoogleによるアクセス解析ツール「Googleアナリティクス」，およびFUNCTIONAL
+        SOFTWARE, INC.によるSentryを使用しています。
       </p>
       <p>
         Googleアナリティクスでは，データの収集のためにCookieを使用しています。
         このデータは匿名で収集されており，個人を特定するものではありません。
         この機能はCookieを無効にすることで収集を拒否することが出来ますので，お使いのブラウザの設定をご確認ください。
-        この規約に関しての詳細は<a
+        詳細については<a
           href="https://marketingplatform.google.com/about/analytics/terms/jp/"
-        >Googleアナリティクスサービス利用規約</a>
-        のページや<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約</a>ページをご覧ください。
+        >Googleアナリティクスのサービス利用規約</a>
+        や<a href="https://support.google.com/analytics/answer/4597324?hl=ja">Googleアナリティクスのポリシーページ</a>をご覧ください。
+      </p>
+      <p>
+        Sentryでは，Cookieやその他の技術を使用して，ユーザーの行動やデバイスに関するデータを収集します。
+        詳細については<a href="https://sentry.io/terms/">Sentryの利用規約</a>や<a href="https://sentry.io/privacy/">Sentryのポリシーページ</a>をご覧ください。
       </p>
     </section>
     <section>
@@ -164,7 +159,7 @@
     <footer>
       <section>
         <p id="modification-day">
-          2022年3月3日改定
+          2025年6月12日改定
         </p>
         <a
           id="back-link"
@@ -176,8 +171,8 @@
 </template>
 
 <style lang="scss" scoped>
-@use '~/assets/scss/variable';
-@use '~/assets/scss/mixin';
+@use "~/assets/scss/variable";
+@use "~/assets/scss/mixin";
 
 .policy {
   padding: 3rem;
