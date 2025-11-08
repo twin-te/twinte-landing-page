@@ -10,7 +10,7 @@
       class="footer__email"
     >email: info@twinte.net</a>
     <div class="footer__links">
-      <NuxtLink to="/sponsor"> 寄付者一覧 </NuxtLink>
+      <a href="https://app.twinte.net/sponsorship/sponsors-list">寄付者一覧</a>
       <NuxtLink to="/policy"> プライバシーポリシー </NuxtLink>
       <NuxtLink to="/terms"> 利用規約 </NuxtLink>
       <NuxtLink to="/recruit"> Twin:teに参加 </NuxtLink>

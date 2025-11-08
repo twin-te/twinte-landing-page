@@ -59,7 +59,7 @@
     </h2>
     <a
       v-if="count != null && users != null"
-      href="https://sponsorship.twinte.net"
+      href="https://app.twinte.net/sponsorship"
     >
       <img
         class="sponsorpage-btn"
