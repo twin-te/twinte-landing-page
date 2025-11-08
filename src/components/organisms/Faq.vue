@@ -37,9 +37,9 @@
       >
         <template #body>
           また、広告もございません。 なお、<a
-            href="https://sponsorship.twinte.net"
+            href="https://app.twinte.net/sponsorship"
           >こちら</a>にて寄付を受け付けております。
-          これまでの寄付金総額や寄付にご協力いただいた方々は<a href="/sponsor">こちら</a>のページに掲載しています。
+          これまでの寄付金総額や寄付にご協力いただいた方々は<a href="https://app.twinte.net/sponsorship/sponsors-list">こちら</a>のページに掲載しています。
         </template>
       </ParticleFaqItem>
     </div>

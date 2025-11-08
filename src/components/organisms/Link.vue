@@ -38,7 +38,7 @@ const items = ref<LinkItemProps[]>([
   },
   {
     title: 'Twin:te Sponsor',
-    href: 'https://sponsorship.twinte.net',
+    href: 'https://app.twinte.net/sponsorship',
     description:
       '寄付の受付ページです。Twin:teの活動をご支援いただけますと幸いです。',
   },
