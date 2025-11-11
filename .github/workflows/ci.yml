@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version-file: ".bun-version"
-      
+
       - uses: actions/cache@v4
         with:
           path: ~/.bun/install/cache
