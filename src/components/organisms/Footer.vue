@@ -2,7 +2,7 @@
   <footer class="footer">
     <img
       src="../../images/twintelogo-color.svg"
-      alt="Twin-teのロゴ"
+      alt="Twin:teのロゴ"
       class="footer__logo"
     >
     <a

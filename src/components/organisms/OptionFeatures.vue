@@ -1,12 +1,12 @@
 <template>
-  <section class="option-featurs">
+  <section class="option-features">
     <img
-      class="option-featurs__title-image"
+      class="option-features__title-image"
       src="../../images/option.png"
       alt="便利なオプション機能！"
     >
     <div class="item-wrapper">
-      <div class="option-featurs__item opacity1">
+      <div class="option-features__item opacity1">
         <div class="item__image">
           <img src="../../images/federation.png">
         </div>
@@ -17,7 +17,7 @@
           TwitterやGoogle、Appleアカウントのいずれかでログインすることで、複数の端末でデータの共有ができます。
         </div>
       </div>
-      <div class="option-featurs__item opacity2">
+      <div class="option-features__item opacity2">
         <div class="item__image">
           <img src="../../images/push.png">
         </div>
@@ -28,9 +28,9 @@
           翌日が特殊日程の場合、プッシュ通知でお知らせします。日課変更を忘れて当日に慌ててしまう心配もありません。
         </div>
       </div>
-      <div class="option-featurs__item opacity3">
+      <div class="option-features__item opacity3">
         <div class="item__image">
-          <img src="../../images/widjet.png">
+          <img src="../../images/widget.png">
         </div>
         <div class="item__title">
           ウィジェットで今日の授業を確認
@@ -56,7 +56,7 @@ export default defineComponent({
 @use '~/assets/scss/variable';
 @use '~/assets/scss/mixin';
 
-.option-featurs {
+.option-features {
   background: variable.$base;
   &__item {
     width: 272px;

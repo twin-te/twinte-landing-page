@@ -5,13 +5,13 @@
   >
     <img
       src="../../images/top.png"
-      alt="Twin-teの画像"
+      alt="Twin:teの画像"
       class="top__images"
     >
     <div class="top__logo-and-link logo-and-link">
       <img
         src="../../images/title-logo.png"
-        alt="Twin-teのロゴ"
+        alt="Twin:teのロゴ"
         class="logo-and-link__title-logo"
       >
       <img
