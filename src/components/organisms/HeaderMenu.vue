@@ -46,18 +46,6 @@
     >
       リンク
     </a>
-    <a
-      :class="{
-        'header-menu__item': true,
-        'header-menu__item--in-top': inTop,
-        'header-menu__item--opened': opened,
-      }"
-      :href="RECRUIT_GUIDELINE_SLIDES_URL"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Twin:teに参加
-    </a>
     <div
       :class="{
         'header-menu__icon': true,
@@ -75,8 +63,6 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 
-import { RECRUIT_GUIDELINE_SLIDES_URL } from '~/constants/links'
-
 export default defineComponent({
   name: 'HeaderMenu',
   props: {
@@ -87,7 +73,7 @@ export default defineComponent({
   },
   setup: () => {
     const opened = ref(false)
-    return { opened, RECRUIT_GUIDELINE_SLIDES_URL }
+    return { opened }
   },
 })
 </script>
@@ -135,7 +121,7 @@ export default defineComponent({
       &:not(:first-child) {
         margin-left: 3.6rem;
       }
-      &:nth-child(5) {
+      &:last-of-type {
         margin-right: 7.4rem;
       }
     }
@@ -162,7 +148,7 @@ export default defineComponent({
       &:nth-child(1) {
         margin-top: 11.6rem;
       }
-      &:nth-child(5) {
+      &:last-of-type {
         margin-bottom: 3.2rem;
       }
     }
