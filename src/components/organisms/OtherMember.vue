@@ -37,7 +37,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { members } from './members'
+import { members } from '~/constants/members'
 
 export default defineComponent({
   setup: () => {},
