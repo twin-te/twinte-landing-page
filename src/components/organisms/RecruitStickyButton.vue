@@ -103,8 +103,8 @@
   }
 
   @include mixin.sp {
-    top: 8.2rem;
-    right: 0.8rem;
+    top: 9.6rem;
+    right: 1.8rem;
     width: 9rem;
     height: 9rem;
     font-size: 1.3rem;
