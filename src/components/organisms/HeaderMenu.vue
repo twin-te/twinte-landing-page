@@ -52,7 +52,9 @@
         'header-menu__item--in-top': inTop,
         'header-menu__item--opened': opened,
       }"
-      href="./recruit"
+      :href="RECRUIT_GUIDELINE_SLIDES_URL"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       Twin:teに参加
     </a>
@@ -73,6 +75,8 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 
+import { RECRUIT_GUIDELINE_SLIDES_URL } from '~/constants/links'
+
 export default defineComponent({
   name: 'HeaderMenu',
   props: {
@@ -83,7 +87,7 @@ export default defineComponent({
   },
   setup: () => {
     const opened = ref(false)
-    return { opened }
+    return { opened, RECRUIT_GUIDELINE_SLIDES_URL }
   },
 })
 </script>

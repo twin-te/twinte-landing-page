@@ -15,7 +15,7 @@
       </p>
       <div class="recruit-banner__actions">
         <a
-          href="https://docs.google.com/presentation/d/1RXZqZc59l56ZYYPJG5IGiU4uivtZk5SUIWvd1Bt24sI/edit"
+          :href="RECRUIT_GUIDELINE_SLIDES_URL"
           target="_blank"
           rel="noopener noreferrer"
           class="recruit-banner__button recruit-banner__button--outline"
@@ -23,7 +23,7 @@
           <span class="recruit-banner__button-text">募集要項</span>
         </a>
         <a
-          href="https://forms.gle/qJBgqM21ojSQ7Q5L9"
+          :href="RECRUIT_APPLICATION_FORM_URL"
           target="_blank"
           rel="noopener noreferrer"
           class="recruit-banner__button recruit-banner__button--primary"
@@ -34,6 +34,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import {
+  RECRUIT_APPLICATION_FORM_URL,
+  RECRUIT_GUIDELINE_SLIDES_URL,
+} from '~/constants/links'
+</script>
 
 <style scoped lang="scss">
 @use '~/assets/scss/variable';
