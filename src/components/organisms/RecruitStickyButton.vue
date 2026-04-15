@@ -97,14 +97,14 @@
   @include mixin.tablet {
     top: 9.8rem;
     right: 4.4rem;
-    width: 10rem;
-    height: 10rem;
-    font-size: 1.4rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    font-size: 1.6rem;
   }
 
   @include mixin.sp {
-    top: 9.6rem;
-    right: 1.8rem;
+    top: 8.2rem;
+    right: 0.8rem;
     width: 9rem;
     height: 9rem;
     font-size: 1.3rem;
