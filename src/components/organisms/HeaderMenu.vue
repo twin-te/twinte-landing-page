@@ -106,7 +106,6 @@ export default defineComponent({
     justify-content: flex-end;
   }
   &--in-top {
-    position: absolute;
     background: none;
     backdrop-filter: none;
   }
