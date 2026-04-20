@@ -136,7 +136,7 @@ import {
     height: 4.4rem;
     border-radius: 2.205rem;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 160%;
     text-decoration: none;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
