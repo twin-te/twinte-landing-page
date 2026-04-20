@@ -1,16 +1,13 @@
 <template>
-  <section
-    id="recruit-banner"
-    class="recruit-banner"
-  >
+  <section id="recruit-banner" class="recruit-banner">
     <div class="recruit-banner__inner">
       <h2 class="recruit-banner__title">
-        Twin:te 開発メンバー<br>
+        Twin:te 開発メンバー<br />
         募集中
       </h2>
       <p class="recruit-banner__description">
-        Twin:teでは長期的な運用を目的として、運営メンバーを常時募集しています。<br>
-        みなさまのご応募お待ちしております。<br>
+        Twin:teでは長期的な運用を目的として、運営メンバーを常時募集しています。<br />
+        みなさまのご応募お待ちしております。<br />
         すべての枠組みにおいて、筑波大学生のみの応募に限らせていただきます、ご了承ください。
       </p>
       <div class="recruit-banner__actions">
@@ -43,12 +40,12 @@ import {
 </script>
 
 <style scoped lang="scss">
-@use '~/assets/scss/variable';
-@use '~/assets/scss/mixin';
+@use "~/assets/scss/variable";
+@use "~/assets/scss/mixin";
 
 .recruit-banner {
   scroll-margin-top: 9rem;
-  background: url('~/images/bg-graphic1.jpg');
+  background: url("~/images/bg-graphic1.jpg");
   background-size: cover;
   color: variable.$white;
 
@@ -74,7 +71,6 @@ import {
 
     @include mixin.tablet {
       max-width: 56rem;
-      text-align: left;
     }
 
     @include mixin.sp {
@@ -84,7 +80,7 @@ import {
   }
 
   &__title {
-    font-weight: 800;
+    font-weight: bold;
     line-height: 160%;
 
     @include mixin.pc {
@@ -100,7 +96,7 @@ import {
   }
 
   &__description {
-    font-weight: 500;
+    font-weight: normal;
     line-height: 200%;
 
     @include mixin.pc {
@@ -145,10 +141,6 @@ import {
     text-decoration: none;
     box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
 
-    @include mixin.pc {
-      height: 4.41rem;
-    }
-
     @include mixin.tablet {
       width: 17.6rem;
       border-radius: 2.2rem;
@@ -159,25 +151,16 @@ import {
       border-radius: 2.2rem;
     }
 
-    &-text {
-      letter-spacing: 0;
-      white-space: nowrap;
-    }
-
     &--outline {
       background: variable.$white;
     }
 
     &--outline &-text {
-      background: variable.$primary-liner;
-      background-clip: text;
-      color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include mixin.text-liner;
     }
 
     &--primary {
-      background: #e9ff21;
+      background: variable.$yellow;
       color: variable.$text-sub;
     }
   }

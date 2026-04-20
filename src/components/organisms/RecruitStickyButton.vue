@@ -51,7 +51,7 @@
   position: fixed;
   z-index: 5;
   color: variable.$text-main;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 130%;
   text-align: center;
   text-decoration: none;
@@ -95,10 +95,6 @@
     position: absolute;
     inset: 0;
     background: variable.$yellow;
-  }
-
-  &:link {
-    color: variable.$text-main;
   }
 
   &__main {
