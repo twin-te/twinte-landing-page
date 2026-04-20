@@ -1,16 +1,10 @@
 <template>
-  <a
-    href="#recruit-banner"
-    class="recruit-sticky-button"
-  >
-    <span
-      class="recruit-sticky-button__star"
-      aria-hidden="true"
-    >
+  <a href="#recruit-banner" class="recruit-sticky-button">
+    <span class="recruit-sticky-button__star" aria-hidden="true">
       <span class="recruit-sticky-button__star-shape" />
     </span>
     <span class="recruit-sticky-button__main">
-      メンバー<br>
+      メンバー<br />
       募集中
     </span>
     <span class="recruit-sticky-button__sub">CLICK▶︎</span>
@@ -18,8 +12,8 @@
 </template>
 
 <style scoped lang="scss">
-@use '~/assets/scss/variable';
-@use '~/assets/scss/mixin';
+@use "~/assets/scss/variable";
+@use "~/assets/scss/mixin";
 
 @mixin recruit-star-shape {
   clip-path: polygon(
@@ -55,36 +49,12 @@
   @include mixin.button-cursor;
 
   position: fixed;
-  z-index: 9;
-  isolation: isolate;
+  z-index: 5;
   color: variable.$text-main;
   font-weight: 700;
   line-height: 130%;
   text-align: center;
   text-decoration: none;
-
-  &__star {
-    position: absolute;
-    inset: -0.8rem;
-    z-index: 0;
-    filter:
-      drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15))
-      drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15))
-      drop-shadow(0.4rem 0.4rem 0.2rem rgba(0, 0, 0, 0.25));
-    pointer-events: none;
-  }
-
-  &__star-shape {
-    @include recruit-star-shape;
-
-    position: absolute;
-    inset: 0.8rem;
-    background: #e9ff21;
-  }
-
-  &:link {
-    color: variable.$text-main;
-  }
 
   @include mixin.pc {
     top: 9.8rem;
@@ -95,34 +65,51 @@
   }
 
   @include mixin.tablet {
-    top: 9.8rem;
-    right: 4.4rem;
-    width: 12.5rem;
-    height: 12.5rem;
-    font-size: 1.6rem;
+    top: 10.8rem;
+    right: 0.9rem;
+    width: 9.4rem;
+    height: 9.4rem;
+    font-size: 1.2rem;
   }
 
   @include mixin.sp {
-    top: 9.6rem;
-    right: 1.8rem;
-    width: 9rem;
-    height: 9rem;
-    font-size: 1.3rem;
+    position: absolute;
+    top: 7.8rem;
+    right: 1.3rem;
+    width: 8.6rem;
+    height: 8.6rem;
+    font-size: 1.2rem;
+  }
+
+  &__star {
+    position: absolute;
+    inset: 0;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15))
+      drop-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15))
+      drop-shadow(0.4rem 0.4rem 0.2rem rgba(0, 0, 0, 0.25));
+  }
+
+  &__star-shape {
+    @include recruit-star-shape;
+
+    position: absolute;
+    inset: 0;
+    background: variable.$yellow;
+  }
+
+  &:link {
+    color: variable.$text-main;
   }
 
   &__main {
     position: relative;
-    z-index: 2;
     margin-top: 0.8rem;
   }
 
   &__sub {
     position: relative;
-    z-index: 2;
-    margin-top: 0.2rem;
     color: variable.$text-sub;
-    font-size: 0.66em;
-    letter-spacing: 0;
+    font-size: 0.7em;
   }
 }
 </style>
