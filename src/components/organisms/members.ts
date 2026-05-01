@@ -248,6 +248,6 @@ export const members: Member[] = [
     name: 'はね',
     description: 'デザイン担当。芸術専門学群所属。',
     imagePath: 'hane.jpg',
-    links: {}
-  }
+    links: {},
+  },
 ]
