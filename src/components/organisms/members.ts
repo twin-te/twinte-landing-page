@@ -124,7 +124,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     imagePath: 'raspi0124',
     name: 'raspi0124',
     description: '知識情報・図書館学類所属。',
@@ -189,7 +189,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'ゾビオ',
     imagePath: 'zobio.png',
     description: '',
@@ -197,10 +197,12 @@ export const members: Member[] = [
   },
   {
     isActive: true,
-    name: 'fami',
+    name: 'keeki',
     imagePath: 'fami.jpg',
     description: '',
-    links: {},
+    links: {
+      website: { label: 'keeki-fami.github.io', url: 'https://keeki-fami.github.io/' },
+    },
   },
   {
     isActive: true,
@@ -224,7 +226,7 @@ export const members: Member[] = [
     },
   },
   {
-    isActive: true,
+    isActive: false,
     name: 'Sudy',
     description: '情報科学類所属。',
     imagePath: 'sudy.png',
@@ -239,6 +241,13 @@ export const members: Member[] = [
     name: 'Jyagapotato',
     description: '工学システム学類所属。',
     imagePath: 'jyagapotato.png',
+    links: {},
+  },
+  {
+    isActive: true,
+    name: 'はね',
+    description: 'デザイン担当。芸術専門学群所属。',
+    imagePath: 'hane.jpg',
     links: {},
   },
 ]
