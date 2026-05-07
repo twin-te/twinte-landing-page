@@ -1,11 +1,13 @@
 <template>
   <main>
     <OrganismsHeaderMenu v-model:in-top="inTop" />
+    <OrganismsRecruitStickyButton />
     <OrganismsTop />
     <OrganismsFeature />
     <OrganismsOptionFeatures />
     <OrganismsFaq />
     <OrganismsMember />
+    <OrganismsRecruitBanner />
     <OrganismsLink />
     <OrganismsBottom />
     <OrganismsFooter />

@@ -46,16 +46,6 @@
     >
       リンク
     </a>
-    <a
-      :class="{
-        'header-menu__item': true,
-        'header-menu__item--in-top': inTop,
-        'header-menu__item--opened': opened,
-      }"
-      href="./recruit"
-    >
-      Twin:teに参加
-    </a>
     <div
       :class="{
         'header-menu__icon': true,
@@ -106,7 +96,6 @@ export default defineComponent({
     justify-content: flex-end;
   }
   &--in-top {
-    position: absolute;
     background: none;
     backdrop-filter: none;
   }
@@ -132,7 +121,7 @@ export default defineComponent({
       &:not(:first-child) {
         margin-left: 3.6rem;
       }
-      &:nth-child(5) {
+      &:last-of-type {
         margin-right: 7.4rem;
       }
     }
@@ -159,7 +148,7 @@ export default defineComponent({
       &:nth-child(1) {
         margin-top: 11.6rem;
       }
-      &:nth-child(5) {
+      &:last-of-type {
         margin-bottom: 3.2rem;
       }
     }
