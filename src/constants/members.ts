@@ -250,4 +250,11 @@ export const members: Member[] = [
     imagePath: 'hane.jpg',
     links: {},
   },
+  {
+    isActive: true,
+    name: 'Rippy',
+    description: 'インフラ担当（予定）。情報理工学位P所属。',
+    imagePath: 'rippy.jpg',
+    links: {},
+  },
 ]
