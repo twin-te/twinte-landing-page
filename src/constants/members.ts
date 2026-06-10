@@ -250,4 +250,17 @@ export const members: Member[] = [
     imagePath: 'hane.jpg',
     links: {},
   },
+  {
+    isActive: true,
+    name: 'naohanpen',
+    description: '',
+    imagePath: 'naohanpen.png',
+    links: {
+      website: {
+        label: 'naohanpen.jp',
+        url: 'https://naohanpen.jp',
+      },
+      githubId: 'naohanpen',
+    },
+  },
 ]
