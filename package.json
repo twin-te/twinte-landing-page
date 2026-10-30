@@ -13,7 +13,7 @@
   "dependencies": {
     "@gtm-support/vue-gtm": "^3.1.0",
     "@nuxt/vite-builder": "^3.17.2",
-    "nuxt": "^3.17.2",
+    "nuxt": "^4.0.0",
     "scrollreveal": "^4.0.9",
     "vue": "^3.5.13",
     "vue-gtag-next": "^1.14.0"
